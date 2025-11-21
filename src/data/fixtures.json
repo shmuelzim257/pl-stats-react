@@ -1,0 +1,29 @@
+[
+  {
+    "matchId": 1,
+    "gameweek": 1,
+    "date": "2025-08-09",
+    "time": "17:00",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Chelsea",
+    "stadium": "Old Trafford"
+  },
+  {
+    "matchId": 2,
+    "gameweek": 1,
+    "date": "2025-08-10",
+    "time": "19:30",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Arsenal",
+    "stadium": "Anfield"
+  },
+  {
+    "matchId": 3,
+    "gameweek": 1,
+    "date": "2025-08-11",
+    "time": "22:00",
+    "homeTeam": "Tottenham Hotspur",
+    "awayTeam": "Manchester United",
+    "stadium": "Tottenham Hotspur Stadium"
+  }
+]

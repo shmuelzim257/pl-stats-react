@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Bruno Fernandes",
+    "team": "Manchester United",
+    "position": "MID",
+    "minutes": 1120,
+    "goals": 6,
+    "assists": 5,
+    "points": 88
+  },
+  {
+    "id": 2,
+    "name": "Rasmus Højlund",
+    "team": "Manchester United",
+    "position": "FWD",
+    "minutes": 980,
+    "goals": 7,
+    "assists": 2,
+    "points": 76
+  },
+  {
+    "id": 3,
+    "name": "Marcus Rashford",
+    "team": "Manchester United",
+    "position": "FWD",
+    "minutes": 1050,
+    "goals": 5,
+    "assists": 3,
+    "points": 70
+  },
+  {
+    "id": 4,
+    "name": "Erling Haaland",
+    "team": "Manchester City",
+    "position": "FWD",
+    "minutes": 1100,
+    "goals": 12,
+    "assists": 2,
+    "points": 110
+  },
+  {
+    "id": 5,
+    "name": "Mohamed Salah",
+    "team": "Liverpool",
+    "position": "MID",
+    "minutes": 1150,
+    "goals": 10,
+    "assists": 6,
+    "points": 115
+  }
+]

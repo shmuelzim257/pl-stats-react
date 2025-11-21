@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ARS",
+    "name": "Arsenal",
+    "shortName": "Arsenal",
+    "city": "London",
+    "stadium": "Emirates Stadium",
+    "manager": "Mikel Arteta",
+    "captain": "Martin \u00d8degaard",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+  },
+  {
+    "id": "AVL",
+    "name": "Aston Villa",
+    "shortName": "Aston Villa",
+    "city": "Birmingham",
+    "stadium": "Villa Park",
+    "manager": "Unai Emery",
+    "captain": "John McGinn",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Aston_Villa_FC_crest_%282016%29.svg"
+  },
+  {
+    "id": "BOU",
+    "name": "Bournemouth",
+    "shortName": "Bournemouth",
+    "city": "Bournemouth",
+    "stadium": "Vitality Stadium",
+    "manager": "Andoni Iraola",
+    "captain": "Adam Smith",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg"
+  },
+  {
+    "id": "BRE",
+    "name": "Brentford",
+    "shortName": "Brentford",
+    "city": "London",
+    "stadium": "Gtech Community Stadium",
+    "manager": "Keith Andrews",
+    "captain": "Nathan Collins",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg"
+  },
+  {
+    "id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "shortName": "Brighton",
+    "city": "Brighton",
+    "stadium": "Amex Stadium",
+    "manager": "Fabian H\u00fcrzeler",
+    "captain": "Lewis Dunk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg"
+  },
+  {
+    "id": "BUR",
+    "name": "Burnley",
+    "shortName": "Burnley",
+    "city": "Burnley",
+    "stadium": "Turf Moor",
+    "manager": "Scott Parker",
+    "captain": "Josh Cullen",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Burnley_FC_Logo.svg"
+  },
+  {
+    "id": "CHE",
+    "name": "Chelsea",
+    "shortName": "Chelsea",
+    "city": "London",
+    "stadium": "Stamford Bridge",
+    "manager": "Enzo Maresca",
+    "captain": "Reece James",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+  },
+  {
+    "id": "CRY",
+    "name": "Crystal Palace",
+    "shortName": "Crystal Palace",
+    "city": "London",
+    "stadium": "Selhurst Park",
+    "manager": "Oliver Glasner",
+    "captain": "Marc Gu\u00e9hi",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Crystal_Palace_FC_logo.svg"
+  },
+  {
+    "id": "EVE",
+    "name": "Everton",
+    "shortName": "Everton",
+    "city": "Liverpool",
+    "stadium": "Goodison Park",
+    "manager": "David Moyes",
+    "captain": "S\u00e9amus Coleman",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg"
+  },
+  {
+    "id": "FUL",
+    "name": "Fulham",
+    "shortName": "Fulham",
+    "city": "London",
+    "stadium": "Craven Cottage",
+    "manager": "Marco Silva",
+    "captain": "Tom Cairney",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Fulham_FC_%28shield%29.svg"
+  },
+  {
+    "id": "LEE",
+    "name": "Leeds United",
+    "shortName": "Leeds",
+    "city": "Leeds",
+    "stadium": "Elland Road",
+    "manager": "Daniel Farke",
+    "captain": "Ethan Ampadu",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Leeds_United_F.C._logo.svg"
+  },
+  {
+    "id": "LIV",
+    "name": "Liverpool",
+    "shortName": "Liverpool",
+    "city": "Liverpool",
+    "stadium": "Anfield",
+    "manager": "Arne Slot",
+    "captain": "Virgil van Dijk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+  },
+  {
+    "id": "MCI",
+    "name": "Manchester City",
+    "shortName": "Man City",
+    "city": "Manchester",
+    "stadium": "Etihad Stadium",
+    "manager": "Pep Guardiola",
+    "captain": "Bernardo Silva",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+  },
+  {
+    "id": "MUN",
+    "name": "Manchester United",
+    "shortName": "Man United",
+    "city": "Manchester",
+    "stadium": "Old Trafford",
+    "manager": "Ruben Amorim",
+    "captain": "Bruno Fernandes",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+  },
+  {
+    "id": "NEW",
+    "name": "Newcastle United",
+    "shortName": "Newcastle",
+    "city": "Newcastle upon Tyne",
+    "stadium": "St James' Park",
+    "manager": "Eddie Howe",
+    "captain": "Bruno Guimar\u00e3es",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg"
+  },
+  {
+    "id": "NFO",
+    "name": "Nottingham Forest",
+    "shortName": "Nottm Forest",
+    "city": "Nottingham",
+    "stadium": "City Ground",
+    "manager": "Sean Dyche",
+    "captain": "Ryan Yates",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/47/Nottingham_Forest_F.C._logo.svg"
+  },
+  {
+    "id": "SUN",
+    "name": "Sunderland",
+    "shortName": "Sunderland",
+    "city": "Sunderland",
+    "stadium": "Stadium of Light",
+    "manager": "R\u00e9gis Le Bris",
+    "captain": "Granit Xhaka",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Sunderland_A.F.C._logo.svg"
+  },
+  {
+    "id": "TOT",
+    "name": "Tottenham Hotspur",
+    "shortName": "Spurs",
+    "city": "London",
+    "stadium": "Tottenham Hotspur Stadium",
+    "manager": "Thomas Frank",
+    "captain": "Cristian Romero",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg"
+  },
+  {
+    "id": "WHU",
+    "name": "West Ham United",
+    "shortName": "West Ham",
+    "city": "London",
+    "stadium": "London Stadium",
+    "manager": "Nuno Esp\u00edrito Santo",
+    "captain": "Jarrod Bowen",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg"
+  },
+  {
+    "id": "WOL",
+    "name": "Wolverhampton Wanderers",
+    "shortName": "Wolves",
+    "city": "Wolverhampton",
+    "stadium": "Molineux Stadium",
+    "manager": "Rob Edwards",
+    "captain": "Toti Gomes",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg"
+  }
+]
