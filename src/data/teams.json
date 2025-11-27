@@ -5,9 +5,13 @@
     "shortName": "Arsenal",
     "city": "London",
     "stadium": "Emirates Stadium",
-    "manager": "Mikel Arteta",
-    "captain": "Martin \u00d8degaard",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+    "capacity": 60704,
+    "founded": 1886,
+    "majorHonours": "13 league titles, 14 FA Cups",
+    "website": "https://www.arsenal.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "homeColors": ["#EF0107", "#FFFFFF"],
+    "awayColors": ["#FDE100", "#000033"]
   },
   {
     "id": "AVL",
@@ -15,19 +19,27 @@
     "shortName": "Aston Villa",
     "city": "Birmingham",
     "stadium": "Villa Park",
-    "manager": "Unai Emery",
-    "captain": "John McGinn",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Aston_Villa_FC_crest_%282016%29.svg"
+    "capacity": 42657,
+    "founded": 1874,
+    "majorHonours": "7 league titles, 7 FA Cups, 1 European Cup",
+    "website": "https://www.avfc.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Aston_Villa_FC_crest_%282016%29.svg",
+    "homeColors": ["#670E36", "#95BFE5"],
+    "awayColors": ["#FFFFFF", "#670E36"]
   },
   {
     "id": "BOU",
-    "name": "Bournemouth",
+    "name": "AFC Bournemouth",
     "shortName": "Bournemouth",
     "city": "Bournemouth",
     "stadium": "Vitality Stadium",
-    "manager": "Andoni Iraola",
-    "captain": "Adam Smith",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg"
+    "capacity": 11307,
+    "founded": 1899,
+    "majorHonours": "Championship titles, first promoted to PL in 2015",
+    "website": "https://www.afcb.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_(2013).svg",
+    "homeColors": ["#DA291C", "#000000"],
+    "awayColors": ["#FFFFFF", "#00A3E0"]
   },
   {
     "id": "BRE",
@@ -35,19 +47,27 @@
     "shortName": "Brentford",
     "city": "London",
     "stadium": "Gtech Community Stadium",
-    "manager": "Keith Andrews",
-    "captain": "Nathan Collins",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg"
+    "capacity": 17250,
+    "founded": 1889,
+    "majorHonours": "Second tier titles, established PL side since 2021",
+    "website": "https://www.brentfordfc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg",
+    "homeColors": ["#DA291C", "#FFFFFF"],
+    "awayColors": ["#000000", "#FFD700"]
   },
   {
     "id": "BHA",
     "name": "Brighton & Hove Albion",
     "shortName": "Brighton",
     "city": "Brighton",
-    "stadium": "Amex Stadium",
-    "manager": "Fabian H\u00fcrzeler",
-    "captain": "Lewis Dunk",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg"
+    "stadium": "American Express Stadium",
+    "capacity": 31800,
+    "founded": 1901,
+    "majorHonours": "FA Cup runners-up, regular in European qualification race",
+    "website": "https://www.brightonandhovealbion.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_&_Hove_Albion_logo.svg",
+    "homeColors": ["#0057B8", "#FFFFFF"],
+    "awayColors": ["#000000", "#FFD200"]
   },
   {
     "id": "BUR",
@@ -55,9 +75,13 @@
     "shortName": "Burnley",
     "city": "Burnley",
     "stadium": "Turf Moor",
-    "manager": "Scott Parker",
-    "captain": "Josh Cullen",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Burnley_FC_Logo.svg"
+    "capacity": 21400,
+    "founded": 1882,
+    "majorHonours": "2 league titles, FA Cup",
+    "website": "https://www.burnleyfootballclub.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png",
+    "homeColors": ["#6C1D45", "#99C6EA"],
+    "awayColors": ["#FFFFFF", "#6C1D45"]
   },
   {
     "id": "CHE",
@@ -65,9 +89,13 @@
     "shortName": "Chelsea",
     "city": "London",
     "stadium": "Stamford Bridge",
-    "manager": "Enzo Maresca",
-    "captain": "Reece James",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+    "capacity": 40343,
+    "founded": 1905,
+    "majorHonours": "6 league titles, 2 Champions Leagues",
+    "website": "https://www.chelseafc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+    "homeColors": ["#034694", "#FFFFFF"],
+    "awayColors": ["#FFFFFF", "#034694"]
   },
   {
     "id": "CRY",
@@ -75,9 +103,13 @@
     "shortName": "Crystal Palace",
     "city": "London",
     "stadium": "Selhurst Park",
-    "manager": "Oliver Glasner",
-    "captain": "Marc Gu\u00e9hi",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Crystal_Palace_FC_logo.svg"
+    "capacity": 25486,
+    "founded": 1905,
+    "majorHonours": "FA Cup runners-up, established PL club",
+    "website": "https://www.cpfc.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Crystal_Palace_FC_logo.svg",
+    "homeColors": ["#1B458F", "#C4122E"],
+    "awayColors": ["#FFFFFF", "#1B458F"]
   },
   {
     "id": "EVE",
@@ -85,9 +117,13 @@
     "shortName": "Everton",
     "city": "Liverpool",
     "stadium": "Goodison Park",
-    "manager": "David Moyes",
-    "captain": "S\u00e9amus Coleman",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg"
+    "capacity": 39414,
+    "founded": 1878,
+    "majorHonours": "9 league titles, 5 FA Cups, 1 Cup Winners' Cup",
+    "website": "https://www.evertonfc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg",
+    "homeColors": ["#003399", "#FFFFFF"],
+    "awayColors": ["#FFFFFF", "#003399"]
   },
   {
     "id": "FUL",
@@ -95,19 +131,27 @@
     "shortName": "Fulham",
     "city": "London",
     "stadium": "Craven Cottage",
-    "manager": "Marco Silva",
-    "captain": "Tom Cairney",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Fulham_FC_%28shield%29.svg"
+    "capacity": 25700,
+    "founded": 1879,
+    "majorHonours": "Europa League runners-up 2010",
+    "website": "https://www.fulhamfc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Fulham_FC_(shield).svg",
+    "homeColors": ["#FFFFFF", "#000000"],
+    "awayColors": ["#FF0000", "#FFFFFF"]
   },
   {
     "id": "LEE",
     "name": "Leeds United",
-    "shortName": "Leeds",
+    "shortName": "Leeds United",
     "city": "Leeds",
     "stadium": "Elland Road",
-    "manager": "Daniel Farke",
-    "captain": "Ethan Ampadu",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Leeds_United_F.C._logo.svg"
+    "capacity": 37492,
+    "founded": 1919,
+    "majorHonours": "3 league titles, FA Cup",
+    "website": "https://www.leedsunited.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Leeds_United_FC_crest.svg",
+    "homeColors": ["#FFFFFF", "#FFCC00"],
+    "awayColors": ["#000033", "#FFCC00"]
   },
   {
     "id": "LIV",
@@ -115,49 +159,69 @@
     "shortName": "Liverpool",
     "city": "Liverpool",
     "stadium": "Anfield",
-    "manager": "Arne Slot",
-    "captain": "Virgil van Dijk",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+    "capacity": 61276,
+    "founded": 1892,
+    "majorHonours": "20 league titles, 6 European Cups",
+    "website": "https://www.liverpoolfc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
+    "homeColors": ["#C8102E", "#FFFFFF"],
+    "awayColors": ["#FFFFFF", "#00A398"]
   },
   {
-    "id": "MCI",
+    "id": "MNC",
     "name": "Manchester City",
-    "shortName": "Man City",
+    "shortName": "Manchester City",
     "city": "Manchester",
     "stadium": "Etihad Stadium",
-    "manager": "Pep Guardiola",
-    "captain": "Bernardo Silva",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+    "capacity": 53400,
+    "founded": 1880,
+    "majorHonours": "10+ league titles, 1 Champions League",
+    "website": "https://www.mancity.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "homeColors": ["#6CABDD", "#FFFFFF"],
+    "awayColors": ["#1C204E", "#FDB913"]
   },
   {
-    "id": "MUN",
+    "id": "MAN",
     "name": "Manchester United",
-    "shortName": "Man United",
+    "shortName": "Manchester United",
     "city": "Manchester",
     "stadium": "Old Trafford",
-    "manager": "Ruben Amorim",
-    "captain": "Bruno Fernandes",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+    "capacity": 74310,
+    "founded": 1878,
+    "majorHonours": "20 league titles, 3 European Cups",
+    "website": "https://www.manutd.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
+    "homeColors": ["#DA291C", "#FFFFFF"],
+    "awayColors": ["#FFFFFF", "#000000"]
   },
   {
     "id": "NEW",
     "name": "Newcastle United",
-    "shortName": "Newcastle",
+    "shortName": "Newcastle United",
     "city": "Newcastle upon Tyne",
     "stadium": "St James' Park",
-    "manager": "Eddie Howe",
-    "captain": "Bruno Guimar\u00e3es",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg"
+    "capacity": 52305,
+    "founded": 1892,
+    "majorHonours": "4 league titles, 6 FA Cups",
+    "website": "https://www.nufc.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg",
+    "homeColors": ["#000000", "#FFFFFF"],
+    "awayColors": ["#00B0CA", "#000000"]
   },
   {
     "id": "NFO",
     "name": "Nottingham Forest",
-    "shortName": "Nottm Forest",
+    "shortName": "Nottingham Forest",
     "city": "Nottingham",
     "stadium": "City Ground",
-    "manager": "Sean Dyche",
-    "captain": "Ryan Yates",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/47/Nottingham_Forest_F.C._logo.svg"
+    "capacity": 30445,
+    "founded": 1865,
+    "majorHonours": "2 European Cups, 1 league title",
+    "website": "https://www.nottinghamforest.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Nottingham_Forest_FC_logo.svg",
+    "homeColors": ["#DD0000", "#FFFFFF"],
+    "awayColors": ["#FFFFFF", "#000000"]
   },
   {
     "id": "SUN",
@@ -165,29 +229,41 @@
     "shortName": "Sunderland",
     "city": "Sunderland",
     "stadium": "Stadium of Light",
-    "manager": "R\u00e9gis Le Bris",
-    "captain": "Granit Xhaka",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Sunderland_A.F.C._logo.svg"
+    "capacity": 48707,
+    "founded": 1879,
+    "majorHonours": "6 league titles, 2 FA Cups",
+    "website": "https://www.safc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Sunderland_AFC_logo.svg",
+    "homeColors": ["#E2231A", "#FFFFFF"],
+    "awayColors": ["#000000", "#E2231A"]
   },
   {
     "id": "TOT",
     "name": "Tottenham Hotspur",
-    "shortName": "Spurs",
+    "shortName": "Tottenham Hotspur",
     "city": "London",
     "stadium": "Tottenham Hotspur Stadium",
-    "manager": "Thomas Frank",
-    "captain": "Cristian Romero",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg"
+    "capacity": 62850,
+    "founded": 1882,
+    "majorHonours": "2 league titles, 8 FA Cups, 2 UEFA Cups",
+    "website": "https://www.tottenhamhotspur.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
+    "homeColors": ["#FFFFFF", "#132257"],
+    "awayColors": ["#132257", "#FFFFFF"]
   },
   {
     "id": "WHU",
     "name": "West Ham United",
-    "shortName": "West Ham",
+    "shortName": "West Ham United",
     "city": "London",
     "stadium": "London Stadium",
-    "manager": "Nuno Esp\u00edrito Santo",
-    "captain": "Jarrod Bowen",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg"
+    "capacity": 62500,
+    "founded": 1895,
+    "majorHonours": "European Cup Winners' Cup, UEFA Europa Conference League",
+    "website": "https://www.whufc.com",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg",
+    "homeColors": ["#7A263A", "#1BB1E7"],
+    "awayColors": ["#FFFFFF", "#7A263A"]
   },
   {
     "id": "WOL",
@@ -195,8 +271,12 @@
     "shortName": "Wolves",
     "city": "Wolverhampton",
     "stadium": "Molineux Stadium",
-    "manager": "Rob Edwards",
-    "captain": "Toti Gomes",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg"
+    "capacity": 32050,
+    "founded": 1877,
+    "majorHonours": "3 league titles, 4 FA Cups",
+    "website": "https://www.wolves.co.uk",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg",
+    "homeColors": ["#FDB913", "#000000"],
+    "awayColors": ["#000000", "#FDB913"]
   }
 ]

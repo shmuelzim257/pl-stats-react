@@ -1,16 +1,92 @@
 [
   {
-    "id": 1,
-    "title": "Manchester United prepare for 2025/26 Premier League opener at Old Trafford",
-    "source": "BBC Sport",
-    "publishedAt": "2025-08-01",
-    "url": "https://www.bbc.com/sport/football"
+    "id": "mw12-review",
+    "title": "What we learned from Matchweek 12 in 2025/26",
+    "source": "Premier League",
+    "date": "2025-11-25",
+    "url": "https://www.premierleague.com/en/news/4473812/what-we-learned-from-matchweek-12-in-2025-26-premier-league-season",
+    "excerpt": "סיכום רשמי של מחזור 12 בפרמייר ליג 2025/26, כולל הדגשת המשך הקריסה של ליברפול, הרצף של ארסנל בצמרת והמאבק בתחתית.",
+    "teams": ["Liverpool", "Arsenal", "Wolverhampton Wanderers", "Burnley"]
   },
   {
-    "id": 2,
-    "title": "Premier League 2025/26: promoted Sunderland, Burnley and Leeds ready for top-flight return",
-    "source": "Sky Sports",
-    "publishedAt": "2025-07-28",
-    "url": "https://www.skysports.com/football/news"
+    "id": "table-snapshot",
+    "title": "Arsenal lead 2025-26 Premier League table after 12 matches",
+    "source": "ESPN",
+    "date": "2025-11-24",
+    "url": "https://www.espn.com/soccer/standings/_/league/eng.1",
+    "excerpt": "ארסנל מובילה את הטבלה אחרי 12 מחזורים עם 29 נקודות, לפני צ׳לסי ומנצ׳סטר סיטי, בעוד וולבס שקועה במקום האחרון.",
+    "teams": ["Arsenal", "Chelsea", "Manchester City", "Wolverhampton Wanderers"]
+  },
+  {
+    "id": "haaland-top-scorer",
+    "title": "Erling Haaland clear at the top of 2025-26 scoring charts",
+    "source": "TNT Sports",
+    "date": "2025-11-20",
+    "url": "https://www.tntsports.co.uk/football/premier-league/topscorer.shtml",
+    "excerpt": "ארלינג הולאנד ממשיך להוביל את טבלת הכובשים עם 14 שערי ליגה ב-12 משחקים, כשאיגור טיאגו מדביק קצב מרשים עבור ברנטפורד.",
+    "teams": ["Manchester City", "Brentford"]
+  },
+  {
+    "id": "liverpool-slump",
+    "title": "Slot admits to bleak mood as Liverpool's slump deepens",
+    "source": "Reuters",
+    "date": "2025-11-27",
+    "url": "https://www.reuters.com/sports/soccer/slot-admits-bleak-mood-liverpools-slump-deepens-with-4-1-defeat-psv-2025-11-27/",
+    "excerpt": "ארנה סלוט מודה שהמצב מנטלי קשה בליברפול אחרי תבוסה 4–1 ל-PSV ותשע הפסדים ב-12 משחקים רשמיים – כולל רצף הפסדים בפרמייר ליג.",
+    "teams": ["Liverpool"]
+  },
+  {
+    "id": "liverpool-psv",
+    "title": "PSV stun Liverpool 4-1 at Anfield",
+    "source": "Reuters",
+    "date": "2025-11-26",
+    "url": "https://www.reuters.com/sports/soccer/psv-eindhoven-stun-liverpool-with-4-1-thrashing-anfield-2025-11-26/",
+    "excerpt": "ליברפול חוטפת תבוסה ביתית 4–1 ביגלל PSV בליגת האלופות, תוצאה שמחדדת עוד יותר את המשבר של אלופת אנגליה המכהנת.",
+    "teams": ["Liverpool"]
+  },
+  {
+    "id": "arsenal-bayern",
+    "title": "Arsenal beat Bayern Munich 3-1 to go top of Champions League group",
+    "source": "The Guardian",
+    "date": "2025-11-26",
+    "url": "https://www.theguardian.com/football/2025/nov/26/arsenal-bayern-munich-champions-league-match-report",
+    "excerpt": "ארסנל מנצחת 3–1 את באיירן מינכן במשחק גדול באמירייטס, עם הופעה חזקה של מרטינלי וטימבר – וממשיכה מומנטום חיובי גם לפרמייר ליג.",
+    "teams": ["Arsenal"]
+  },
+  {
+    "id": "double-gw13",
+    "title": "First full double Gameweek of 2025/26 shakes up fantasy strategy",
+    "source": "The Sun – Dream Team",
+    "date": "2025-11-27",
+    "url": "https://www.thesun.co.uk/sport/football/dream-team/37447088/fantasy-double-gameweek-fixtures-premier-league-strategy/",
+    "excerpt": "מחזור כפול ראשון שבו כל 20 הקבוצות משחקות פעמיים – מדגיש את הערך של איגור טיאגו, דני וולבק, בריאן אמביימו ושחקני ווסטהאם בפנטזי.",
+    "teams": ["Brentford", "Brighton & Hove Albion", "West Ham United", "Manchester United"]
+  },
+  {
+    "id": "season-overview",
+    "title": "2025–26 Premier League season overview",
+    "source": "Wikipedia / Premier League",
+    "date": "2025-11-24",
+    "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League",
+    "excerpt": "סקירה כללית של עונת 2025/26: ליברפול כאלופה המכהנת, החזרה של סנדרלנד וקרבות בתחתית עם וולבס וברנלי.",
+    "teams": ["Liverpool", "Sunderland", "Burnley", "Wolverhampton Wanderers"]
+  },
+  {
+    "id": "forest-chaos",
+    "title": "Managerial chaos at Forest in 2025–26",
+    "source": "Wikipedia / BBC summaries",
+    "date": "2025-10-20",
+    "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_Premier_League",
+    "excerpt": "נוטינגהאם פורסט מחליפה מאמנים פעמיים בתוך חודש וחצי, אחרי פתיחת עונה רעה במיוחד ושרשרת הפסדים בליגה.",
+    "teams": ["Nottingham Forest"]
+  },
+  {
+    "id": "stats-top-scorers",
+    "title": "Top scorers and hat-tricks in 2025–26 so far",
+    "source": "Premier League Stats",
+    "date": "2025-11-24",
+    "url": "https://www.premierleague.com/en/stats/top/players",
+    "excerpt": "הולאנד מוביל את טבלת הכובשים, כשמאחוריו איגור טיאגו, דני וולבק ומאטטה. עונת 2025/26 כבר הניבה מספר משחקים עתירי שערים והאטריקים.",
+    "teams": ["Manchester City", "Brentford", "Brighton & Hove Albion", "Crystal Palace"]
   }
 ]

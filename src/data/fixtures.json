@@ -1,29 +1,82 @@
 [
   {
-    "matchId": 1,
-    "gameweek": 1,
-    "date": "2025-08-09",
-    "time": "17:00",
-    "homeTeam": "Manchester United",
-    "awayTeam": "Chelsea",
-    "stadium": "Old Trafford"
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "12:30",
+    "home": "Burnley",
+    "away": "Chelsea",
+    "stadium": "Turf Moor"
   },
   {
-    "matchId": 2,
-    "gameweek": 1,
-    "date": "2025-08-10",
-    "time": "19:30",
-    "homeTeam": "Liverpool",
-    "awayTeam": "Arsenal",
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "15:00",
+    "home": "AFC Bournemouth",
+    "away": "West Ham United",
+    "stadium": "Vitality Stadium"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "15:00",
+    "home": "Brighton & Hove Albion",
+    "away": "Brentford",
+    "stadium": "American Express Stadium"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "15:00",
+    "home": "Fulham",
+    "away": "Sunderland",
+    "stadium": "Craven Cottage"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "15:00",
+    "home": "Liverpool",
+    "away": "Nottingham Forest",
     "stadium": "Anfield"
   },
   {
-    "matchId": 3,
-    "gameweek": 1,
-    "date": "2025-08-11",
-    "time": "22:00",
-    "homeTeam": "Tottenham Hotspur",
-    "awayTeam": "Manchester United",
-    "stadium": "Tottenham Hotspur Stadium"
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "15:00",
+    "home": "Wolverhampton Wanderers",
+    "away": "Crystal Palace",
+    "stadium": "Molineux Stadium"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-22",
+    "timeUk": "17:30",
+    "home": "Newcastle United",
+    "away": "Manchester City",
+    "stadium": "St James' Park"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-23",
+    "timeUk": "14:00",
+    "home": "Leeds United",
+    "away": "Aston Villa",
+    "stadium": "Elland Road"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-23",
+    "timeUk": "16:30",
+    "home": "Arsenal",
+    "away": "Tottenham Hotspur",
+    "stadium": "Emirates Stadium"
+  },
+  {
+    "matchweek": 12,
+    "date": "2025-11-24",
+    "timeUk": "20:00",
+    "home": "Manchester United",
+    "away": "Everton",
+    "stadium": "Old Trafford"
   }
 ]

@@ -1,41 +1,54 @@
-import React, { useEffect, useState } from "react";
-import newsData from "../data/news.json";
+import React from 'react';
+import news from '../data/news.json';
 
-const News = () => {
-  const [news, setNews] = useState([]);
+const formatDate = (iso) => {
+  try {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    return d.toLocaleDateString('he-IL', {
+      day: '2-digit',
+      month: '2-digit',
+      year: '2-digit'
+    });
+  } catch {
+    return iso;
+  }
+};
 
-  useEffect(() => {
-    setNews(newsData);
-  }, []);
-
+export const News = () => {
   return (
-    <section>
-      <h1 className="page-title">חדשות מהליגה האנגלית</h1>
-      <p className="section-subtitle">
-        כאן אפשר להראות למראיינים שאתה יודע לרכז חדשות ממקורות שונים (כרגע: נתונים סטטיים).
+    <div className="container">
+      <h1>חדשות &amp; ניתוחים – פרמייר ליג 2025/26</h1>
+      <p className="card-body">
+        עשר כתבות נבחרות ממקורות רשמיים ואתרי כדורגל מובילים, המתייחסות לעונת
+        2025/26 – מירוץ האליפות, מלך השערים, עומס משחקים ועוד. כל כרטיס כולל
+        מקור, תאריך וקישור לכתבה המלאה.
       </p>
 
-      <div className="cards-grid">
+      <div className="news-list">
         {news.map((item) => (
-          <div key={item.id} className="card">
-            <div className="card-header">
-              <h2>{item.title}</h2>
-              <span className="badge">{item.source}</span>
+          <article key={item.id} className="news-item">
+            <div className="news-meta">
+              {item.source} · {formatDate(item.date)}
             </div>
-            <p className="section-subtitle">פורסם: {item.publishedAt}</p>
+            <h2 className="news-title">{item.title}</h2>
+            <p className="news-excerpt">{item.excerpt}</p>
+            {item.teams && item.teams.length > 0 && (
+              <div className="news-meta">
+                קבוצות רלוונטיות: {item.teams.join(', ')}
+              </div>
+            )}
             <a
+              className="news-link"
               href={item.url}
               target="_blank"
               rel="noreferrer"
-              className="nav-button active"
             >
-              מעבר לכתבה
+              קרא את הכתבה המלאה באתר המקור
             </a>
-          </div>
+          </article>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
-
-export default News;

@@ -1,83 +1,93 @@
-import React from "react";
+import React from 'react';
 
-const Home = ({ goTo }) => {
+const heroUrl =
+  'https://images.pexels.com/photos/26962340/pexels-photo-26962340.jpeg?auto=compress&cs=tinysrgb&w=1200';
+
+export const Home = ({ goTo }) => {
   return (
-    <section>
-      <h1 className="page-title">Premier League Stats – גרסת מנצ׳סטר יונייטד</h1>
-      <p className="section-subtitle">
-        אתר React סטטי שמציג משחקי מחזור, חדשות, נתוני שחקנים עם פילטרים ומידע בסיסי על כל קבוצות הפרמייר ליג
-        לעונת 25/26 – מיועד לחולי סטטיסטיקה ושחקני פנטזי.
-      </p>
-
-      <div className="cards-grid">
-        <div className="card">
-          <div className="card-header">
-            <h2>משחקי המחזור הקרוב</h2>
-            <span className="badge">Fixtures</span>
-          </div>
-          <p>צפה במשחקי המחזור הקרוב עם דגש על מנצ׳סטר יונייטד.</p>
-          <button className="nav-button active" onClick={() => goTo("fixtures")}>
-            עבור למסך משחקים
-          </button>
+    <div className="container">
+      <section className="hero">
+        <img
+          src={heroUrl}
+          alt="AI, data and Premier League stats"
+          className="hero-image"
+        />
+        <div className="hero-text">
+          <p className="tagline">Premier League · Data · Fantasy · AI</p>
+          <h1>PL Stats United</h1>
+          <p className="card-body">
+            שמי שמואל צימליכמן ואני מנהל פרויקטים עם פוקוס בתחומים AI, Data
+            ו-Cloud. האתר מולכם מציג את התשוקה שלי בשנים האחרונות לכדורגל,
+            סטטיסטיקות ופנטזי. באתר ניתן למצוא גם מידע עליי וגם רעיונות שלי על
+            איך פרויקטים מהתחומים הנ״ל בנויים.
+          </p>
+          <p className="card-body">
+            המטרה של הפרויקט היא להדגים שילוב בין אהבה לכדורגל לבין חשיבה
+            מוצרית־טכנולוגית: עמודי משחקים, טבלה, שחקנים, קבוצות וחדשות – הכל
+            כאתר React רספונסיבי אחד.
+          </p>
         </div>
+      </section>
 
-        <div className="card">
-          <div className="card-header">
-            <h2>חדשות הליגה</h2>
-            <span className="badge">News</span>
-          </div>
-          <p>אוסף ידני של כותרות חשובות מהפרמייר ליג.</p>
-          <button className="nav-button active" onClick={() => goTo("news")}>
-            עבור לחדשות
-          </button>
-        </div>
+      <section>
+        <div className="cards-grid">
+          <article className="card">
+            <div className="card-header">
+              <h2 className="card-title">משחקי המחזור הקרוב</h2>
+              <span className="pill">Fixtures</span>
+            </div>
+            <p className="card-body">
+              צפייה בכל משחקי המחזור הקרוב, כולל סמלי הקבוצות, אצטדיון, תאריך
+              ושעה – עם טבלת ליגה עדכנית מתחת.
+            </p>
+            <button className="primary-btn" onClick={() => goTo('fixtures')}>
+              עבור למשחקים
+            </button>
+          </article>
 
-        <div className="card">
-          <div className="card-header">
-            <h2>שחקנים & ניקוד</h2>
-            <span className="badge">Fantasy-oriented</span>
-          </div>
-          <p>ניקוד שחקנים עד כה בעונה + פילטרים לפי עמדה, קבוצה ונקודות.</p>
-          <button className="nav-button active" onClick={() => goTo("players")}>
-            עבור למסך שחקנים
-          </button>
-        </div>
+          <article className="card">
+            <div className="card-header">
+              <h2 className="card-title">שחקנים &amp; ניקוד</h2>
+              <span className="pill">Fantasy-oriented</span>
+            </div>
+            <p className="card-body">
+              סטטיסטיקה מתקדמת לשחקנים מרכזיים בפרמייר ליג – שערים, בישולים,
+              xG, xGI פר 90 ועוד, עם אפשרות סינון לפי קבוצה ועמדה.
+            </p>
+            <button className="primary-btn" onClick={() => goTo('players')}>
+              עבור לשחקנים
+            </button>
+          </article>
 
-        <div className="card">
-          <div className="card-header">
-            <h2>קבוצות הפרמייר ליג</h2>
-            <span className="badge">Teams</span>
-          </div>
-          <p>מידע בסיסי על כל קבוצות עונת 25/26, כולל סמלים וחיפוש לפי קבוצה.</p>
-          <button className="nav-button active" onClick={() => goTo("teams")}>
-            עבור למסך קבוצות
-          </button>
-        </div>
+          <article className="card">
+            <div className="card-header">
+              <h2 className="card-title">קבוצות &amp; מועדונים</h2>
+              <span className="pill">Club profiles</span>
+            </div>
+            <p className="card-body">
+              פרופיל לכל אחת מ-20 הקבוצות בליגה: אצטדיון, קיבולת, תארים
+              עיקריים, שנת הקמה, צבעי מדים וקישור לאתר הרשמי.
+            </p>
+            <button className="primary-btn" onClick={() => goTo('teams')}>
+              עבור לקבוצות
+            </button>
+          </article>
 
-        <div className="card">
-          <div className="card-header">
-            <h2>About</h2>
-            <span className="badge">Portfolio</span>
-          </div>
-          <p>עמוד שמסביר עליך ועל המטרה של הפרויקט – שימושי לראיונות עבודה.</p>
-          <button className="nav-button active" onClick={() => goTo("about")}>
-            עבור לעמוד About
-          </button>
+          <article className="card">
+            <div className="card-header">
+              <h2 className="card-title">חדשות וניתוחים</h2>
+              <span className="pill">News</span>
+            </div>
+            <p className="card-body">
+              עשר כתבות נבחרות מהעונה הנוכחית – מירוץ האליפות, מלך השערים,
+              ניתוחים טקטיים וסקירות מחזור.
+            </p>
+            <button className="primary-btn" onClick={() => goTo('news')}>
+              עבור לחדשות
+            </button>
+          </article>
         </div>
-
-        <div className="card">
-          <div className="card-header">
-            <h2>Tech / Architecture</h2>
-            <span className="badge">Tech</span>
-          </div>
-          <p>עמוד טכני שמסביר על הסטאק, הארכיטקטורה והאפשרות לחיבור ל-API אמיתי.</p>
-          <button className="nav-button active" onClick={() => goTo("tech")}>
-            עבור לעמוד Tech
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
-
-export default Home;
