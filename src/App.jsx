@@ -74,7 +74,7 @@ function App() {
             About
           </button>
           <button
-            className={page === 'tech' ? 'nav-btn active' : 'nav-btn'}
+            className={page === 'Projects' ? 'nav-btn active' : 'nav-btn'}
             onClick={() => setPage('tech')}
           >
             Tech
