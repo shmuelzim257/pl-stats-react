@@ -387,3 +387,8 @@ th {
 .table-wrapper table {
   min-width: 1200px;
 }
+.project-section {
+  border-top: 2px solid #1f2937;
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+}
