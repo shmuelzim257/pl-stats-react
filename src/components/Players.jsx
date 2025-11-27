@@ -1,88 +1,21 @@
 import React from "react";
 
-const players = [
-  {
-    id: 1,
-    name: "Erling Haaland",
-    team: "Manchester City",
-    position: "חלוץ",
-    minutes: 1080,
-    goals: 12,
-    assists: 3,
-    xg: 11.8,
-    xa: 2.7,
-    xgi: 14.5,
-    shots: 45,
-    keyPasses: 18,
-  },
-  {
-    id: 2,
-    name: "Mohamed Salah",
-    team: "Liverpool",
-    position: "חלוץ",
-    minutes: 1060,
-    goals: 10,
-    assists: 5,
-    xg: 9.9,
-    xa: 4.1,
-    xgi: 14.0,
-    shots: 38,
-    keyPasses: 22,
-  },
-  {
-    id: 3,
-    name: "Bukayo Saka",
-    team: "Arsenal",
-    position: "קשר",
-    minutes: 1020,
-    goals: 6,
-    assists: 6,
-    xg: 5.4,
-    xa: 5.8,
-    xgi: 11.2,
-    shots: 30,
-    keyPasses: 28,
-  },
-];
-
 export const Players = () => {
-  if (!players || players.length === 0) {
-    return (
-      <div className="container">
-        <h1>שחקנים &amp; ניקוד</h1>
-        <p>כרגע אין נתונים בקובץ השחקנים. בהמשך נטעין כאן נתוני אמת.</p>
-      </div>
-    );
-  }
-
   return (
     <div className="container">
       <h1>שחקנים &amp; ניקוד</h1>
       <p>
-        סטטיסטיקה מתקדמת לשחקנים מרכזיים בפרמייר-ליג – xG, xA, xGI, בעיטות,
-        מסירות מפתח ועוד. הנתונים בדף הם דמו לצורך הצגת הפרויקט.
+        טבלת סטטיסטיקות לשחקני Fantasy Premier League, לפי עמודות רשמיות מהמשחק:
+        מחיר, נקודות, פורם, בחירה באחוזים ו-ICT Index. הנתונים כאן הם דמו
+        והמבנה מותאם ל-FPL נכון ל-27.11.2025.
       </p>
-
-      <div className="filters-row">
-        <input
-          className="input"
-          type="text"
-          placeholder="חפש לפי שם שחקן או קבוצה…"
-        />
-        <select className="select">
-          <option>כל העמדות</option>
-          <option>שוער</option>
-          <option>מגן</option>
-          <option>קשר</option>
-          <option>חלוץ</option>
-        </select>
-      </div>
 
       <div className="card">
         <div className="card-header">
-          <h2 className="card-title">טבלת שחקנים – דמו</h2>
-          <span className="pill">Fantasy / xGI</span>
+          <h2 className="card-title">טבלת שחקנים – מבנה לפי FPL</h2>
+          <span className="pill">FPL Official Stats</span>
         </div>
+
         <div className="card-body">
           <table>
             <thead>
@@ -90,32 +23,33 @@ export const Players = () => {
                 <th>שחקן</th>
                 <th>קבוצה</th>
                 <th>עמדה</th>
+                <th>מחיר (£m)</th>
+                <th>נקודות עונה</th>
+                <th>נקודות מחזור אחרון</th>
+                <th>נק&apos; למשחק</th>
+                <th>Form</th>
+                <th>נבחר ע&quot;י %</th>
                 <th>דקות</th>
                 <th>שערים</th>
                 <th>בישולים</th>
-                <th>xG</th>
-                <th>xA</th>
-                <th>xGI</th>
-                <th>בעיטות</th>
-                <th>מסירות מפתח</th>
+                <th>שערים נקיים</th>
+                <th>שערים שספג</th>
+                <th>הצלות</th>
+                <th>בונוס</th>
+                <th>BPS</th>
+                <th>Influence</th>
+                <th>Creativity</th>
+                <th>Threat</th>
+                <th>ICT Index</th>
               </tr>
             </thead>
             <tbody>
-              {players.map((p) => (
-                <tr key={p.id}>
-                  <td>{p.name}</td>
-                  <td>{p.team}</td>
-                  <td>{p.position}</td>
-                  <td>{p.minutes}</td>
-                  <td>{p.goals}</td>
-                  <td>{p.assists}</td>
-                  <td>{p.xg}</td>
-                  <td>{p.xa}</td>
-                  <td>{p.xgi}</td>
-                  <td>{p.shots}</td>
-                  <td>{p.keyPasses}</td>
-                </tr>
-              ))}
+              <tr>
+                <td colSpan="21" style={{ textAlign: "center", padding: "1rem" }}>
+                  הנתונים בפועל ייטענו כאן בשלב הבא (דמו מתוך FPL API / קובץ
+                  JSON).
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
