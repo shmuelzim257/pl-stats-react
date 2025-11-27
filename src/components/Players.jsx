@@ -1,115 +1,125 @@
-import React, { useMemo, useState } from 'react';
-import players from '../data/players.json';
+import React from "react";
 
-const unique = (arr) => Array.from(new Set(arr));
+const players = [
+  {
+    id: 1,
+    name: "Erling Haaland",
+    team: "Manchester City",
+    position: "חלוץ",
+    minutes: 1080,
+    goals: 12,
+    assists: 3,
+    xg: 11.8,
+    xa: 2.7,
+    xgi: 14.5,
+    shots: 45,
+    keyPasses: 18,
+  },
+  {
+    id: 2,
+    name: "Mohamed Salah",
+    team: "Liverpool",
+    position: "חלוץ",
+    minutes: 1060,
+    goals: 10,
+    assists: 5,
+    xg: 9.9,
+    xa: 4.1,
+    xgi: 14.0,
+    shots: 38,
+    keyPasses: 22,
+  },
+  {
+    id: 3,
+    name: "Bukayo Saka",
+    team: "Arsenal",
+    position: "קשר",
+    minutes: 1020,
+    goals: 6,
+    assists: 6,
+    xg: 5.4,
+    xa: 5.8,
+    xgi: 11.2,
+    shots: 30,
+    keyPasses: 28,
+  },
+];
 
 export const Players = () => {
-  const [clubFilter, setClubFilter] = useState('ALL');
-  const [positionFilter, setPositionFilter] = useState('ALL');
-  const [search, setSearch] = useState('');
-  const [sortBy, setSortBy] = useState('xgi');
-
-  const clubs = useMemo(
-    () => ['ALL', ...unique(players.map((p) => p.club)).sort()],
-    []
-  );
-
-  const filtered = useMemo(() => {
-    return players
-      .filter((p) => (clubFilter === 'ALL' ? true : p.club === clubFilter))
-      .filter((p) =>
-        positionFilter === 'ALL' ? true : p.position === positionFilter
-      )
-      .filter((p) =>
-        !search ? true : p.name.toLowerCase().includes(search.toLowerCase())
-      )
-      .slice()
-      .sort((a, b) => {
-        if (sortBy === 'goals') return b.goals - a.goals;
-        if (sortBy === 'assists') return b.assists - a.assists;
-        if (sortBy === 'xg') return b.xg - a.xg;
-        if (sortBy === 'xgi') return (b.xgiPer90 ?? 0) - (a.xgiPer90 ?? 0);
-        return 0;
-      });
-  }, [clubFilter, positionFilter, search, sortBy]);
+  if (!players || players.length === 0) {
+    return (
+      <div className="container">
+        <h1>שחקנים &amp; ניקוד</h1>
+        <p>כרגע אין נתונים בקובץ השחקנים. בהמשך נטעין כאן נתוני אמת.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="container">
-      <h1>שחקנים &amp; ניקוד – צילום סטטיסטיקה 2025/26</h1>
-      <p className="card-body">
-        הנתונים מייצגים מבחר שחקנים בולטים מהפרמייר ליג בעונת 2025/26 – מבוסס
-        על שערים, בישולים ומדדי xG/xGI נכון לסוף מחזור 12.
+      <h1>שחקנים &amp; ניקוד</h1>
+      <p>
+        סטטיסטיקה מתקדמת לשחקנים מרכזיים בפרמייר-ליג – xG, xA, xGI, בעיטות,
+        מסירות מפתח ועוד. הנתונים בדף הם דמו לצורך הצגת הפרויקט.
       </p>
 
       <div className="filters-row">
         <input
           className="input"
-          placeholder="חיפוש שחקן..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          type="text"
+          placeholder="חפש לפי שם שחקן או קבוצה…"
         />
-        <select
-          className="select"
-          value={clubFilter}
-          onChange={(e) => setClubFilter(e.target.value)}
-        >
-          {clubs.map((c) => (
-            <option key={c} value={c}>
-              {c === 'ALL' ? 'כל הקבוצות' : c}
-            </option>
-          ))}
-        </select>
-        <select
-          className="select"
-          value={positionFilter}
-          onChange={(e) => setPositionFilter(e.target.value)}
-        >
-          <option value="ALL">כל העמדות</option>
-          <option value="F">חלוצים</option>
-          <option value="M">קשרים</option>
-          <option value="D">בלמים/מגינים</option>
-          <option value="GK">שוערים</option>
-        </select>
-        <select
-          className="select"
-          value={sortBy}
-          onChange={(e) => setSortBy(e.target.value)}
-        >
-          <option value="xgi">מיון לפי xGI/90</option>
-          <option value="xg">מיון לפי xG</option>
-          <option value="goals">מיון לפי שערים</option>
-          <option value="assists">מיון לפי בישולים</option>
+        <select className="select">
+          <option>כל העמדות</option>
+          <option>שוער</option>
+          <option>מגן</option>
+          <option>קשר</option>
+          <option>חלוץ</option>
         </select>
       </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>שחקן</th>
-            <th>קבוצה</th>
-            <th>עמדה</th>
-            <th>דקות</th>
-            <th>שערים</th>
-            <th>בישולים</th>
-            <th>xG</th>
-            <th>xGI/90</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filtered.map((p) => (
-            <tr key={p.name + p.club}>
-              <td>{p.name}</td>
-              <td>{p.club}</td>
-              <td>{p.position}</td>
-              <td>{p.minutes}</td>
-              <td>{p.goals}</td>
-              <td>{p.assists}</td>
-              <td>{p.xg.toFixed(2)}</td>
-              <td>{(p.xgiPer90 ?? 0).toFixed(2)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="card">
+        <div className="card-header">
+          <h2 className="card-title">טבלת שחקנים – דמו</h2>
+          <span className="pill">Fantasy / xGI</span>
+        </div>
+        <div className="card-body">
+          <table>
+            <thead>
+              <tr>
+                <th>שחקן</th>
+                <th>קבוצה</th>
+                <th>עמדה</th>
+                <th>דקות</th>
+                <th>שערים</th>
+                <th>בישולים</th>
+                <th>xG</th>
+                <th>xA</th>
+                <th>xGI</th>
+                <th>בעיטות</th>
+                <th>מסירות מפתח</th>
+              </tr>
+            </thead>
+            <tbody>
+              {players.map((p) => (
+                <tr key={p.id}>
+                  <td>{p.name}</td>
+                  <td>{p.team}</td>
+                  <td>{p.position}</td>
+                  <td>{p.minutes}</td>
+                  <td>{p.goals}</td>
+                  <td>{p.assists}</td>
+                  <td>{p.xg}</td>
+                  <td>{p.xa}</td>
+                  <td>{p.xgi}</td>
+                  <td>{p.shots}</td>
+                  <td>{p.keyPasses}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 };
