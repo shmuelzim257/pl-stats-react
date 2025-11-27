@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 
-// נתוני דמו בהשראת FPL – מבנה כמו ב-API הרשמי
-// הערכים הם Snapshot דמיוני לעונה 25/26 לצורך הצגת הפרויקט.
+// דמו של שחקנים – אפשר להחליף בהמשך במערך גדול מכל הליגה (מ-json חיצוני)
 const players = [
   {
     id: 1,
@@ -197,77 +196,205 @@ const players = [
   }
 ];
 
+const columns = [
+  { key: "name", label: "שחקן", numeric: false },
+  { key: "team", label: "קבוצה", numeric: false },
+  { key: "position", label: "עמדה", numeric: false },
+  { key: "price", label: "מחיר (£m)", numeric: true },
+  { key: "totalPoints", label: "נקודות עונה", numeric: true },
+  { key: "gwPoints", label: "נקודות מחזור אחרון", numeric: true },
+  { key: "pointsPerGame", label: "נק' למשחק", numeric: true },
+  { key: "form", label: "Form", numeric: true },
+  { key: "selectedByPercent", label: 'נבחר ע"י %', numeric: true },
+  { key: "minutes", label: "דקות", numeric: true },
+  { key: "goals", label: "שערים", numeric: true },
+  { key: "assists", label: "בישולים", numeric: true },
+  { key: "cleanSheets", label: "שערים נקיים", numeric: true },
+  { key: "goalsConceded", label: "שערים שספג", numeric: true },
+  { key: "saves", label: "הצלות", numeric: true },
+  { key: "bonus", label: "בונוס", numeric: true },
+  { key: "bps", label: "BPS", numeric: true },
+  { key: "influence", label: "Influence", numeric: true },
+  { key: "creativity", label: "Creativity", numeric: true },
+  { key: "threat", label: "Threat", numeric: true },
+  { key: "ictIndex", label: "ICT Index", numeric: true }
+];
+
 export const Players = () => {
+  const [search, setSearch] = useState("");
+  const [positionFilter, setPositionFilter] = useState("ALL");
+  const [teamFilter, setTeamFilter] = useState("ALL");
+  const [sortCol, setSortCol] = useState("totalPoints");
+  const [sortDir, setSortDir] = useState("desc");
+
+  const teams = useMemo(
+    () => ["ALL", ...Array.from(new Set(players.map((p) => p.team))).sort()],
+    []
+  );
+
+  const positions = ["ALL", "GK", "DEF", "MID", "FWD"];
+
+  const filteredPlayers = useMemo(() => {
+    let data = [...players];
+
+    // סינון לפי עמדה
+    if (positionFilter !== "ALL") {
+      data = data.filter((p) => p.position === positionFilter);
+    }
+
+    // סינון לפי קבוצה
+    if (teamFilter !== "ALL") {
+      data = data.filter((p) => p.team === teamFilter);
+    }
+
+    // חיפוש חופשי – עובר על כל השדות כמחרוזת
+    if (search.trim() !== "") {
+      const q = search.toLowerCase();
+      data = data.filter((p) =>
+        Object.values(p)
+          .join(" ")
+          .toLowerCase()
+          .includes(q)
+      );
+    }
+
+    // מיון
+    data.sort((a, b) => {
+      const col = sortCol;
+      const av = a[col];
+      const bv = b[col];
+
+      if (typeof av === "number" && typeof bv === "number") {
+        return sortDir === "asc" ? av - bv : bv - av;
+      }
+
+      const as = String(av).toLowerCase();
+      const bs = String(bv).toLowerCase();
+      if (as < bs) return sortDir === "asc" ? -1 : 1;
+      if (as > bs) return sortDir === "asc" ? 1 : -1;
+      return 0;
+    });
+
+    return data;
+  }, [search, positionFilter, teamFilter, sortCol, sortDir]);
+
+  const handleSort = (key) => {
+    if (sortCol === key) {
+      setSortDir((prev) => (prev === "asc" ? "desc" : "asc"));
+    } else {
+      setSortCol(key);
+      setSortDir("desc");
+    }
+  };
+
+  const renderSortArrow = (key) => {
+    if (sortCol !== key) return null;
+    return sortDir === "asc" ? " ▲" : " ▼";
+  };
+
   return (
     <div className="container">
       <h1>שחקנים &amp; ניקוד</h1>
       <p>
-        טבלת סטטיסטיקות לשחקני Fantasy Premier League, לפי מבנה העמודות הרשמי של
-        FPL (מחיר, נקודות, Form, ICT Index ועוד). הנתונים כאן הם דמו לצורך הצגת
-        הפרויקט כפורטפוליו.
+        טבלת סטטיסטיקות לשחקני Fantasy Premier League, עם חיפוש חופשי, סינון לפי
+        עמדה וקבוצה ומיון על כל עמודה. הנתונים בדף הם דמו – המבנה מוכן להרחבה
+        לכל שחקני הליגה דרך קובץ JSON.
       </p>
+
+      <div className="filters-row">
+        <input
+          className="input"
+          type="text"
+          placeholder="חפש לפי שם, קבוצה או ערך כלשהו…"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <select
+          className="select"
+          value={positionFilter}
+          onChange={(e) => setPositionFilter(e.target.value)}
+        >
+          {positions.map((pos) => (
+            <option key={pos} value={pos}>
+              {pos === "ALL"
+                ? "כל העמדות"
+                : pos === "GK"
+                ? "שוערים"
+                : pos === "DEF"
+                ? "הגנה"
+                : pos === "MID"
+                ? "קשרים"
+                : "חלוצים"}
+            </option>
+          ))}
+        </select>
+        <select
+          className="select"
+          value={teamFilter}
+          onChange={(e) => setTeamFilter(e.target.value)}
+        >
+          {teams.map((t) => (
+            <option key={t} value={t}>
+              {t === "ALL" ? "כל הקבוצות" : t}
+            </option>
+          ))}
+        </select>
+      </div>
 
       <div className="card">
         <div className="card-header">
           <h2 className="card-title">טבלת שחקנים – דמו</h2>
-          <span className="pill">FPL Snapshot</span>
+          <span className="pill">
+            {filteredPlayers.length} שחקנים בתצוגה
+          </span>
         </div>
 
         <div className="card-body">
-          <table>
-            <thead>
-              <tr>
-                <th>שחקן</th>
-                <th>קבוצה</th>
-                <th>עמדה</th>
-                <th>מחיר (£m)</th>
-                <th>נקודות עונה</th>
-                <th>נקודות מחזור אחרון</th>
-                <th>נק&apos; למשחק</th>
-                <th>Form</th>
-                <th>נבחר ע&quot;י %</th>
-                <th>דקות</th>
-                <th>שערים</th>
-                <th>בישולים</th>
-                <th>שערים נקיים</th>
-                <th>שערים שספג</th>
-                <th>הצלות</th>
-                <th>בונוס</th>
-                <th>BPS</th>
-                <th>Influence</th>
-                <th>Creativity</th>
-                <th>Threat</th>
-                <th>ICT Index</th>
-              </tr>
-            </thead>
-            <tbody>
-              {players.map((p) => (
-                <tr key={p.id}>
-                  <td>{p.name}</td>
-                  <td>{p.team}</td>
-                  <td>{p.position}</td>
-                  <td>{p.price.toFixed(1)}</td>
-                  <td>{p.totalPoints}</td>
-                  <td>{p.gwPoints}</td>
-                  <td>{p.pointsPerGame.toFixed(1)}</td>
-                  <td>{p.form.toFixed(1)}</td>
-                  <td>{p.selectedByPercent.toFixed(1)}</td>
-                  <td>{p.minutes}</td>
-                  <td>{p.goals}</td>
-                  <td>{p.assists}</td>
-                  <td>{p.cleanSheets}</td>
-                  <td>{p.goalsConceded}</td>
-                  <td>{p.saves}</td>
-                  <td>{p.bonus}</td>
-                  <td>{p.bps}</td>
-                  <td>{p.influence.toFixed(1)}</td>
-                  <td>{p.creativity.toFixed(1)}</td>
-                  <td>{p.threat.toFixed(1)}</td>
-                  <td>{p.ictIndex.toFixed(1)}</td>
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  {columns.map((col) => (
+                    <th
+                      key={col.key}
+                      onClick={() => handleSort(col.key)}
+                      style={{ cursor: "pointer", whiteSpace: "nowrap" }}
+                    >
+                      {col.label}
+                      {renderSortArrow(col.key)}
+                    </th>
+                  ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {filteredPlayers.map((p) => (
+                  <tr key={p.id}>
+                    <td>{p.name}</td>
+                    <td>{p.team}</td>
+                    <td>{p.position}</td>
+                    <td>{p.price.toFixed(1)}</td>
+                    <td>{p.totalPoints}</td>
+                    <td>{p.gwPoints}</td>
+                    <td>{p.pointsPerGame.toFixed(1)}</td>
+                    <td>{p.form.toFixed(1)}</td>
+                    <td>{p.selectedByPercent.toFixed(1)}</td>
+                    <td>{p.minutes}</td>
+                    <td>{p.goals}</td>
+                    <td>{p.assists}</td>
+                    <td>{p.cleanSheets}</td>
+                    <td>{p.goalsConceded}</td>
+                    <td>{p.saves}</td>
+                    <td>{p.bonus}</td>
+                    <td>{p.bps}</td>
+                    <td>{p.influence.toFixed(1)}</td>
+                    <td>{p.creativity.toFixed(1)}</td>
+                    <td>{p.threat.toFixed(1)}</td>
+                    <td>{p.ictIndex.toFixed(1)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

@@ -376,3 +376,14 @@ th {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+.table-wrapper {
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  background: #020617;
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.table-wrapper table {
+  min-width: 1200px;
+}
