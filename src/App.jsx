@@ -74,10 +74,10 @@ function App() {
             About
           </button>
           <button
-            className={page === 'Projects' ? 'nav-btn active' : 'nav-btn'}
+            className={page === 'tech' ? 'nav-btn active' : 'nav-btn'}
             onClick={() => setPage('tech')}
           >
-            Tech
+            Projects
           </button>
         </nav>
       </header>
