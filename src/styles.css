@@ -392,3 +392,10 @@ th {
   padding-top: 1.5rem;
   margin-top: 2.5rem;
 }
+.project-separator {
+  border: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  margin: 40px 0;
+  border-radius: 2px;
+}
