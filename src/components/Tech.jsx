@@ -5,12 +5,12 @@ export const Tech = () => {
     <div className="container">
       <h1>Projects</h1>
       <p>
-        בעמוד זה אני מציג רעיונות לפרויקטים שניהלתי / יכול לנהל סביב כדורגל,
-        נתונים ו-AI. הדוגמה הבאה מציגה פרויקט קונספטואלי שאני משתמש בו בראיונות:
-        שירות אנליזה למחזור בפרמייר ליג.
+        בעמוד זה אני מציג כמה פרויקטים קונספטואליים ופרויקטים דומים למה שאני
+        מנהל בפועל: שילוב בין כדורגל, נתונים, AI ו-Automation. הפרויקטים נבנו
+        כך שידגישו גם יכולות ניהול פרויקטים וגם הבנה טכנולוגית.
       </p>
 
-      {/* כרטיס פרויקט ראשי */}
+      {/* פרויקט 1 – Gameweek Insights */}
       <div className="card" style={{ marginTop: "1rem" }}>
         <div className="card-header">
           <h2 className="card-title">
@@ -20,10 +20,9 @@ export const Tech = () => {
         </div>
         <div className="card-body">
           <p>
-            פרויקט שמטרתו לפתח שירות (Web API + UI) שמאפשר לבחור מחזור בליגה
-            האנגלית, למשוך נתוני ביצועים של כל השחקנים במחזור, לנתח אותם ולהציג
-            תובנות למנהלי פנטזי: מי בולט, באיזה מדד, ומי יכול להיות ה-Next Big
-            Pick.
+            שירות (Web API + UI) שמאפשר לבחור מחזור בליגה האנגלית, למשוך נתוני
+            ביצועים של כל השחקנים במחזור, לנתח אותם ולהציג תובנות למנהלי פנטזי:
+            מי בולט, באיזה מדד, ומי יכול להיות ה-Next Big Pick.
           </p>
 
           <h3>מטרות הפרויקט</h3>
@@ -34,7 +33,7 @@ export const Tech = () => {
             </li>
             <li>
               חישוב קטגוריות ביצועים (בעיטות למסגרת, מסירות מפתח, דריבלים,
-              נגיעות ברחבה ועוד).
+              נגיעות ברחבה, xG/xA/xGI ועוד).
             </li>
             <li>זיהוי שחקנים בולטים בכל קטגוריה והפקת &quot;תובנות מחזור&quot;.</li>
             <li>הצגת התוצאות בטבלה ממוינת לפי נקודות FPL למחזור.</li>
@@ -44,8 +43,9 @@ export const Tech = () => {
           <ul>
             <li>
               <strong>Data Ingestion:</strong> שירות שמתחבר ל-API של FPL{" "}
-              <code>/api/bootstrap-static</code> ו-<code>/api/event/&#123;gw&#125;/live</code>{" "}
-              לצורך קבלת נתוני שחקנים, קבוצות ומחזורים (בפורמט JSON).
+              <code>/api/bootstrap-static</code> ו-
+              <code>/api/event/&#123;gw&#125;/live</code> לצורך קבלת נתוני
+              שחקנים, קבוצות ומחזורים (בפורמט JSON).
             </li>
             <li>
               <strong>Processing &amp; Analytics:</strong> שכבה שמחשבת מדדי ביצוע
@@ -71,16 +71,162 @@ export const Tech = () => {
         </div>
       </div>
 
-      {/* כרטיס גאנט / לוחות זמנים */}
+      {/* פרויקט 2 – חשבוניות + סיכומי ביקור */}
       <div className="card" style={{ marginTop: "1rem" }}>
         <div className="card-header">
-          <h2 className="card-title">Gantt &amp; Timeline</h2>
+          <h2 className="card-title">
+            AI Invoice &amp; Visit Summary Extraction
+          </h2>
+          <span className="pill">OCR / Healthcare / Automation</span>
+        </div>
+        <div className="card-body">
+          <p>
+            פרויקט שמטרתו לטפל בחשבוניות עסקיות/רפואיות ובסיכומי ביקור שמגיעים
+            יחד (למשל רופא או בעל מקצוע), לחלץ מהם נתונים, לבצע הצלבות ולהשלים
+            מידע חסר באופן אוטומטי.
+          </p>
+
+          <h3>מטרות הפרויקט</h3>
+          <ul>
+            <li>קליטה אוטומטית של מסמכים סרוקים או מצולמים (חשבונית + סיכום ביקור).</li>
+            <li>חילוץ שדות מפתח (ספק, שירות, תאריכים, עלויות, קוד טיפול וכו').</li>
+            <li>הצלבה בין החשבונית לסיכום הביקור כדי לזהות חוסרים או אי-התאמות.</li>
+            <li>העשרת נתונים מתוך Master Data פנימי (לקוחות, רופאים, מרפאות).</li>
+            <li>הפקת פלט מובנה למערכות פיננסיות / ERP / CRM.</li>
+          </ul>
+
+          <h3>ארכיטקטורה ברמת High-Level</h3>
+          <ul>
+            <li>
+              <strong>Ingestion:</strong> תור מסמכים (Queue/Blob), Trigger לכל
+              מסמך חדש.
+            </li>
+            <li>
+              <strong>OCR:</strong> מנוע OCR (ABBYY / Azure Form Recognizer) לחילוץ
+              בסיסי של טקסט ואזורים.
+            </li>
+            <li>
+              <strong>LLM / NLP:</strong> מודל לשוני שמזהה ישויות (רופא, מטופל,
+              פרוצדורה, סכומים) וממפה אותן לשדות מובנים.
+            </li>
+            <li>
+              <strong>Validation &amp; Enrichment:</strong> הצלבת השדות מול
+              מערכות ארגוניות (Billing / EMR).
+            </li>
+            <li>
+              <strong>Output:</strong> כתיבה לטבלאות נתונים / API פנימי / מערכת
+              חיוב.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* פרויקט 3 – ניתוח מיילים ודוחות */}
+      <div className="card" style={{ marginTop: "1rem" }}>
+        <div className="card-header">
+          <h2 className="card-title">
+            AI Email &amp; Report Triage Assistant
+          </h2>
+          <span className="pill">NLP / Routing / Productivity</span>
+        </div>
+        <div className="card-body">
+          <p>
+            פרויקט שמטפל במיילים ארוכים ושרשורים מורכבים, לעיתים בצירוף דוחות
+            כבדים, ומחלץ מהם תובנות: לאיזו מחלקה זה שייך (למשל חא&quot;ט או
+            פנסיה), אילו משימות נדרשות, ומה רמת הדחיפות.
+          </p>
+
+          <h3>מטרות הפרויקט</h3>
+          <ul>
+            <li>קריאה אוטומטית של שרשורי מייל ודוחות מצורפים (PDF / Word / Excel).</li>
+            <li>סיווג לפי מחלקה / תחום (חא&quot;ט, פנסיה, שירות, תביעות וכו').</li>
+            <li>חילוץ משימות, Deadlines וגורמים אחראיים מתוך הטקסט.</li>
+            <li>סיכום קצר למשתמש – TL;DR של השרשור והדוח.</li>
+            <li>חיבור למערכת ניהול משימות / CRM כדי לפתוח קריאות אוטומטיות.</li>
+          </ul>
+
+          <h3>ארכיטקטורה ברמת High-Level</h3>
+          <ul>
+            <li>
+              <strong>Connectors:</strong> חיבור ל-Mailbox / 365 / Gmail / DMS.
+            </li>
+            <li>
+              <strong>Document Parsing:</strong> המרה של קבצים מצורפים לטקסט,
+              כולל OCR לדוחות סרוקים.
+            </li>
+            <li>
+              <strong>LLM Orchestration:</strong> מודל לשוני שמבצע סיווג, סיכום,
+              והפקת משימות.
+            </li>
+            <li>
+              <strong>Routing Engine:</strong> החלטה לאיזו מחלקה/Queue המקרה
+              שייך.
+            </li>
+            <li>
+              <strong>Integration:</strong> יצירת Tickets במערכות תמיכה / CRM,
+              ושליחת סיכום למשתמשים הרלוונטיים.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* פרויקט 4 – אימות רכב מתמונות */}
+      <div className="card" style={{ marginTop: "1rem" }}>
+        <div className="card-header">
+          <h2 className="card-title">
+            Intelligent Image-Based Vehicle Verification
+          </h2>
+          <span className="pill">Computer Vision / Fraud Detection</span>
+        </div>
+        <div className="card-body">
+          <p>
+            פרויקט שמטרתו לייעל תהליכים לאחר תאונת רכב: המשתמש מעלה תמונות של
+            הרכב הפגוע, והמערכת מאמתת את הדגם, לוחית הרישוי, אזור הנזק ומחפשת
+            סימנים לחשד לזיוף או סתירה בנתונים.
+          </p>
+
+          <h3>מטרות הפרויקט</h3>
+          <ul>
+            <li>זיהוי אוטומטי של רכב (Make/Model/Color) מתוך תמונות.</li>
+            <li>קריאת לוחית רישוי והשוואה למידע במערכת (OCR ללוחיות).</li>
+            <li>זיהוי אזורי נזק והשוואתם לדיווח הלקוח.</li>
+            <li>איתור חריגות (למשל תמונות ממכונית אחרת / נזק שלא תואם את האירוע).</li>
+            <li>האצת תהליכי טיפול בתביעה והפחתת ניסיונות הונאה.</li>
+          </ul>
+
+          <h3>ארכיטקטורה ברמת High-Level</h3>
+          <ul>
+            <li>
+              <strong>Image Ingestion:</strong> העלאת תמונות דרך פורטל / אפליקציה
+              ניידת.
+            </li>
+            <li>
+              <strong>Computer Vision:</strong> מודלים לזיהוי רכב, לוחית רישוי,
+              וזיהוי אזורי נזק (Damage Detection).
+            </li>
+            <li>
+              <strong>Business Rules &amp; Scoring:</strong> מנוע שמדרג חשד
+              להונאה על בסיס ממצאים.
+            </li>
+            <li>
+              <strong>Integration:</strong> חיבור למערכת תביעות / CRM להצגת
+              הממצאים לסוקר או לחוקר.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* כרטיס גאנט / לוחות זמנים עבור פרויקט Gameweek */}
+      <div className="card" style={{ marginTop: "1rem", marginBottom: "1.5rem" }}>
+        <div className="card-header">
+          <h2 className="card-title">Gantt &amp; Timeline – Gameweek Insights</h2>
           <span className="pill">5 שבועות · Cross-Team</span>
         </div>
         <div className="card-body">
           <p>
-            חלוקת הפרויקט על פני ציר זמן של חמישה שבועות, תוך התייחסות למחלקות
-            השונות: Product, Backend, Data, Frontend, DevOps, QA.
+            חלוקת פרויקט ה-Premier League Gameweek Insights Service על פני ציר זמן
+            של חמישה שבועות, תוך התייחסות למחלקות השונות: Product, Backend,
+            Data, Frontend, DevOps, QA.
           </p>
 
           <h3>חלוקת זמן לפי מחלקות</h3>
