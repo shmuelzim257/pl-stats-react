@@ -5,7 +5,7 @@ import { Players } from "./components/Players";
 import { Teams } from "./components/Teams";
 import { News } from "./components/News";
 import { Tech } from "./components/Tech"; // Projects
-import { About } from "./components/About";
+
 
 const PAGES = {
   home: { label: "Home", component: <Home /> },
@@ -14,7 +14,6 @@ const PAGES = {
   teams: { label: "Teams", component: <Teams /> },
   news: { label: "News", component: <News /> },
   projects: { label: "Projects", component: <Tech /> },
-  about: { label: "About", component: <About /> },
 };
 
 export default function App() {
