@@ -1,401 +1,134 @@
-/* Reset בסיסי */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* ===== APP SHELL LAYOUT (Header + Main + Footer) ===== */
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: #020617;
-  color: #e5e7eb;
-  direction: rtl;
-}
-
-/* Layout כללי */
-
-.app {
+.app-shell {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
+/* HEADER */
 
-/* תפריט עליון */
-
-.topbar {
+.app-header {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-subtle, #e5e7eb);
   position: sticky;
   top: 0;
   z-index: 20;
+}
+
+.app-header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(90deg, #020617, #111827);
-  border-bottom: 1px solid #1f2937;
+  gap: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
-.logo {
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 1.1rem;
-}
-
-.logo-main {
-  color: #e5e7eb;
-}
-
-.logo-accent {
-  color: #22c55e;
-}
-
-.nav {
+/* Brand (לוגו טקסטואלי קטן) */
+.brand {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.nav-btn {
-  border: none;
+.brand-mark {
+  width: 32px;
+  height: 32px;
   border-radius: 999px;
-  padding: 0.3rem 0.8rem;
-  background: transparent;
-  color: #9ca3af;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-.nav-btn.active {
-  background: #22c55e;
-  color: #021014;
-}
-
-.nav-btn:hover {
-  background: #1f2937;
-}
-
-.main {
-  flex: 1;
-  padding: 1.5rem 1rem 2rem;
-}
-
-.footer {
-  border-top: 1px solid #1f2937;
-  padding: 0.75rem 1.5rem;
-  text-align: center;
-  font-size: 0.75rem;
-  color: #6b7280;
-}
-
-/* Hero – עמוד בית */
-
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-  gap: 1.5rem;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.hero-image {
-  width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-  max-height: 260px;
-}
-
-.hero-text h1 {
-  margin: 0.2rem 0 0.5rem;
-  font-size: 1.8rem;
-}
-
-.tagline {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #9ca3af;
-}
-
-/* כרטיסים */
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  background: #020617;
-  border-radius: 1rem;
-  border: 1px solid #1f2937;
-  padding: 1rem;
-}
-
-.card-header {
+  background: var(--accent, #14b8a6);
+  color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 14px rgba(20, 184, 166, 0.4);
 }
 
-.card-title {
-  margin: 0;
+.brand-title {
+  font-weight: 600;
   font-size: 1rem;
 }
 
-.card-body {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: #d1d5db;
-}
-
-.pill {
-  font-size: 0.7rem;
-  border-radius: 999px;
-  padding: 0.15rem 0.6rem;
-  background: #1f2937;
-  color: #9ca3af;
-}
-
-.primary-btn {
-  margin-top: 0.75rem;
-  border-radius: 999px;
-  border: none;
-  padding: 0.4rem 0.9rem;
-  background: #22c55e;
-  color: #021014;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.primary-btn:hover {
-  background: #16a34a;
-}
-
-/* Fixtures */
-
-.fixtures-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 0.75rem;
-  margin: 1rem 0 2rem;
-}
-
-.fixture-card {
-  border-radius: 0.9rem;
-  border: 1px solid #1f2937;
-  padding: 0.75rem;
-  background: #020617;
-}
-
-.fixture-teams {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.fixture-team {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.fixture-team img {
-  width: 24px;
-  height: 24px;
-}
-
-.vs {
+.brand-subtitle {
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: var(--text-muted, #6b7280);
 }
 
-.fixture-meta {
-  margin-top: 0.4rem;
-  font-size: 0.75rem;
-  color: #9ca3af;
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
+/* ניווט עליון */
 
-/* טבלאות (טבלה ושחקנים) */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.75rem;
-  font-size: 0.8rem;
-}
-
-th,
-td {
-  padding: 0.35rem 0.4rem;
-  border-bottom: 1px solid #1f2937;
-  text-align: center;
-}
-
-th {
-  background-color: #020617;
-  color: #9ca3af;
-}
-
-/* פילטרים */
-
-.filters-row {
+.main-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0.75rem 0 1rem;
+  gap: 0.35rem;
 }
 
-.input,
-.select {
-  background: #020617;
+/* nav-btn כבר הוגדר קודם, אבל אם לא – זה הבסיס: */
+/*
+.nav-btn {
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid #1f2937;
-  color: #e5e7eb;
-  font-size: 0.8rem;
-  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-muted, #6b7280);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
 }
 
-.input::placeholder {
-  color: #6b7280;
+.nav-btn:hover {
+  background: rgba(20, 184, 166, 0.08);
+  color: var(--accent-dark, #0f766e);
+  transform: translateY(-1px);
 }
 
-/* כרטיסי קבוצות */
+.nav-btn.active {
+  background: var(--accent, #14b8a6);
+  color: #ffffff;
+}
+*/
 
-.teams-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 0.75rem;
-  margin-top: 1rem;
+/* MAIN */
+
+.app-main {
+  flex: 1;
+  padding-bottom: 2.5rem;
 }
 
-.team-card {
-  border-radius: 0.9rem;
-  border: 1px solid #1f2937;
-  padding: 0.75rem;
-  background: #020617;
+/* FOOTER */
+
+.app-footer {
+  border-top: 1px solid var(--border-subtle, #e5e7eb);
+  background: #ffffff;
 }
 
-.team-header {
+.app-footer-inner {
   display: flex;
-  gap: 0.6rem;
-  align-items: center;
-}
-
-.team-header img {
-  width: 28px;
-  height: 28px;
-}
-
-.team-name {
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.team-sub {
-  font-size: 0.75rem;
-  color: #9ca3af;
-}
-
-.stadium-line {
-  margin-top: 0.25rem;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-size: 0.8rem;
-  color: #d1d5db;
+  color: var(--text-muted, #6b7280);
 }
 
-.kit-row {
+.footer-meta {
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 0.35rem;
-  font-size: 0.75rem;
-}
-
-.kit-swatch {
-  width: 28px;
-  height: 14px;
-  border-radius: 999px;
-  border: 1px solid #111827;
-}
-
-.team-link {
-  font-size: 0.75rem;
-  color: #60a5fa;
-  text-decoration: none;
-}
-
-/* חדשות */
-
-.news-list {
-  display: grid;
+  flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1rem;
 }
 
-.news-item {
-  border-radius: 0.9rem;
-  border: 1px solid #1f2937;
-  padding: 0.75rem;
-  background: #020617;
-}
-
-.news-meta {
-  font-size: 0.7rem;
-  color: #9ca3af;
-}
-
-.news-title {
-  margin: 0.25rem 0;
-  font-size: 0.95rem;
-}
-
-.news-excerpt {
-  margin: 0.25rem 0;
-  font-size: 0.8rem;
-  color: #d1d5db;
-}
-
-.news-link {
-  font-size: 0.75rem;
-  color: #60a5fa;
-  text-decoration: none;
-}
-
-/* רספונסיבי */
+/* התאמות מובייל */
 
 @media (max-width: 768px) {
-  .hero {
-    grid-template-columns: minmax(0, 1fr);
+  .app-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
   }
-}
-.table-wrapper {
-  border-radius: 0.75rem;
-  border: 1px solid #1f2937;
-  background: #020617;
-  overflow: auto;
-  max-height: 70vh;
-}
 
-.table-wrapper table {
-  min-width: 1200px;
-}
-.project-section {
-  border-top: 2px solid #1f2937;
-  padding-top: 1.5rem;
-  margin-top: 2.5rem;
-}
-.project-separator {
-  border: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #4e54c8, #8f94fb);
-  margin: 40px 0;
-  border-radius: 2px;
+  .main-nav {
+    width: 100%;
+    overflow-x: auto;
+  }
 }

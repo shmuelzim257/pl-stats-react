@@ -1,95 +1,72 @@
-import React, { useState } from 'react';
-import { Home } from './components/Home';
-import { Fixtures } from './components/Fixtures';
-import { Players } from './components/Players';
-import { Teams } from './components/Teams';
-import { News } from './components/News';
-import { About } from './components/About';
-import { Tech } from './components/Tech';
+import React, { useState } from "react";
+import { Home } from "./components/Home";
+import { Fixtures } from "./components/Fixtures";
+import { Players } from "./components/Players";
+import { Teams } from "./components/Teams";
+import { News } from "./components/News";
+import { Tech } from "./components/Tech"; // Projects
+import { About } from "./components/About";
 
-function App() {
-  const [page, setPage] = useState('home');
+const PAGES = {
+  home: { label: "Home", component: <Home /> },
+  fixtures: { label: "Fixtures", component: <Fixtures /> },
+  players: { label: "Players & Points", component: <Players /> },
+  teams: { label: "Teams", component: <Teams /> },
+  news: { label: "News", component: <News /> },
+  projects: { label: "Projects", component: <Tech /> },
+  about: { label: "About", component: <About /> },
+};
 
-  const renderPage = () => {
-    switch (page) {
-      case 'fixtures':
-        return <Fixtures />;
-      case 'players':
-        return <Players />;
-      case 'teams':
-        return <Teams />;
-      case 'news':
-        return <News />;
-      case 'about':
-        return <About />;
-      case 'tech':
-        return <Tech />;
-      default:
-        return <Home goTo={setPage} />;
-    }
-  };
+export default function App() {
+  const [activePage, setActivePage] = useState("home");
+
+  const CurrentPage = PAGES[activePage]?.component ?? <Home />;
 
   return (
-    <div className="app">
-      <header className="topbar">
-        <div className="logo" onClick={() => setPage('home')}>
-          <span className="logo-main">PL Stats</span>{' '}
-          <span className="logo-accent">United</span>
+    <div className="app-shell">
+      {/* HEADER */}
+      <header className="app-header">
+        <div className="app-header-inner container">
+          <div className="brand">
+            <div className="brand-mark">PL</div>
+            <div className="brand-text">
+              <div className="brand-title">PL Stats United</div>
+              <div className="brand-subtitle">AI · Data · Fantasy</div>
+            </div>
+          </div>
+          <nav className="main-nav">
+            {Object.entries(PAGES).map(([key, page]) => (
+              <button
+                key={key}
+                className={`nav-btn${key === activePage ? " active" : ""}`}
+                onClick={() => setActivePage(key)}
+              >
+                {page.label}
+              </button>
+            ))}
+          </nav>
         </div>
-        <nav className="nav">
-          <button
-            className={page === 'home' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('home')}
-          >
-            בית
-          </button>
-          <button
-            className={page === 'fixtures' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('fixtures')}
-          >
-            משחקי מחזור
-          </button>
-          <button
-            className={page === 'players' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('players')}
-          >
-            שחקנים &amp; ניקוד
-          </button>
-          <button
-            className={page === 'teams' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('teams')}
-          >
-            קבוצות
-          </button>
-          <button
-            className={page === 'news' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('news')}
-          >
-            חדשות
-          </button>
-          <button
-            className={page === 'about' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('about')}
-          >
-            About
-          </button>
-          <button
-            className={page === 'tech' ? 'nav-btn active' : 'nav-btn'}
-            onClick={() => setPage('tech')}
-          >
-            Projects
-          </button>
-        </nav>
       </header>
-      <main className="main">{renderPage()}</main>
-      <footer className="footer">
-        <small>
-          Snapshot data as of 24 Nov 2025 · Built with React &amp; Vite by Shmuel
-          Zimlichman
-        </small>
+
+      {/* MAIN CONTENT */}
+      <main className="app-main">
+        {CurrentPage}
+      </main>
+
+      {/* FOOTER */}
+      <footer className="app-footer">
+        <div className="app-footer-inner container">
+          <div>
+            <strong>Shmuel Zimlichman</strong> · Project Manager · AI · Data · Cloud
+          </div>
+          <div className="footer-meta">
+            <span>
+              PL Stats United – Personal demo site combining Premier League data,
+              AI projects and portfolio content.
+            </span>
+          </div>
+        </div>
       </footer>
     </div>
   );
 }
-
-export default App;
