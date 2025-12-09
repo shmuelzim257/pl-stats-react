@@ -20,7 +20,15 @@ export const Home = () => {
             Azure, Copilot ו-Document Automation (מערכת KDOX ועוד).
           </p>
 
-          <div style={{ marginTop: "0.85rem", display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+          <div
+            style={{
+              marginTop: "0.85rem",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "0.5rem",
+              justifyContent: "flex-start",
+            }}
+          >
             <span className="pill">Project & Delivery Management</span>
             <span className="pill">OCR & Document Automation</span>
             <span className="pill">Azure · Cloud · Microservices</span>
@@ -128,7 +136,7 @@ export const Home = () => {
           <div>
             <h3>AI, Data & Automation</h3>
             <ul>
-              <li>OCR & Document Processing (KDOX, Azure, Elasticsearch)</li>
+              <li>OCR &amp; Document Processing (KDOX, Azure, Elasticsearch)</li>
               <li>RPA ו-תהליכי אוטומציה מקצה לקצה</li>
               <li>LLM-based פתרונות, Copilot ו-Modern Work</li>
             </ul>
@@ -142,6 +150,23 @@ export const Home = () => {
             </ul>
           </div>
         </div>
+      </section>
+
+      {/* תשוקה לספורט, דאטה וסטטיסטיקה */}
+      <section className="home-section">
+        <h2>Football · Data · Fantasy</h2>
+        <p>
+          מעבר לצד המקצועי, אני חולה סטטיסטיקה וספורט – במיוחד פרמייר ליג ופנטזי.
+          אני נהנה לפרק משחקים למספרים, לחפש דפוסים ב-xG, xGI ונתוני עומק, ולהפוך
+          אותם לתובנות פרקטיות שמייצרות יתרון – בין אם זה בקבלת החלטות כ-FPL
+          מנג'ר, ובין אם זה בתכנון מוצרים ופתרונות בעולם האמיתי.
+        </p>
+        <p>
+          האתר הזה מחבר בין שני העולמות: מצד אחד הקריירה שלי כמנהל פרויקטים
+          בעולם AI ו-Cloud, ומצד שני האהבה לנתונים, כדורגל וחשיבה אנליטית. כאן
+          אפשר לראות איך אני חושב על פרויקטים, על דאטה ועל חוויית משתמש – דרך
+          הזווית האישית של פרמייר ליג.
+        </p>
       </section>
     </div>
   );
