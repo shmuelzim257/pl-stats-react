@@ -9,15 +9,15 @@ export const Home = () => {
           <h1>Shmuel Zimlichman – Project Manager · AI · Data · Cloud</h1>
 
           <p>
-            אני שמואל צימליכמן, מנהל פרויקטים טכנולוגיים עם התמחות ב-AI, ניהול
-            מוצרים ופתרונות ענן. בשנים האחרונות אני מוביל פרויקטים מורכבים
+            אני שמואל צימליכמן, מנהל פרויקטים טכנולוגיים עם התמחות ב-AI, data
+            ,ניהול עובדים ופתרונות ענן. בשנים האחרונות אני מוביל פרויקטים מורכבים
             בעולם ה-OCR, מיקרו-סרביסים ו-LLM, משלב האפיון ועד עלייה לייצור.
           </p>
 
           <p>
-            כיום אני משמש כמנהל פרויקטים ב-KPMG Edge, צוות הטכנולוגיה של KPMG
-            ישראל, עם פוקוס על פיתוח והטמעה של מוצרים ופתרונות בתחום Modern Work,
-            Azure, Copilot ו-Document Automation (מערכת KDOX ועוד).
+            כיום אני משמש כמנהל פרויקטים ב-KPMG, צוות הטכנולוגיה של KPMG ישראל,
+            עם פוקוס על פיתוח והטמעה של מוצרים ופתרונות בתחום Modern Work, Azure,
+            Copilot ו-Document Automation (מערכת KDOX ועוד).
           </p>
 
           <div
@@ -51,7 +51,7 @@ export const Home = () => {
 
           <div className="hero-card hero-card-row">
             <div className="hero-metric">
-              <span className="hero-metric-label">KPMG Edge</span>
+              <span className="hero-metric-label">KPMG</span>
               <span className="hero-metric-value">Project Manager</span>
             </div>
             <div className="hero-metric">
@@ -121,33 +121,47 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Stack וכלים */}
+      {/* Tech & Delivery Toolbox – באותו מבנה כרטיסים */}
       <section className="home-section">
         <h2>Tech & Delivery Toolbox</h2>
-        <div className="home-stack">
-          <div>
-            <h3>Project & Product</h3>
-            <ul>
-              <li>Agile delivery · עבודה עם צוותי R&D, QA ו-Product</li>
-              <li>ניהול Backlog, Roadmaps וסנכרון בין כמה פרויקטים במקביל</li>
-              <li>עבודה מול הנהלה ו-Stakeholders בארגונים גדולים</li>
-            </ul>
+        <div className="home-cards-grid">
+          <div className="card">
+            <div className="card-header">
+              <h3 className="card-title">Project & Product</h3>
+            </div>
+            <div className="card-body">
+              <ul>
+                <li>Agile delivery · עבודה עם צוותי R&D, QA ו-Product</li>
+                <li>ניהול Backlog, Roadmaps וסנכרון בין כמה פרויקטים במקביל</li>
+                <li>עבודה מול הנהלה ו-Stakeholders בארגונים גדולים</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3>AI, Data & Automation</h3>
-            <ul>
-              <li>OCR &amp; Document Processing (KDOX, Azure, Elasticsearch)</li>
-              <li>RPA ו-תהליכי אוטומציה מקצה לקצה</li>
-              <li>LLM-based פתרונות, Copilot ו-Modern Work</li>
-            </ul>
+
+          <div className="card">
+            <div className="card-header">
+              <h3 className="card-title">AI, Data & Automation</h3>
+            </div>
+            <div className="card-body">
+              <ul>
+                <li>OCR &amp; Document Processing (KDOX, Azure, Elasticsearch)</li>
+                <li>RPA ו-תהליכי אוטומציה מקצה לקצה</li>
+                <li>LLM-based פתרונות, Copilot ו-Modern Work</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3>Engineering background</h3>
-            <ul>
-              <li>B.Sc. בהנדסת חשמל ואלקטרוניקה – התמחות במערכות ממוחשבות</li>
-              <li>ניסיון בתכנות Python, JavaScript, SQL וטכנולוגיות Web</li>
-              <li>יכולת לתקשר גם עם מפתחים וגם עם אנשי עסקים</li>
-            </ul>
+
+          <div className="card">
+            <div className="card-header">
+              <h3 className="card-title">Engineering background</h3>
+            </div>
+            <div className="card-body">
+              <ul>
+                <li>B.Sc. בהנדסת חשמל ואלקטרוניקה – התמחות במערכות ממוחשבות</li>
+                <li>ניסיון בתכנות Python, JavaScript, SQL וטכנולוגיות Web</li>
+                <li>יכולת לתקשר גם עם מפתחים וגם עם אנשי עסקים</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -156,10 +170,10 @@ export const Home = () => {
       <section className="home-section">
         <h2>Football · Data · Fantasy</h2>
         <p>
-          מעבר לצד המקצועי, אני חולה סטטיסטיקה וספורט – במיוחד פרמייר ליג ופנטזי.
+          מעבר לצד המקצועי, אחד התחביבים שלי שילוב של סטטיסטיקה וספורט – במיוחד פרמייר ליג ופנטזי.
           אני נהנה לפרק משחקים למספרים, לחפש דפוסים ב-xG, xGI ונתוני עומק, ולהפוך
           אותם לתובנות פרקטיות שמייצרות יתרון – בין אם זה בקבלת החלטות כ-FPL
-          מנג'ר, ובין אם זה בתכנון מוצרים ופתרונות בעולם האמיתי.
+          מנג&apos;ר, ובין אם זה בתכנון מוצרים ופתרונות בעולם האמיתי.
         </p>
         <p>
           האתר הזה מחבר בין שני העולמות: מצד אחד הקריירה שלי כמנהל פרויקטים
