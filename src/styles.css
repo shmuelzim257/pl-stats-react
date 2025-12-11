@@ -1,449 +1,186 @@
-/* ===== בסיס כללי ===== */
-
-:root {
-  /* רקעים */
-  --bg-body: #f5f5f4;      /* אפור-חם (off white) */
-  --bg-card: #ffffff;
-  --border-subtle: #e5e7eb;
-
-  /* טקסט */
-  --text-main: #111827;
-  --text-muted: #6b7280;
-
-  /* צבע הדגשה – כתום חם, לא צועק */
-  --accent: #f97316;       /* כתום מודרני */
-  --accent-dark: #ea580c;  /* כתום כהה */
-  --accent-soft: #ffedd5;  /* רקע כתמתם רך */
-}
-
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+/* ================================
+   GLOBAL LAYOUT + RTL SUPPORT
+=================================== */
+html {
+  direction: rtl;
 }
 
 body {
-  direction: rtl;
-  text-align: right;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #f7f3ef; /* חמים ומזמין */
+  color: #2d2d2d;
+  line-height: 1.6;
 }
 
-/* אנגלית/מספרים – שיישארו לוגיים */
-.brand-text,
-.main-nav,
-.hero-metric,
-.table-wrapper table,
-.table-wrapper th,
-.table-wrapper td {
-  direction: ltr;
-  text-align: left;
+/* ================================
+   HEADER + NAVIGATION
+=================================== */
+header {
+  background-color: #8b5e3c; /* חם, מקצועי */
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
-/* קישורים */
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
 
-a {
-  color: var(--accent-dark);
+nav a {
+  color: white;
+  margin-left: 20px;
   text-decoration: none;
+  font-weight: 500;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* מכולה כללית */
-
+/* ================================
+   MAIN CONTAINER
+=================================== */
 .container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* כרטיסים כלליים */
+/* ================================
+   TITLES
+=================================== */
+h1, h2, h3 {
+  color: #5a3d28;
+  margin-bottom: 12px;
+}
 
+/* ================================
+   CARDS
+=================================== */
 .card {
-  background: var(--bg-card);
-  border-radius: 16px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
-  padding: 1.25rem 1.5rem;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.card-header {
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s ease;
+}
+
+/* ================================
+   BUTTONS
+=================================== */
+button, .btn {
+  background: #8b5e3c;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover, .btn:hover {
+  background: #734a30;
+}
+
+/* ================================
+   FLEX ROWS / GRIDS
+=================================== */
+.row {
   display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.75rem;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
+.card-small {
+  flex: 1;
+  min-width: 260px;
 }
 
-.card-body p {
-  margin-top: 0.35rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* תגיות */
-
-.pill {
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-/* טבלאות (שחקנים, גאנטים וכו') */
-
-.table-wrapper {
-  width: 100%;
+/* ================================
+   TABLES (Players, Fixtures, Standings)
+=================================== */
+.table-container {
   overflow-x: auto;
+  margin-top: 15px;
 }
 
-.table-wrapper table {
+table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  background: white;
 }
 
-.table-wrapper th,
-.table-wrapper td {
-  border-bottom: 1px solid var(--border-subtle);
-  padding: 0.5rem 0.6rem;
-  text-align: left;
+table th {
+  background: #d8c1b2;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
 }
 
-.table-wrapper thead th {
-  background: #eef2ff;
-  font-weight: 600;
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
-.table-wrapper tbody tr:nth-child(even) {
-  background: rgba(148, 163, 184, 0.06);
+table tr:hover {
+  background: #f1e8e1;
 }
 
-/* מפריד בין פרויקטים */
-
-.project-separator {
-  border: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-  margin: 40px 0;
-  border-radius: 2px;
-}
-
-/* ===== Hero בעמוד הבית ===== */
-
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: 1.75rem;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.hero-text h1 {
-  font-size: 1.9rem;
-  margin: 0 0 0.75rem;
-}
-
-.hero-text p {
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin: 0.25rem 0;
-}
-
-/* הצד הויזואלי של ההירו (בלי תמונה חיצונית) */
-
-.hero-visual {
+/* ================================
+   SEARCH BOX & FILTERS
+=================================== */
+.search-box {
+  margin: 12px 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
-.hero-card {
-  border-radius: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  padding: 0.9rem 1rem;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+input[type="text"], select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bfa89b;
 }
 
-.hero-card-main h2 {
-  font-size: 1.1rem;
-  margin: 0.35rem 0 0.25rem;
+/* ================================
+   PROJECT TIMELINES / GANTT
+=================================== */
+.timeline {
+  border-right: 4px solid #8b5e3c;
+  padding-right: 20px;
+  margin: 20px 0;
 }
 
-.hero-card-main p {
-  margin: 0;
-  color: var(--text-muted);
+.timeline-item {
+  margin-bottom: 20px;
+  padding-right: 10px;
+  position: relative;
 }
 
-.hero-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--accent-dark);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+.timeline-item::before {
+  content: "•";
+  position: absolute;
+  right: -16px;
+  top: 4px;
+  font-size: 22px;
+  color: #8b5e3c;
 }
 
-.hero-card-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.hero-metric {
-  flex: 1;
-  background: var(--accent-soft);
-  border-radius: 12px;
-  padding: 0.5rem 0.65rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.hero-metric-label {
-  font-size: 0.7rem;
-  color: var(--accent-dark);
-  text-transform: uppercase;
-}
-xt-transform: uppercase;
-}
-
-.hero-metric-value {
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.hero-brain {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.hero-brain-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 20%, #f9fafb, #0f766e);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-.hero-brain-text {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* ===== Badges לקבוצות ===== */
-
-.team-badge {
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #ffffff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.8rem;
-  flex-shrink: 0;
-  box-shadow: 0 4px 10px rgba(20, 184, 166, 0.4);
-}
-
-.team-with-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* ===== Layout: Header + Main + Footer ===== */
-
-.app-shell {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-body);
-}
-
-/* HEADER */
-
-.app-header {
-  background: #ffffff;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.app-header-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0.6rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
-}
-
-/* Brand */
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.9rem;
-  box-shadow: 0 6px 14px rgba(20, 184, 166, 0.4);
-}
-
-.brand-title {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.brand-subtitle {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* ניווט עליון */
-
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.nav-btn {
-  border: none;
-  background: transparent;
-  padding: 0.5rem 0.9rem;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
-}
-
-.nav-btn:hover {
-  background: rgba(20, 184, 166, 0.08);
-  color: var(--accent-dark);
-  transform: translateY(-1px);
-}
-
-.nav-btn.active {
-  background: var(--accent);
-  color: #ffffff;
-}
-
-/* MAIN */
-
-.app-main {
-  flex: 1;
-  padding-bottom: 2.5rem;
-}
-
-/* FOOTER */
-
-.app-footer {
-  border-top: 1px solid var(--border-subtle);
-  background: #ffffff;
-}
-
-.app-footer-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0.75rem 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.footer-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-/* ===== מובייל ===== */
-
-@media (max-width: 768px) {
-  .hero {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero-image {
-    max-width: 260px;
-  }
-
-  .card {
-    padding: 1rem 1.1rem;
-  }
-
-  .app-header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main-nav {
-    width: 100%;
-    overflow-x: auto;
-  }
-}
-.home-section {
-  margin-top: 2rem;
-}
-
-.home-section h2 {
-  margin: 0 0 0.75rem;
-  font-size: 1.4rem;
-}
-
-.home-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-}
-
-.home-stack {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-}
-
-.home-stack h3 {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
+/* ================================
+   FOOTER
+=================================== */
+footer {
+  background: #8b5e3c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
 }
