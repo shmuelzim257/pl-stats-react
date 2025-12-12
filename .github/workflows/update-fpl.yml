@@ -1,8 +1,9 @@
 name: Update FPL players daily
 
+# מעניק ל-GitHub Actions הרשאה לבצע commit + push
 permissions:
   contents: write
-  
+
 on:
   schedule:
     # כל יום ב-03:00 UTC (05:00/06:00 בישראל)
