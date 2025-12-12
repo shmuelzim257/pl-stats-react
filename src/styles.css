@@ -1,182 +1,272 @@
-/* בסיס כללי לאתר */
+/* src/styles.css */
+
+/* ----------------- בסיס ופלטת צבעים חמה ----------------- */
+:root {
+  --bg-main: #f6efe6;
+  --bg-card: #ffffff;
+  --accent: #a7632b;
+  --accent-soft: #f0d2aa;
+  --accent-soft-strong: #e1b07a;
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+  --border-subtle: #e4d5bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Alef", sans-serif;
+  background: radial-gradient(circle at top, #fdf6ec 0, var(--bg-main) 55%);
+  color: var(--text-main);
   direction: rtl;
   text-align: right;
 }
 
+/* לינקים */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* מכולה כללית */
 .container {
   max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
 }
 
-.page-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+/* כותרות */
+.page-title,
+h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin: 0 0 1rem;
 }
 
-/* כרטיסים – העיצוב הקיים */
+.page-intro {
+  max-width: 900px;
+  margin: 0 auto 0.75rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.meta-text {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0;
+}
+
+.meta-warning {
+  color: #b45309;
+}
+
+/* ----------------- כרטיסים ----------------- */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-top: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  margin-top: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-subtle);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 .card-title {
-  font-size: 1.3rem;
   margin: 0;
+  font-size: 1.2rem;
 }
 
 .pill {
-  background: #dedede;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--text-main);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
   font-size: 0.8rem;
 }
 
-/* טבלה */
+.card-body {
+  font-size: 0.95rem;
+}
+
+/* ----------------- פילטרים וחיפוש ----------------- */
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border-subtle);
+  margin-top: 1.2rem;
+}
+
+.input,
+.select {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
+  min-width: 140px;
+}
+
+.input {
+  flex: 1;
+}
+
+/* ----------------- טבלה + גלילה פנימית ----------------- */
+
 .table-wrapper {
-  max-height: 450px;
+  max-height: 520px;        /* כאן הגובה – אפשר לשנות בקלות */
   overflow-y: auto;
-  margin-top: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+
+/* סקרול אינר */
+.table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #c4a786;
+  border-radius: 4px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: var(--bg-card);
 }
 
-th {
-  background: #e9e9e9;
-  padding: 0.7rem;
-  cursor: pointer;
-  user-select: none;
-}
-
+th,
 td {
-  padding: 0.6rem;
-  border-bottom: 1px solid #efefef;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.55rem;
+  border-bottom: 1px solid #f3e7d4;
+}
+
+thead th {
+  background: #f3e5d4;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tbody tr:nth-child(even) {
+  background: #fdf7ee;
 }
 
 tbody tr:hover {
-  background: #fafafa;
+  background: #f7ecdd;
 }
 
-/* עיצוב סקרול פנימי */
-.table-wrapper::-webkit-scrollbar {
-  width: 8px;
-}
-
-.table-wrapper::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #bdbdbd;
-}
-
-/* שורת חיפוש ופילטרים */
-.filters-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.filters-row input,
-.filters-row select {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-/* --- משבצות "שחקנים מובילים" --- */
+/* ----------------- משבצות "שחקנים מובילים" ----------------- */
 
 .top-leaders-section {
-  margin: 2rem 0;
+  margin: 2rem 0 1.4rem;
 }
 
 .section-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
 }
 
 .top-leaders-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
 }
 
 .top-leader-card {
-  background: #fff7e6;
-  border-radius: 14px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  background: #fff8ec;
+  border-radius: 16px;
+  padding: 0.8rem 0.9rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3dfc4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .top-leader-main {
-  border: 1px solid #f4b563;
-  transform: scale(1.02);
+  border-color: var(--accent-soft-strong);
+  box-shadow: 0 6px 18px rgba(166, 99, 43, 0.18);
+  transform: translateY(-2px);
 }
 
 .leader-title-row {
-  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: 0.35rem;
 }
 
 .leader-category {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .leader-description {
-  font-size: 0.8rem;
-  opacity: 0.7;
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }
 
 .leader-player-name {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
 }
 
 .leader-team-name {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.55rem;
 }
 
 .leader-value-row {
   display: flex;
-  gap: 0.3rem;
   align-items: baseline;
+  gap: 0.25rem;
+  margin-top: auto;
 }
 
 .leader-value {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .leader-unit {
-  font-size: 0.9rem;
-  opacity: 0.7;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ----------------- התאמה למובייל ----------------- */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 0.75rem;
+  }
+
+  .filters-row {
+    border-radius: 16px;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
 }

@@ -1,6 +1,8 @@
+// src/pages/Players.jsx
 import React, { useEffect, useMemo, useState } from "react";
+import basePlayers from "../data/players.json";
 
-// עמודות הטבלה לפי מבנה FPL
+// עמודות הטבלה לפי מבנה FPL/players.json
 const columns = [
   { key: "name", label: "שחקן", numeric: false },
   { key: "team", label: "קבוצה", numeric: false },
@@ -25,12 +27,13 @@ const columns = [
   { key: "ictIndex", label: "ICT Index", numeric: true }
 ];
 
-// כתובת ה-API הרשמי של FPL
+// ה־API הרשמי – ננסה לעדכן ממנו, אבל תמיד יש דאטה בסיסית מהקובץ המקומי
 const FPL_URL = "https://fantasy.premierleague.com/api/bootstrap-static/";
 
 export const Players = () => {
-  const [players, setPlayers] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // מתחילים מהדאטה המקומי כדי שתמיד תהיה טבלה
+  const [players, setPlayers] = useState(basePlayers || []);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [lastUpdated, setLastUpdated] = useState(null);
 
@@ -40,7 +43,7 @@ export const Players = () => {
   const [sortCol, setSortCol] = useState("totalPoints");
   const [sortDir, setSortDir] = useState("desc");
 
-  // טעינת נתוני FPL בזמן טעינת העמוד
+  // נסיון עדכון מה־API – אם CORS חוסם, עדיין תהיה טבלה מהקובץ
   useEffect(() => {
     const fetchFPL = async () => {
       try {
@@ -49,24 +52,21 @@ export const Players = () => {
 
         const res = await fetch(FPL_URL);
         if (!res.ok) {
-          throw new Error("נכשלה טעינת הנתונים מ-FPL");
+          throw new Error("נכשלה טעינת הנתונים מ-FPL (קוד " + res.status + ")");
         }
 
         const data = await res.json();
 
-        // map של קבוצות: id -> שם קבוצה
         const teamsMap = new Map();
         data.teams.forEach((t) => {
           teamsMap.set(t.id, t.name);
         });
 
-        // map של עמדות: id -> קיצור עמדה (GK/DEF/MID/FWD)
         const positionsMap = new Map();
         data.element_types.forEach((et) => {
           positionsMap.set(et.id, et.singular_name_short);
         });
 
-        // מיפוי השחקנים למבנה שנוח לטבלה שלנו
         const mappedPlayers = data.elements.map((el) => ({
           id: el.id,
           name: el.web_name,
@@ -96,7 +96,10 @@ export const Players = () => {
         setLastUpdated(new Date());
       } catch (err) {
         console.error(err);
-        setError(err.message || "שגיאה לא ידועה בטעינת נתונים");
+        // כאן לא מאפסים את players – ממשיכים להציג את הדאטה המקומי
+        setError(
+          "לא הצלחתי לעדכן מה-API (כנראה CORS). מוצגים נתונים מהקובץ המקומי."
+        );
       } finally {
         setLoading(false);
       }
@@ -105,6 +108,7 @@ export const Players = () => {
     fetchFPL();
   }, []);
 
+  // רשימת קבוצות
   const teams = useMemo(() => {
     if (!players || players.length === 0) return ["ALL"];
     return ["ALL", ...Array.from(new Set(players.map((p) => p.team))).sort()];
@@ -112,6 +116,7 @@ export const Players = () => {
 
   const positions = ["ALL", "GK", "DEF", "MID", "FWD"];
 
+  // סינון + חיפוש + מיון
   const filteredPlayers = useMemo(() => {
     let data = [...players];
 
@@ -133,7 +138,6 @@ export const Players = () => {
       );
     }
 
-    // מיון
     data.sort((a, b) => {
       const col = sortCol;
       const av = a[col];
@@ -152,6 +156,73 @@ export const Players = () => {
 
     return data;
   }, [players, search, positionFilter, teamFilter, sortCol, sortDir]);
+
+  // משבצות "שחקנים מובילים" לפי קטגוריות מתקדמות
+  const leaders = useMemo(() => {
+    if (!players || players.length === 0) return [];
+
+    const categories = [
+      {
+        id: "totalPoints",
+        title: "סך נקודות עונה",
+        description: "השחקן עם הכי הרבה נקודות מצטברות",
+        key: "totalPoints",
+        unit: "נק'"
+      },
+      {
+        id: "form",
+        title: "Form",
+        description: "החם ביותר בתקופה האחרונה",
+        key: "form",
+        unit: "מדד"
+      },
+      {
+        id: "ictIndex",
+        title: "ICT Index",
+        description: "השפעה · יצירתיות · איום",
+        key: "ictIndex",
+        unit: "ICT"
+      },
+      {
+        id: "goals",
+        title: "מלך השערים",
+        description: "הכי הרבה שערים עד עכשיו",
+        key: "goals",
+        unit: "שערים"
+      },
+      {
+        id: "assists",
+        title: "מלך הבישולים",
+        description: "הכי הרבה בישולים",
+        key: "assists",
+        unit: "בישולים"
+      }
+    ];
+
+    const findLeader = (key) => {
+      return players.reduce((best, p) => {
+        const val = typeof p[key] === "number" ? p[key] : -Infinity;
+        if (!best) return p;
+        const bestVal = typeof best[key] === "number" ? best[key] : -Infinity;
+        return val > bestVal ? p : best;
+      }, null);
+    };
+
+    return categories
+      .map((cat) => {
+        const p = findLeader(cat.key);
+        if (!p) return null;
+
+        const raw = p[cat.key];
+        const value =
+          typeof raw === "number" && !Number.isInteger(raw)
+            ? raw.toFixed(1)
+            : raw;
+
+        return { ...cat, player: p, value };
+      })
+      .filter(Boolean);
+  }, [players]);
 
   const handleSort = (key) => {
     if (sortCol === key) {
@@ -180,38 +251,63 @@ export const Players = () => {
 
   return (
     <div className="container">
-      <h1>שחקנים &amp; ניקוד</h1>
-      <p>
-        טבלת סטטיסטיקות לכל שחקני Fantasy Premier League, נטענת ישירות מה-API
-        הרשמי של FPL בזמן טעינת העמוד. אפשר לחפש, לסנן לפי עמדה וקבוצה, ולמיין
-        לפי כל אחת מהעמודות.
+      <h1 className="page-title">שחקנים &amp; ניקוד</h1>
+      <p className="page-intro">
+        טבלת סטטיסטיקות לכל שחקני Fantasy Premier League. ניתן לחפש לפי שם,
+        לסנן לפי עמדה וקבוצה, למיין לפי כל עמודה ולהעמיק בנתונים המתקדמים.
       </p>
 
       {lastUpdated && (
-        <p style={{ fontSize: "0.8rem", color: "#9ca3af" }}>
-          נתונים נכון לרגע הטעינה: {formatDateTime(lastUpdated)}
+        <p className="meta-text">
+          נתונים מעודכנים מה-API נכון ל: {formatDateTime(lastUpdated)}
         </p>
       )}
 
+      {error && (
+        <p className="meta-text meta-warning">
+          ⚠ {error}
+        </p>
+      )}
+
+      {/* משבצות הנתונים המתקדמים */}
+      {leaders.length > 0 && (
+        <section className="top-leaders-section">
+          <h2 className="section-title">שחקנים מובילים בקטגוריות מתקדמות</h2>
+          <div className="top-leaders-grid">
+            {leaders.map((item, index) => (
+              <article
+                key={item.id}
+                className={
+                  "top-leader-card" + (index === 0 ? " top-leader-main" : "")
+                }
+              >
+                <div className="leader-title-row">
+                  <span className="leader-category">{item.title}</span>
+                  <span className="leader-description">
+                    {item.description}
+                  </span>
+                </div>
+                <div className="leader-player-name">{item.player.name}</div>
+                <div className="leader-team-name">{item.player.team}</div>
+                <div className="leader-value-row">
+                  <span className="leader-value">{item.value}</span>
+                  <span className="leader-unit">{item.unit}</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* טעינה */}
       {loading && (
         <div className="card" style={{ marginTop: "1rem" }}>
-          <div className="card-body">
-            טוען נתוני שחקנים מ-FPL…
-          </div>
+          <div className="card-body">טוען נתוני שחקנים…</div>
         </div>
       )}
 
-      {error && !loading && (
-        <div className="card" style={{ marginTop: "1rem", borderColor: "#b91c1c" }}>
-          <div className="card-body" style={{ color: "#fecaca" }}>
-            שגיאה בטעינת הנתונים: {error}
-            <br />
-            אפשר לנסות לרענן את הדף או לבדוק חיבור לאינטרנט.
-          </div>
-        </div>
-      )}
-
-      {!loading && !error && players.length > 0 && (
+      {/* טבלה – תמיד מוצגת אם יש שחקנים, גם אם היה error מה-API */}
+      {players.length > 0 && (
         <>
           <div className="filters-row">
             <input
@@ -221,6 +317,7 @@ export const Players = () => {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
+
             <select
               className="select"
               value={positionFilter}
@@ -240,6 +337,7 @@ export const Players = () => {
                 </option>
               ))}
             </select>
+
             <select
               className="select"
               value={teamFilter}
@@ -255,7 +353,9 @@ export const Players = () => {
 
           <div className="card">
             <div className="card-header">
-              <h2 className="card-title">טבלת שחקנים – {filteredPlayers.length} בתצוגה</h2>
+              <h2 className="card-title">
+                טבלת שחקנים – {filteredPlayers.length} בתצוגה
+              </h2>
               <span className="pill">סה״כ במערכת: {players.length}</span>
             </div>
 
@@ -268,7 +368,11 @@ export const Players = () => {
                         <th
                           key={col.key}
                           onClick={() => handleSort(col.key)}
-                          style={{ cursor: "pointer", whiteSpace: "nowrap" }}
+                          style={{
+                            cursor: "pointer",
+                            whiteSpace: "nowrap",
+                            textAlign: col.numeric ? "left" : "right"
+                          }}
                         >
                           {col.label}
                           {renderSortArrow(col.key)}
