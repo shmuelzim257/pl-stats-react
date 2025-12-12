@@ -1,0 +1,43 @@
+name: Update FPL players daily
+
+on:
+  schedule:
+    # כל יום ב-03:00 UTC (05:00/06:00 בישראל)
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  update-fpl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run FPL update script
+        run: npm run update:fpl
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add src/data/players.json
+            git commit -m "chore: daily FPL players update"
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Push changes
+        if: always()
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
