@@ -1,7 +1,7 @@
 // scripts/update-fpl-players.mjs
-// סקריפט Node שמוריד את נתוני ה-FPL ושומר אותם כ-json ללקוח
+// סקריפט Node שמוריד את נתוני ה-FPL ושומר אותם כ-players.json לפרויקט
 
-import fs from "fs";
+import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 const FPL_URL = "https://fantasy.premierleague.com/api/bootstrap-static/";
 
 async function run() {
-  console.log("מוריד נתוני שחקנים מ-FPL...");
+  console.log("⏳ מוריד נתוני שחקנים מ-FPL...");
 
   const res = await fetch(FPL_URL);
   if (!res.ok) {
@@ -20,6 +20,7 @@ async function run() {
 
   const data = await res.json();
 
+  // מפות קבוצות ועמדות
   const teamsMap = new Map();
   data.teams.forEach((t) => {
     teamsMap.set(t.id, t.name);
@@ -30,6 +31,7 @@ async function run() {
     positionsMap.set(et.id, et.singular_name_short);
   });
 
+  // מיפוי השחקנים למבנה שה-frontend מצפה לו
   const mappedPlayers = data.elements.map((el) => ({
     id: el.id,
     name: el.web_name,
@@ -55,14 +57,28 @@ async function run() {
     ictIndex: parseFloat(el.ict_index)
   }));
 
+  // ניסיון לזהות מחזור נוכחי (לא נכתב לקובץ, רק ללוג)
+  const currentGw =
+    data.events?.find((e) => e.is_current) ??
+    data.events?.find((e) => e.is_next) ??
+    data.events?.find((e) => e.is_previous);
+
   const outPath = path.join(__dirname, "..", "src", "data", "players.json");
 
-  fs.writeFileSync(outPath, JSON.stringify(mappedPlayers, null, 2), "utf-8");
+  // לוודא שהתיקייה קיימת
+  await fs.mkdir(path.dirname(outPath), { recursive: true });
 
-  console.log(`נשמרו ${mappedPlayers.length} שחקנים אל: ${outPath}`);
+  await fs.writeFile(outPath, JSON.stringify(mappedPlayers, null, 2), "utf-8");
+
+  console.log(`✅ נשמרו ${mappedPlayers.length} שחקנים אל: ${outPath}`);
+  if (currentGw) {
+    console.log(
+      `📅 מחזור רלוונטי: GW${currentGw.id} – ${currentGw.name} (finished: ${currentGw.finished})`
+    );
+  }
 }
 
 run().catch((err) => {
-  console.error("שגיאה בעדכון נתונים:", err);
+  console.error("❌ שגיאה בעדכון נתונים:", err);
   process.exit(1);
 });
