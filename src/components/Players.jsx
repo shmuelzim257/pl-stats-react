@@ -1,5 +1,4 @@
-import React, { useMemo, useState } from "react";
-import playersData from "../data/players.json";
+import React, { useEffect, useMemo, useState } from "react";
 
 // עמודות הטבלה לפי מבנה FPL
 const columns = [
@@ -26,14 +25,85 @@ const columns = [
   { key: "ictIndex", label: "ICT Index", numeric: true }
 ];
 
+// כתובת ה-API הרשמי של FPL
+const FPL_URL = "https://fantasy.premierleague.com/api/bootstrap-static/";
+
 export const Players = () => {
+  const [players, setPlayers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [lastUpdated, setLastUpdated] = useState(null);
+
   const [search, setSearch] = useState("");
   const [positionFilter, setPositionFilter] = useState("ALL");
   const [teamFilter, setTeamFilter] = useState("ALL");
   const [sortCol, setSortCol] = useState("totalPoints");
   const [sortDir, setSortDir] = useState("desc");
 
-  const players = playersData || [];
+  // טעינת נתוני FPL בזמן טעינת העמוד
+  useEffect(() => {
+    const fetchFPL = async () => {
+      try {
+        setLoading(true);
+        setError("");
+
+        const res = await fetch(FPL_URL);
+        if (!res.ok) {
+          throw new Error("נכשלה טעינת הנתונים מ-FPL");
+        }
+
+        const data = await res.json();
+
+        // map של קבוצות: id -> שם קבוצה
+        const teamsMap = new Map();
+        data.teams.forEach((t) => {
+          teamsMap.set(t.id, t.name);
+        });
+
+        // map של עמדות: id -> קיצור עמדה (GK/DEF/MID/FWD)
+        const positionsMap = new Map();
+        data.element_types.forEach((et) => {
+          positionsMap.set(et.id, et.singular_name_short);
+        });
+
+        // מיפוי השחקנים למבנה שנוח לטבלה שלנו
+        const mappedPlayers = data.elements.map((el) => ({
+          id: el.id,
+          name: el.web_name,
+          team: teamsMap.get(el.team) ?? `Team ${el.team}`,
+          position: positionsMap.get(el.element_type) ?? "",
+          price: el.now_cost / 10,
+          totalPoints: el.total_points,
+          gwPoints: el.event_points,
+          pointsPerGame: parseFloat(el.points_per_game),
+          form: parseFloat(el.form),
+          selectedByPercent: parseFloat(el.selected_by_percent),
+          minutes: el.minutes,
+          goals: el.goals_scored,
+          assists: el.assists,
+          cleanSheets: el.clean_sheets,
+          goalsConceded: el.goals_conceded,
+          saves: el.saves,
+          bonus: el.bonus,
+          bps: el.bps,
+          influence: parseFloat(el.influence),
+          creativity: parseFloat(el.creativity),
+          threat: parseFloat(el.threat),
+          ictIndex: parseFloat(el.ict_index)
+        }));
+
+        setPlayers(mappedPlayers);
+        setLastUpdated(new Date());
+      } catch (err) {
+        console.error(err);
+        setError(err.message || "שגיאה לא ידועה בטעינת נתונים");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFPL();
+  }, []);
 
   const teams = useMemo(() => {
     if (!players || players.length === 0) return ["ALL"];
@@ -52,7 +122,7 @@ export const Players = () => {
     if (teamFilter !== "ALL") {
       data = data.filter((p) => p.team === teamFilter);
     }
-const handleSort
+
     if (search.trim() !== "") {
       const q = search.toLowerCase();
       data = data.filter((p) =>
@@ -83,75 +153,6 @@ const handleSort
     return data;
   }, [players, search, positionFilter, teamFilter, sortCol, sortDir]);
 
-    // משבצות "שחקנים מובילים" בקטגוריות שונות
-  const leaders = useMemo(() => {
-    if (!players || players.length === 0) return [];
-
-    const categories = [
-      {
-        id: "totalPoints",
-        title: "סך נקודות עונה",
-        description: "השחקן עם הכי הרבה נקודות מצטברות",
-        key: "totalPoints",
-        unit: "נקודות"
-      },
-      {
-        id: "form",
-        title: "Form",
-        description: "הכי חזק בתקופה האחרונה",
-        key: "form",
-        unit: "מדד Form"
-      },
-      {
-        id: "ictIndex",
-        title: "ICT Index",
-        description: "השפעה, יצירתיות ואיום ביחד",
-        key: "ictIndex",
-        unit: "מדד ICT"
-      },
-      {
-        id: "goals",
-        title: "מלך השערים",
-        description: "הכי הרבה שערים עד עכשיו",
-        key: "goals",
-        unit: "שערים"
-      },
-      {
-        id: "assists",
-        title: "מלך הבישולים",
-        description: "הכי הרבה בישולים עד עכשיו",
-        key: "assists",
-        unit: "בישולים"
-      }
-    ];
-
-    const findLeader = (key) => {
-      return players.reduce(
-        (best, p) => (best == null || p[key] > best[key] ? p : best),
-        null
-      );
-    };
-
-    return categories
-      .map((cat) => {
-        const player = findLeader(cat.key);
-        if (!player) return null;
-
-        const rawValue = player[cat.key];
-        const value =
-          typeof rawValue === "number" && !Number.isInteger(rawValue)
-            ? rawValue.toFixed(1)
-            : rawValue;
-
-        return {
-          ...cat,
-          player,
-          value
-        };
-      })
-      .filter(Boolean);
-  }, [players]);
-
   const handleSort = (key) => {
     if (sortCol === key) {
       setSortDir((prev) => (prev === "asc" ? "desc" : "asc"));
@@ -166,24 +167,51 @@ const handleSort
     return sortDir === "asc" ? " ▲" : " ▼";
   };
 
+  const formatDateTime = (d) => {
+    if (!d) return "";
+    return d.toLocaleString("he-IL", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  };
+
   return (
     <div className="container">
       <h1>שחקנים &amp; ניקוד</h1>
       <p>
-        טבלת סטטיסטיקות לכל שחקני ה-FPL, נטענת מקובץ JSON סטטי שנוצר מה-API
-        הרשמי. ניתן לחפש, לסנן ולמיין לפי כל אחת מהעמודות.
+        טבלת סטטיסטיקות לכל שחקני Fantasy Premier League, נטענת ישירות מה-API
+        הרשמי של FPL בזמן טעינת העמוד. אפשר לחפש, לסנן לפי עמדה וקבוצה, ולמיין
+        לפי כל אחת מהעמודות.
       </p>
 
-      {players.length === 0 && (
+      {lastUpdated && (
+        <p style={{ fontSize: "0.8rem", color: "#9ca3af" }}>
+          נתונים נכון לרגע הטעינה: {formatDateTime(lastUpdated)}
+        </p>
+      )}
+
+      {loading && (
         <div className="card" style={{ marginTop: "1rem" }}>
           <div className="card-body">
-            כרגע אין נתונים בקובץ השחקנים (players.json). יש להריץ את סקריפט
-            העדכון או למלא נתוני דמו.
+            טוען נתוני שחקנים מ-FPL…
           </div>
         </div>
       )}
 
-      {players.length > 0 && (
+      {error && !loading && (
+        <div className="card" style={{ marginTop: "1rem", borderColor: "#b91c1c" }}>
+          <div className="card-body" style={{ color: "#fecaca" }}>
+            שגיאה בטעינת הנתונים: {error}
+            <br />
+            אפשר לנסות לרענן את הדף או לבדוק חיבור לאינטרנט.
+          </div>
+        </div>
+      )}
+
+      {!loading && !error && players.length > 0 && (
         <>
           <div className="filters-row">
             <input
@@ -225,42 +253,10 @@ const handleSort
             </select>
           </div>
 
-                    {/* 🔹 אזור המשבצות – שחקנים מובילים בקטגוריות שונות */}
-          {leaders.length > 0 && (
-            <section className="top-leaders-section">
-              <h2 className="section-title">שחקנים מובילים בקטגוריות שונות</h2>
-              <div className="top-leaders-grid">
-                {leaders.map((item, index) => (
-                  <article
-                    key={item.id}
-                    className={
-                      "top-leader-card" + (index === 0 ? " top-leader-main" : "")
-                    }
-                  >
-                    <div className="leader-title-row">
-                      <span className="leader-category">{item.title}</span>
-                      <span className="leader-description">
-                        {item.description}
-                      </span>
-                    </div>
-                    <div className="leader-player-name">{item.player.name}</div>
-                    <div className="leader-team-name">{item.player.team}</div>
-                    <div className="leader-value-row">
-                      <span className="leader-value">{item.value}</span>
-                      <span className="leader-unit">{item.unit}</span>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          )}
-
           <div className="card">
             <div className="card-header">
-              <h2 className="card-title">
-                טבלת שחקנים – {filteredPlayers.length} בתצוגה
-              </h2>
-              <span className="pill">סה״כ בקובץ: {players.length}</span>
+              <h2 className="card-title">טבלת שחקנים – {filteredPlayers.length} בתצוגה</h2>
+              <span className="pill">סה״כ במערכת: {players.length}</span>
             </div>
 
             <div className="card-body">
