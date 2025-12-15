@@ -57,25 +57,13 @@ async function run() {
     ictIndex: parseFloat(el.ict_index)
   }));
 
-  // ניסיון לזהות מחזור נוכחי (לא נכתב לקובץ, רק ללוג)
-  const currentGw =
-    data.events?.find((e) => e.is_current) ??
-    data.events?.find((e) => e.is_next) ??
-    data.events?.find((e) => e.is_previous);
-
   const outPath = path.join(__dirname, "..", "src", "data", "players.json");
 
-  // לוודא שהתיקייה קיימת
   await fs.mkdir(path.dirname(outPath), { recursive: true });
 
   await fs.writeFile(outPath, JSON.stringify(mappedPlayers, null, 2), "utf-8");
 
   console.log(`✅ נשמרו ${mappedPlayers.length} שחקנים אל: ${outPath}`);
-  if (currentGw) {
-    console.log(
-      `📅 מחזור רלוונטי: GW${currentGw.id} – ${currentGw.name} (finished: ${currentGw.finished})`
-    );
-  }
 }
 
 run().catch((err) => {
