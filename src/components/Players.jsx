@@ -1,15 +1,14 @@
-// src/pages/Players.jsx
-import React, { useEffect, useMemo, useState } from "react";
+// src/components/Players.jsx
+import React, { useMemo, useState } from "react";
 import basePlayers from "../data/players.json";
 
-// עמודות הטבלה לפי מבנה FPL/players.json
 const columns = [
   { key: "name", label: "שחקן", numeric: false },
   { key: "team", label: "קבוצה", numeric: false },
   { key: "position", label: "עמדה", numeric: false },
   { key: "price", label: "מחיר (£m)", numeric: true },
   { key: "totalPoints", label: "נקודות עונה", numeric: true },
-  { key: "gwPoints", label: "נקודות מחזור אחרון", numeric: true },
+  { key: "gwPoints", label: "נק' מחזור אחרון", numeric: true },
   { key: "pointsPerGame", label: "נק' למשחק", numeric: true },
   { key: "form", label: "Form", numeric: true },
   { key: "selectedByPercent", label: 'נבחר ע"י %', numeric: true },
@@ -17,7 +16,6 @@ const columns = [
   { key: "goals", label: "שערים", numeric: true },
   { key: "assists", label: "בישולים", numeric: true },
   { key: "cleanSheets", label: "שערים נקיים", numeric: true },
-  { key: "goalsConceded", label: "שערים שספג", numeric: true },
   { key: "saves", label: "הצלות", numeric: true },
   { key: "bonus", label: "בונוס", numeric: true },
   { key: "bps", label: "BPS", numeric: true },
@@ -27,88 +25,23 @@ const columns = [
   { key: "ictIndex", label: "ICT Index", numeric: true }
 ];
 
-// ה־API הרשמי – ננסה לעדכן ממנו, אבל תמיד יש דאטה בסיסית מהקובץ המקומי
-const FPL_URL = "https://fantasy.premierleague.com/api/bootstrap-static/";
+const POS_LABEL = {
+  GK: "שוער",
+  DEF: "הגנה",
+  MID: "קישור",
+  FWD: "התקפה"
+};
+
+const safeNum = (v) => (typeof v === "number" && !Number.isNaN(v) ? v : -Infinity);
 
 export const Players = () => {
-  // מתחילים מהדאטה המקומי כדי שתמיד תהיה טבלה
-  const [players, setPlayers] = useState(basePlayers || []);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [lastUpdated, setLastUpdated] = useState(null);
-
+  const [players] = useState(Array.isArray(basePlayers) ? basePlayers : []);
   const [search, setSearch] = useState("");
   const [positionFilter, setPositionFilter] = useState("ALL");
   const [teamFilter, setTeamFilter] = useState("ALL");
   const [sortCol, setSortCol] = useState("totalPoints");
   const [sortDir, setSortDir] = useState("desc");
 
-  // נסיון עדכון מה־API – אם CORS חוסם, עדיין תהיה טבלה מהקובץ
-  useEffect(() => {
-    const fetchFPL = async () => {
-      try {
-        setLoading(true);
-        setError("");
-
-        const res = await fetch(FPL_URL);
-        if (!res.ok) {
-          throw new Error("נכשלה טעינת הנתונים מ-FPL (קוד " + res.status + ")");
-        }
-
-        const data = await res.json();
-
-        const teamsMap = new Map();
-        data.teams.forEach((t) => {
-          teamsMap.set(t.id, t.name);
-        });
-
-        const positionsMap = new Map();
-        data.element_types.forEach((et) => {
-          positionsMap.set(et.id, et.singular_name_short);
-        });
-
-        const mappedPlayers = data.elements.map((el) => ({
-          id: el.id,
-          name: el.web_name,
-          team: teamsMap.get(el.team) ?? `Team ${el.team}`,
-          position: positionsMap.get(el.element_type) ?? "",
-          price: el.now_cost / 10,
-          totalPoints: el.total_points,
-          gwPoints: el.event_points,
-          pointsPerGame: parseFloat(el.points_per_game),
-          form: parseFloat(el.form),
-          selectedByPercent: parseFloat(el.selected_by_percent),
-          minutes: el.minutes,
-          goals: el.goals_scored,
-          assists: el.assists,
-          cleanSheets: el.clean_sheets,
-          goalsConceded: el.goals_conceded,
-          saves: el.saves,
-          bonus: el.bonus,
-          bps: el.bps,
-          influence: parseFloat(el.influence),
-          creativity: parseFloat(el.creativity),
-          threat: parseFloat(el.threat),
-          ictIndex: parseFloat(el.ict_index)
-        }));
-
-        setPlayers(mappedPlayers);
-        setLastUpdated(new Date());
-      } catch (err) {
-        console.error(err);
-        // כאן לא מאפסים את players – ממשיכים להציג את הדאטה המקומי
-        setError(
-          "לא הצלחתי לעדכן מה-API (כנראה CORS). מוצגים נתונים מהקובץ המקומי."
-        );
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchFPL();
-  }, []);
-
-  // רשימת קבוצות
   const teams = useMemo(() => {
     if (!players || players.length === 0) return ["ALL"];
     return ["ALL", ...Array.from(new Set(players.map((p) => p.team))).sort()];
@@ -116,39 +49,28 @@ export const Players = () => {
 
   const positions = ["ALL", "GK", "DEF", "MID", "FWD"];
 
-  // סינון + חיפוש + מיון
   const filteredPlayers = useMemo(() => {
     let data = [...players];
 
-    if (positionFilter !== "ALL") {
-      data = data.filter((p) => p.position === positionFilter);
-    }
-
-    if (teamFilter !== "ALL") {
-      data = data.filter((p) => p.team === teamFilter);
-    }
+    if (positionFilter !== "ALL") data = data.filter((p) => p.position === positionFilter);
+    if (teamFilter !== "ALL") data = data.filter((p) => p.team === teamFilter);
 
     if (search.trim() !== "") {
       const q = search.toLowerCase();
       data = data.filter((p) =>
-        Object.values(p)
-          .join(" ")
-          .toLowerCase()
-          .includes(q)
+        Object.values(p).join(" ").toLowerCase().includes(q)
       );
     }
 
     data.sort((a, b) => {
-      const col = sortCol;
-      const av = a[col];
-      const bv = b[col];
+      const av = a[sortCol];
+      const bv = b[sortCol];
 
       if (typeof av === "number" && typeof bv === "number") {
         return sortDir === "asc" ? av - bv : bv - av;
       }
-
-      const as = String(av).toLowerCase();
-      const bs = String(bv).toLowerCase();
+      const as = String(av ?? "").toLowerCase();
+      const bs = String(bv ?? "").toLowerCase();
       if (as < bs) return sortDir === "asc" ? -1 : 1;
       if (as > bs) return sortDir === "asc" ? 1 : -1;
       return 0;
@@ -157,163 +79,314 @@ export const Players = () => {
     return data;
   }, [players, search, positionFilter, teamFilter, sortCol, sortDir]);
 
-  // משבצות "שחקנים מובילים" לפי קטגוריות מתקדמות
-  const leaders = useMemo(() => {
-    if (!players || players.length === 0) return [];
-
-    const categories = [
-      {
-        id: "totalPoints",
-        title: "סך נקודות עונה",
-        description: "השחקן עם הכי הרבה נקודות מצטברות",
-        key: "totalPoints",
-        unit: "נק'"
-      },
-      {
-        id: "form",
-        title: "Form",
-        description: "החם ביותר בתקופה האחרונה",
-        key: "form",
-        unit: "מדד"
-      },
-      {
-        id: "ictIndex",
-        title: "ICT Index",
-        description: "השפעה · יצירתיות · איום",
-        key: "ictIndex",
-        unit: "ICT"
-      },
-      {
-        id: "goals",
-        title: "מלך השערים",
-        description: "הכי הרבה שערים עד עכשיו",
-        key: "goals",
-        unit: "שערים"
-      },
-      {
-        id: "assists",
-        title: "מלך הבישולים",
-        description: "הכי הרבה בישולים",
-        key: "assists",
-        unit: "בישולים"
-      }
-    ];
-
-    const findLeader = (key) => {
-      return players.reduce((best, p) => {
-        const val = typeof p[key] === "number" ? p[key] : -Infinity;
-        if (!best) return p;
-        const bestVal = typeof best[key] === "number" ? best[key] : -Infinity;
-        return val > bestVal ? p : best;
-      }, null);
-    };
-
-    return categories
-      .map((cat) => {
-        const p = findLeader(cat.key);
-        if (!p) return null;
-
-        const raw = p[cat.key];
-        const value =
-          typeof raw === "number" && !Number.isInteger(raw)
-            ? raw.toFixed(1)
-            : raw;
-
-        return { ...cat, player: p, value };
-      })
-      .filter(Boolean);
-  }, [players]);
-
   const handleSort = (key) => {
-    if (sortCol === key) {
-      setSortDir((prev) => (prev === "asc" ? "desc" : "asc"));
-    } else {
+    if (sortCol === key) setSortDir((prev) => (prev === "asc" ? "desc" : "asc"));
+    else {
       setSortCol(key);
       setSortDir("desc");
     }
   };
 
-  const renderSortArrow = (key) => {
-    if (sortCol !== key) return null;
-    return sortDir === "asc" ? " ▲" : " ▼";
-  };
+  const sortArrow = (key) => (sortCol !== key ? "" : sortDir === "asc" ? " ▲" : " ▼");
 
-  const formatDateTime = (d) => {
-    if (!d) return "";
-    return d.toLocaleString("he-IL", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
-  };
+  // ---- משבצות מתקדמות ----
+  const advancedTiles = useMemo(() => {
+    if (!players || players.length === 0) return [];
+
+    // מחזיר מספר "בטוח" לחישובים (לא -Infinity כדי שלא יהרוס חלוקות)
+    const num = (v) => (typeof v === "number" && !Number.isNaN(v) ? v : 0);
+
+    const topBy = (list, key) =>
+      list.reduce((best, p) => (num(p[key]) > num(best?.[key]) ? p : best), null);
+
+    const pickTop = (list, scoreFn) =>
+      list.reduce(
+        (best, p) => {
+          const score = scoreFn(p);
+          return num(score) > num(best.score) ? { player: p, score } : best;
+        },
+        { player: null, score: -Infinity }
+      );
+
+    const MIN_MINUTES = 450; // מסנן רעש (שחקנים עם מעט דקות)
+    const active = players.filter((p) => num(p.minutes) >= MIN_MINUTES);
+
+    const byPos = (pos) => players.filter((p) => p.position === pos);
+
+    const bestPerPosition = ["GK", "DEF", "MID", "FWD"]
+      .map((pos) => {
+        const p = topBy(byPos(pos), "totalPoints");
+        return p
+          ? {
+              id: `best-${pos}`,
+              title: `הכי טוב ב-${POS_LABEL[pos]}`,
+              subtitle: "לפי נקודות עונה",
+              player: p,
+              value: p.totalPoints,
+              unit: "נק'"
+            }
+          : null;
+      })
+      .filter(Boolean);
+
+    const extra = [
+      // --- קיימות ---
+      {
+        id: "gk-saves",
+        title: "שוער עם הכי הרבה הצלות",
+        subtitle: "מדד שימושי לשוערים",
+        player: topBy(byPos("GK"), "saves"),
+        valueKey: "saves",
+        unit: "הצלות"
+      },
+      {
+        id: "def-cs",
+        title: "הגנה עם הכי הרבה שערים נקיים",
+        subtitle: "אינדיקציה ליציבות",
+        player: topBy(byPos("DEF"), "cleanSheets"),
+        valueKey: "cleanSheets",
+        unit: "CS"
+      },
+      {
+        id: "mid-assists",
+        title: "קשר מוביל בבישולים",
+        subtitle: "יוצר מצבים",
+        player: topBy(byPos("MID"), "assists"),
+        valueKey: "assists",
+        unit: "בישולים"
+      },
+      {
+        id: "mid-creativity",
+        title: "קשר מוביל ב-Creativity",
+        subtitle: "מדד יצירתיות רשמי",
+        player: topBy(byPos("MID"), "creativity"),
+        valueKey: "creativity",
+        unit: "CR"
+      },
+      {
+        id: "fwd-goals",
+        title: "חלוץ מוביל בשערים",
+        subtitle: "מסיים פעולות",
+        player: topBy(byPos("FWD"), "goals"),
+        valueKey: "goals",
+        unit: "שערים"
+      },
+      {
+        id: "fwd-threat",
+        title: "חלוץ מוביל ב-Threat",
+        subtitle: "רמת איום",
+        player: topBy(byPos("FWD"), "threat"),
+        valueKey: "threat",
+        unit: "TH"
+      },
+      {
+        id: "overall-ict",
+        title: "מוביל כללי ב-ICT Index",
+        subtitle: "השפעה·יצירתיות·איום",
+        player: topBy(players, "ictIndex"),
+        valueKey: "ictIndex",
+        unit: "ICT"
+      },
+      {
+        id: "overall-form",
+        title: "החם ביותר (Form)",
+        subtitle: "ביצועים לאחרונה",
+        player: topBy(players, "form"),
+        valueKey: "form",
+        unit: "Form"
+      },
+
+      // --- חדשות (תובנות) ---
+
+      // Best Value: נק' עונה / מחיר (מסונן דקות)
+      (() => {
+        const best = pickTop(active, (p) => num(p.totalPoints) / Math.max(0.1, num(p.price)));
+        if (!best.player) return null;
+        return {
+          id: "best-value",
+          title: "תמורה למחיר (Value)",
+          subtitle: `נק' עונה / מחיר (מינ' ${MIN_MINUTES} דק')`,
+          player: best.player,
+          value: best.score,
+          unit: "נק'/£"
+        };
+      })(),
+
+      // Differential: בעלות נמוכה + PPG/Form
+      (() => {
+        const pool = active.filter((p) => num(p.selectedByPercent) > 0 && num(p.selectedByPercent) <= 5);
+        const best = pickTop(pool, (p) => num(p.pointsPerGame) * 2 + num(p.form));
+        if (!best.player) return null;
+        return {
+          id: "best-differential",
+          title: "דיפרנצ'יאל חם",
+          subtitle: "בעלות ≤ 5% + PPG/Form",
+          player: best.player,
+          value: best.score,
+          unit: "Score"
+        };
+      })(),
+
+      // יציב בהרכב: דקות + PPG
+      (() => {
+        const best = pickTop(active, (p) => num(p.minutes) * 0.001 + num(p.pointsPerGame));
+        if (!best.player) return null;
+        return {
+          id: "minutes-stable",
+          title: "יציב בהרכב",
+          subtitle: "דקות גבוהות + נק' למשחק",
+          player: best.player,
+          value: best.score,
+          unit: "Score"
+        };
+      })(),
+
+      // Bonus magnet
+      (() => {
+        const best = pickTop(active, (p) => num(p.bonus));
+        if (!best.player) return null;
+        return {
+          id: "bonus-magnet",
+          title: "מגנט בונוסים",
+          subtitle: "הכי הרבה Bonus",
+          player: best.player,
+          value: best.score,
+          unit: "Bonus"
+        };
+      })(),
+
+      // BPS leader
+      (() => {
+        const best = pickTop(active, (p) => num(p.bps));
+        if (!best.player) return null;
+        return {
+          id: "bps-leader",
+          title: "מלך ה-BPS",
+          subtitle: "בסיס טוב לבונוסים",
+          player: best.player,
+          value: best.score,
+          unit: "BPS"
+        };
+      })(),
+
+      // Underperformer: Threat גבוה ביחס לשערים
+      (() => {
+        const pool = active.filter((p) => num(p.threat) >= 50);
+        const best = pickTop(pool, (p) => num(p.threat) / (num(p.goals) + 1));
+        if (!best.player) return null;
+        return {
+          id: "underperform-threat",
+          title: "Threat גבוה – מעט שערים",
+          subtitle: "איום / (שערים+1)",
+          player: best.player,
+          value: best.score,
+          unit: "TH/Goal"
+        };
+      })(),
+
+      // Creative unlucky: Creativity גבוה ביחס לבישולים
+      (() => {
+        const pool = active.filter((p) => num(p.creativity) >= 50);
+        const best = pickTop(pool, (p) => num(p.creativity) / (num(p.assists) + 1));
+        if (!best.player) return null;
+        return {
+          id: "underperform-creative",
+          title: "Creativity גבוה – מעט בישולים",
+          subtitle: "יצירתיות / (בישולים+1)",
+          player: best.player,
+          value: best.score,
+          unit: "CR/A"
+        };
+      })(),
+
+      // Goal involvement value: (G+A)/£
+      (() => {
+        const best = pickTop(active, (p) => (num(p.goals) + num(p.assists)) / Math.max(0.1, num(p.price)));
+        if (!best.player) return null;
+        return {
+          id: "ga-value",
+          title: "מעורבות בשערים לפי מחיר",
+          subtitle: "(שערים+בישולים) / מחיר",
+          player: best.player,
+          value: best.score,
+          unit: "(G+A)/£"
+        };
+      })()
+    ].filter(Boolean);
+
+    // כאן התיקון הקריטי: ממפים את extra בצורה אחידה
+    const extraMapped = extra
+      .filter((x) => x.player)
+      .map((x) => ({
+        id: x.id,
+        title: x.title,
+        subtitle: x.subtitle,
+        player: x.player,
+        value: x.valueKey ? num(x.player?.[x.valueKey]) : x.value,
+        unit: x.unit
+      }));
+
+    // מגדילים קצת כדי שיראו גם את החדשות
+    return [...bestPerPosition, ...extraMapped].slice(0, 16);
+  }, [players]);
+
+  const fmt = (v) => (typeof v === "number" && !Number.isInteger(v) ? v.toFixed(1) : v);
 
   return (
     <div className="container">
-      <h1 className="page-title">שחקנים &amp; ניקוד</h1>
-      <p className="page-intro">
-        טבלת סטטיסטיקות לכל שחקני Fantasy Premier League. ניתן לחפש לפי שם,
-        לסנן לפי עמדה וקבוצה, למיין לפי כל עמודה ולהעמיק בנתונים המתקדמים.
-      </p>
+      {/* כותרת מעוצבת בתוך מסגרת */}
+      <header className="page-hero">
+        <div className="page-hero-inner">
+          <h1 className="page-hero-title">שחקנים &amp; ניקוד</h1>
+          <p className="page-hero-subtitle">
+            נתונים מתעדכנים מקומית דרך <span className="kbd">npm run update:fpl</span> (אין CORS בדפדפן).
+          </p>
+        </div>
+      </header>
 
-      {lastUpdated && (
-        <p className="meta-text">
-          נתונים מעודכנים מה-API נכון ל: {formatDateTime(lastUpdated)}
-        </p>
-      )}
-
-      {error && (
-        <p className="meta-text meta-warning">
-          ⚠ {error}
-        </p>
-      )}
-
-      {/* משבצות הנתונים המתקדמים */}
-      {leaders.length > 0 && (
-        <section className="top-leaders-section">
-          <h2 className="section-title">שחקנים מובילים בקטגוריות מתקדמות</h2>
-          <div className="top-leaders-grid">
-            {leaders.map((item, index) => (
+      {/* משבצות מתקדמות */}
+      {advancedTiles.length > 0 && (
+        <section className="leaders-section">
+          <h2 className="section-title">מובילים בנתונים מתקדמים</h2>
+          <div className="leaders-grid">
+            {advancedTiles.map((t, idx) => (
               <article
-                key={item.id}
-                className={
-                  "top-leader-card" + (index === 0 ? " top-leader-main" : "")
-                }
+                key={t.id}
+                className={`leader-card ${idx === 0 ? "leader-card--primary" : ""}`}
               >
-                <div className="leader-title-row">
-                  <span className="leader-category">{item.title}</span>
-                  <span className="leader-description">
-                    {item.description}
-                  </span>
+                <div className="leader-top">
+                  <div className="leader-title">{t.title}</div>
+                  <div className="leader-subtitle">{t.subtitle}</div>
                 </div>
-                <div className="leader-player-name">{item.player.name}</div>
-                <div className="leader-team-name">{item.player.team}</div>
+
+                <div className="leader-name">{t.player.name}</div>
+                <div className="leader-meta">
+                  <span className="leader-team">{t.player.team}</span>
+                  <span className="leader-pos">{t.player.position}</span>
+                </div>
+
                 <div className="leader-value-row">
-                  <span className="leader-value">{item.value}</span>
-                  <span className="leader-unit">{item.unit}</span>
+                  <span className="leader-value">{fmt(t.value)}</span>
+                  <span className="leader-unit">{t.unit}</span>
                 </div>
               </article>
             ))}
           </div>
+
+          <p className="note-text">
+            הערה: נתונים כמו “תיקולים” לא מגיעים מה־FPL API הרשמי, לכן כאן השתמשתי במדדים שכן זמינים (CS, Saves, Threat, Creativity, ICT וכו').
+          </p>
         </section>
       )}
 
-      {/* טעינה */}
-      {loading && (
-        <div className="card" style={{ marginTop: "1rem" }}>
-          <div className="card-body">טוען נתוני שחקנים…</div>
-        </div>
-      )}
-
-      {/* טבלה – תמיד מוצגת אם יש שחקנים, גם אם היה error מה-API */}
+      {/* פילטרים */}
       {players.length > 0 && (
         <>
           <div className="filters-row">
             <input
               className="input"
               type="text"
-              placeholder="חפש לפי שם, קבוצה או ערך כלשהו…"
+              placeholder="חפש לפי שם, קבוצה או ערך…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -332,7 +405,7 @@ export const Players = () => {
                     : pos === "DEF"
                     ? "הגנה"
                     : pos === "MID"
-                    ? "קשרים"
+                    ? "קישור"
                     : "חלוצים"}
                 </option>
               ))}
@@ -351,11 +424,10 @@ export const Players = () => {
             </select>
           </div>
 
+          {/* טבלה */}
           <div className="card">
             <div className="card-header">
-              <h2 className="card-title">
-                טבלת שחקנים – {filteredPlayers.length} בתצוגה
-              </h2>
+              <h2 className="card-title">טבלת שחקנים – {filteredPlayers.length} בתצוגה</h2>
               <span className="pill">סה״כ במערכת: {players.length}</span>
             </div>
 
@@ -375,35 +447,35 @@ export const Players = () => {
                           }}
                         >
                           {col.label}
-                          {renderSortArrow(col.key)}
+                          {sortArrow(col.key)}
                         </th>
                       ))}
                     </tr>
                   </thead>
+
                   <tbody>
                     {filteredPlayers.map((p) => (
                       <tr key={p.id}>
                         <td>{p.name}</td>
                         <td>{p.team}</td>
                         <td>{p.position}</td>
-                        <td>{p.price.toFixed(1)}</td>
+                        <td>{typeof p.price === "number" ? p.price.toFixed(1) : ""}</td>
                         <td>{p.totalPoints}</td>
                         <td>{p.gwPoints}</td>
-                        <td>{p.pointsPerGame.toFixed(1)}</td>
-                        <td>{p.form.toFixed(1)}</td>
-                        <td>{p.selectedByPercent.toFixed(1)}</td>
+                        <td>{typeof p.pointsPerGame === "number" ? p.pointsPerGame.toFixed(1) : ""}</td>
+                        <td>{typeof p.form === "number" ? p.form.toFixed(1) : ""}</td>
+                        <td>{typeof p.selectedByPercent === "number" ? p.selectedByPercent.toFixed(1) : ""}</td>
                         <td>{p.minutes}</td>
                         <td>{p.goals}</td>
                         <td>{p.assists}</td>
                         <td>{p.cleanSheets}</td>
-                        <td>{p.goalsConceded}</td>
                         <td>{p.saves}</td>
                         <td>{p.bonus}</td>
                         <td>{p.bps}</td>
-                        <td>{p.influence.toFixed(1)}</td>
-                        <td>{p.creativity.toFixed(1)}</td>
-                        <td>{p.threat.toFixed(1)}</td>
-                        <td>{p.ictIndex.toFixed(1)}</td>
+                        <td>{typeof p.influence === "number" ? p.influence.toFixed(1) : ""}</td>
+                        <td>{typeof p.creativity === "number" ? p.creativity.toFixed(1) : ""}</td>
+                        <td>{typeof p.threat === "number" ? p.threat.toFixed(1) : ""}</td>
+                        <td>{typeof p.ictIndex === "number" ? p.ictIndex.toFixed(1) : ""}</td>
                       </tr>
                     ))}
                   </tbody>

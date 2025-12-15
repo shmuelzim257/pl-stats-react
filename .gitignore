@@ -1,0 +1,11 @@
+# env
+.env
+
+# dependencies
+node_modules/
+
+# vite cache
+node_modules/.vite/
+
+# build
+dist/
