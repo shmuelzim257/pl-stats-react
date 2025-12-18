@@ -240,9 +240,6 @@ export const Players = () => {
       <header className="page-hero">
         <div className="page-hero-inner">
           <h1 className="page-hero-title">שחקנים &amp; ניקוד</h1>
-          <p className="page-hero-subtitle">
-            נתונים מתעדכנים מקומית דרך <span className="kbd">npm run update:fpl</span> (אין CORS בדפדפן).
-          </p>
         </div>
       </header>
 
