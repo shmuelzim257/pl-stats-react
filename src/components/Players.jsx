@@ -1,4 +1,4 @@
-// src/components/Players.jsx
+// C:\pl-stats-react-v2\src\components\Players.jsx
 import React, { useMemo, useState } from "react";
 import basePlayers from "../data/players.json";
 
@@ -32,8 +32,6 @@ const POS_LABEL = {
   FWD: "התקפה"
 };
 
-const safeNum = (v) => (typeof v === "number" && !Number.isNaN(v) ? v : -Infinity);
-
 export const Players = () => {
   const [players] = useState(Array.isArray(basePlayers) ? basePlayers : []);
   const [search, setSearch] = useState("");
@@ -57,9 +55,7 @@ export const Players = () => {
 
     if (search.trim() !== "") {
       const q = search.toLowerCase();
-      data = data.filter((p) =>
-        Object.values(p).join(" ").toLowerCase().includes(q)
-      );
+      data = data.filter((p) => Object.values(p).join(" ").toLowerCase().includes(q));
     }
 
     data.sort((a, b) => {
@@ -93,7 +89,6 @@ export const Players = () => {
   const advancedTiles = useMemo(() => {
     if (!players || players.length === 0) return [];
 
-    // מחזיר מספר "בטוח" לחישובים (לא -Infinity כדי שלא יהרוס חלוקות)
     const num = (v) => (typeof v === "number" && !Number.isNaN(v) ? v : 0);
 
     const topBy = (list, key) =>
@@ -108,7 +103,7 @@ export const Players = () => {
         { player: null, score: -Infinity }
       );
 
-    const MIN_MINUTES = 450; // מסנן רעש (שחקנים עם מעט דקות)
+    const MIN_MINUTES = 450;
     const active = players.filter((p) => num(p.minutes) >= MIN_MINUTES);
 
     const byPos = (pos) => players.filter((p) => p.position === pos);
@@ -130,7 +125,6 @@ export const Players = () => {
       .filter(Boolean);
 
     const extra = [
-      // --- קיימות ---
       {
         id: "gk-saves",
         title: "שוער עם הכי הרבה הצלות",
@@ -196,125 +190,35 @@ export const Players = () => {
         unit: "Form"
       },
 
-      // --- חדשות (תובנות) ---
-
-      // Best Value: נק' עונה / מחיר (מסונן דקות)
+      // --- תובנות חדשות (FPL בלבד) ---
       (() => {
         const best = pickTop(active, (p) => num(p.totalPoints) / Math.max(0.1, num(p.price)));
         if (!best.player) return null;
-        return {
-          id: "best-value",
-          title: "תמורה למחיר (Value)",
-          subtitle: `נק' עונה / מחיר (מינ' ${MIN_MINUTES} דק')`,
-          player: best.player,
-          value: best.score,
-          unit: "נק'/£"
-        };
+        return { id: "best-value", title: "תמורה למחיר (Value)", subtitle: `נק' עונה / מחיר (מינ' ${MIN_MINUTES} דק')`, player: best.player, value: best.score, unit: "נק'/£" };
       })(),
-
-      // Differential: בעלות נמוכה + PPG/Form
       (() => {
         const pool = active.filter((p) => num(p.selectedByPercent) > 0 && num(p.selectedByPercent) <= 5);
         const best = pickTop(pool, (p) => num(p.pointsPerGame) * 2 + num(p.form));
         if (!best.player) return null;
-        return {
-          id: "best-differential",
-          title: "דיפרנצ'יאל חם",
-          subtitle: "בעלות ≤ 5% + PPG/Form",
-          player: best.player,
-          value: best.score,
-          unit: "Score"
-        };
+        return { id: "best-differential", title: "דיפרנצ'יאל חם", subtitle: "בעלות ≤ 5% + PPG/Form", player: best.player, value: best.score, unit: "Score" };
       })(),
-
-      // יציב בהרכב: דקות + PPG
       (() => {
         const best = pickTop(active, (p) => num(p.minutes) * 0.001 + num(p.pointsPerGame));
         if (!best.player) return null;
-        return {
-          id: "minutes-stable",
-          title: "יציב בהרכב",
-          subtitle: "דקות גבוהות + נק' למשחק",
-          player: best.player,
-          value: best.score,
-          unit: "Score"
-        };
+        return { id: "minutes-stable", title: "יציב בהרכב", subtitle: "דקות גבוהות + נק' למשחק", player: best.player, value: best.score, unit: "Score" };
       })(),
-
-      // Bonus magnet
       (() => {
         const best = pickTop(active, (p) => num(p.bonus));
         if (!best.player) return null;
-        return {
-          id: "bonus-magnet",
-          title: "מגנט בונוסים",
-          subtitle: "הכי הרבה Bonus",
-          player: best.player,
-          value: best.score,
-          unit: "Bonus"
-        };
+        return { id: "bonus-magnet", title: "מגנט בונוסים", subtitle: "הכי הרבה Bonus", player: best.player, value: best.score, unit: "Bonus" };
       })(),
-
-      // BPS leader
       (() => {
         const best = pickTop(active, (p) => num(p.bps));
         if (!best.player) return null;
-        return {
-          id: "bps-leader",
-          title: "מלך ה-BPS",
-          subtitle: "בסיס טוב לבונוסים",
-          player: best.player,
-          value: best.score,
-          unit: "BPS"
-        };
-      })(),
-
-      // Underperformer: Threat גבוה ביחס לשערים
-      (() => {
-        const pool = active.filter((p) => num(p.threat) >= 50);
-        const best = pickTop(pool, (p) => num(p.threat) / (num(p.goals) + 1));
-        if (!best.player) return null;
-        return {
-          id: "underperform-threat",
-          title: "Threat גבוה – מעט שערים",
-          subtitle: "איום / (שערים+1)",
-          player: best.player,
-          value: best.score,
-          unit: "TH/Goal"
-        };
-      })(),
-
-      // Creative unlucky: Creativity גבוה ביחס לבישולים
-      (() => {
-        const pool = active.filter((p) => num(p.creativity) >= 50);
-        const best = pickTop(pool, (p) => num(p.creativity) / (num(p.assists) + 1));
-        if (!best.player) return null;
-        return {
-          id: "underperform-creative",
-          title: "Creativity גבוה – מעט בישולים",
-          subtitle: "יצירתיות / (בישולים+1)",
-          player: best.player,
-          value: best.score,
-          unit: "CR/A"
-        };
-      })(),
-
-      // Goal involvement value: (G+A)/£
-      (() => {
-        const best = pickTop(active, (p) => (num(p.goals) + num(p.assists)) / Math.max(0.1, num(p.price)));
-        if (!best.player) return null;
-        return {
-          id: "ga-value",
-          title: "מעורבות בשערים לפי מחיר",
-          subtitle: "(שערים+בישולים) / מחיר",
-          player: best.player,
-          value: best.score,
-          unit: "(G+A)/£"
-        };
+        return { id: "bps-leader", title: "מלך ה-BPS", subtitle: "בסיס טוב לבונוסים", player: best.player, value: best.score, unit: "BPS" };
       })()
     ].filter(Boolean);
 
-    // כאן התיקון הקריטי: ממפים את extra בצורה אחידה
     const extraMapped = extra
       .filter((x) => x.player)
       .map((x) => ({
@@ -326,7 +230,6 @@ export const Players = () => {
         unit: x.unit
       }));
 
-    // מגדילים קצת כדי שיראו גם את החדשות
     return [...bestPerPosition, ...extraMapped].slice(0, 16);
   }, [players]);
 
@@ -334,7 +237,6 @@ export const Players = () => {
 
   return (
     <div className="container">
-      {/* כותרת מעוצבת בתוך מסגרת */}
       <header className="page-hero">
         <div className="page-hero-inner">
           <h1 className="page-hero-title">שחקנים &amp; ניקוד</h1>
@@ -344,16 +246,12 @@ export const Players = () => {
         </div>
       </header>
 
-      {/* משבצות מתקדמות */}
       {advancedTiles.length > 0 && (
         <section className="leaders-section">
           <h2 className="section-title">מובילים בנתונים מתקדמים</h2>
           <div className="leaders-grid">
             {advancedTiles.map((t, idx) => (
-              <article
-                key={t.id}
-                className={`leader-card ${idx === 0 ? "leader-card--primary" : ""}`}
-              >
+              <article key={t.id} className={`leader-card ${idx === 0 ? "leader-card--primary" : ""}`}>
                 <div className="leader-top">
                   <div className="leader-title">{t.title}</div>
                   <div className="leader-subtitle">{t.subtitle}</div>
@@ -374,12 +272,11 @@ export const Players = () => {
           </div>
 
           <p className="note-text">
-            הערה: נתונים כמו “תיקולים” לא מגיעים מה־FPL API הרשמי, לכן כאן השתמשתי במדדים שכן זמינים (CS, Saves, Threat, Creativity, ICT וכו').
+            הערה: כאן מוצגים רק מדדים שקיימים ב־FPL (CS, Saves, Threat, Creativity, ICT, Bonus/BPS וכו׳).
           </p>
         </section>
       )}
 
-      {/* פילטרים */}
       {players.length > 0 && (
         <>
           <div className="filters-row">
@@ -391,31 +288,15 @@ export const Players = () => {
               onChange={(e) => setSearch(e.target.value)}
             />
 
-            <select
-              className="select"
-              value={positionFilter}
-              onChange={(e) => setPositionFilter(e.target.value)}
-            >
+            <select className="select" value={positionFilter} onChange={(e) => setPositionFilter(e.target.value)}>
               {positions.map((pos) => (
                 <option key={pos} value={pos}>
-                  {pos === "ALL"
-                    ? "כל העמדות"
-                    : pos === "GK"
-                    ? "שוערים"
-                    : pos === "DEF"
-                    ? "הגנה"
-                    : pos === "MID"
-                    ? "קישור"
-                    : "חלוצים"}
+                  {pos === "ALL" ? "כל העמדות" : pos === "GK" ? "שוערים" : pos === "DEF" ? "הגנה" : pos === "MID" ? "קישור" : "חלוצים"}
                 </option>
               ))}
             </select>
 
-            <select
-              className="select"
-              value={teamFilter}
-              onChange={(e) => setTeamFilter(e.target.value)}
-            >
+            <select className="select" value={teamFilter} onChange={(e) => setTeamFilter(e.target.value)}>
               {teams.map((t) => (
                 <option key={t} value={t}>
                   {t === "ALL" ? "כל הקבוצות" : t}
@@ -424,7 +305,6 @@ export const Players = () => {
             </select>
           </div>
 
-          {/* טבלה */}
           <div className="card">
             <div className="card-header">
               <h2 className="card-title">טבלת שחקנים – {filteredPlayers.length} בתצוגה</h2>
@@ -440,11 +320,7 @@ export const Players = () => {
                         <th
                           key={col.key}
                           onClick={() => handleSort(col.key)}
-                          style={{
-                            cursor: "pointer",
-                            whiteSpace: "nowrap",
-                            textAlign: col.numeric ? "left" : "right"
-                          }}
+                          style={{ cursor: "pointer", whiteSpace: "nowrap", textAlign: col.numeric ? "left" : "right" }}
                         >
                           {col.label}
                           {sortArrow(col.key)}
@@ -488,3 +364,6 @@ export const Players = () => {
     </div>
   );
 };
+
+// ✅ תאימות: אם במקום אחר אתה מייבא default
+export default Players;
