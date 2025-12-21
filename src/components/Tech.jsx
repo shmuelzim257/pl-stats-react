@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Tech = () => {
-  return (
-    <div className="container">
-      <h1>Projects</h1>
-      <p>
-        בעמוד זה אני מציג פרויקטים קונספטואליים ודומים למה שאני מנהל בפועל:
-        שילוב בין כדורגל, נתונים, AI ו-Automation. כל פרויקט כולל מטרות, ארכיטקטורה,
-        Flow כללי של מה שקורה בפועל, וגאנט ברמת מחלקות על פני ציר זמן.
-      </p>
+ const [activeTab, setActiveTab] = useState("work");
+ return (
+<div className="container">
+  <h1>Projects</h1>
 
+  {/* Tabs */}
+  <div className="projects-tabs">
+    <button
+      className={`tab-button ${activeTab === "work" ? "active" : ""}`}
+      onClick={() => setActiveTab("work")}
+    >
+      Work Projects
+    </button>
+
+    <button
+      className={`tab-button ${activeTab === "vision" ? "active" : ""}`}
+      onClick={() => setActiveTab("vision")}
+    >
+      Vision Projects
+    </button>
+  </div>
+
+  {/* Tab description */}
+  <p className="tab-description">
+    {activeTab === "work"
+      ? "פרויקטים שבוצעו ונוהלו בפועל בסביבות ארגוניות ופרודקשן."
+      : "פרויקטים רעיוניים ויוזמות עתידיות בתחום הכדורגל."}
+  </p>
+
+{activeTab === "vision" && (
+  <>
       {/* === פרויקט 1 – Gameweek Insights === */}
       <div className="card" style={{ marginTop: "1rem" }}>
         <div className="card-header">
@@ -160,7 +182,10 @@ export const Tech = () => {
           </div>
         </div>
       </div>
-
+  </>
+)}
+{activeTab === "work" && (
+  <>
       <hr className="project-separator" />
 
       {/* === פרויקט 2 – חשבוניות + סיכומי ביקור === */}
@@ -698,6 +723,8 @@ export const Tech = () => {
           </div>
         </div>
       </div>
+        </>
+)}
     </div>
   );
 };

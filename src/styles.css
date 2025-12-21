@@ -395,3 +395,28 @@ tbody tr:hover {
   color: var(--color-text-muted, #6b7280);
   font-size: 0.9rem;
 }
+.projects-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #c9a36a;
+  background: transparent;
+  color: #7a4a12;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tab-button.active {
+  background: #c9a36a;
+  color: #fff;
+}
+
+.tab-description {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
