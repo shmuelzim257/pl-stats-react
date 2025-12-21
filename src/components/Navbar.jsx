@@ -1,11 +1,11 @@
 import React from "react";
 
-const Navbar = ({ current, onChangePage }) => {
-  const btn = (id, label) => (
+export const Navbar = ({ current, onNavigate }) => {
+  const btn = (key, label) => (
     <button
-      key={id}
-      className={`nav-button ${current === id ? "active" : ""}`}
-      onClick={() => onChangePage(id)}
+      key={key}
+      className={`nav-btn ${current === key ? "active" : ""}`}
+      onClick={() => onNavigate(key)}
     >
       {label}
     </button>
@@ -13,19 +13,19 @@ const Navbar = ({ current, onChangePage }) => {
 
   return (
     <header className="navbar">
-      <div className="navbar-title">
-        PL Stats <span>United</span>
-      </div>
-<nav className="navbar-links">
-  {btn("home", "בית")}
-  {btn("tech", "Projects")}
-  {btn("fixtures", "משחקי מחזור")}
-  {btn("news", "חדשות")}
-  {btn("players", "שחקנים & ניקוד")}
-  {btn("teams", "קבוצות")}
-  {btn("about", "About")}
-</nav>
+      <div className="navbar-inner">
+        <div className="navbar-logo">PL Stats</div>
 
+        <nav className="navbar-links">
+          {btn("home", "בית")}
+          {btn("tech", "Projects")}
+          {btn("fixtures", "משחקי מחזור")}
+          {btn("news", "חדשות")}
+          {btn("players", "שחקנים & ניקוד")}
+          {btn("teams", "קבוצות")}
+          {btn("about", "About")}
+        </nav>
+      </div>
     </header>
   );
 };
