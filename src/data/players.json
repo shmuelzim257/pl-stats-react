@@ -9,7 +9,7 @@
     "gwPoints": 6,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 38,
+    "selectedByPercent": 37.9,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -18,10 +18,10 @@
     "saves": 1,
     "bonus": 0,
     "bps": 45,
-    "influence": 11.8,
+    "influence": 17.4,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.2
+    "ictIndex": 1.8
   },
   {
     "id": 2,
@@ -81,7 +81,7 @@
     "gwPoints": 8,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 27.3,
+    "selectedByPercent": 26.7,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -90,10 +90,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 44,
-    "influence": 6.6,
-    "creativity": 1.8,
-    "threat": 1,
-    "ictIndex": 0.9
+    "influence": 24.8,
+    "creativity": 5,
+    "threat": 7,
+    "ictIndex": 3.6
   },
   {
     "id": 5,
@@ -162,10 +162,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 30,
-    "influence": 11,
-    "creativity": 22.9,
-    "threat": 7,
-    "ictIndex": 4.1
+    "influence": 21.6,
+    "creativity": 26.1,
+    "threat": 12,
+    "ictIndex": 6
   },
   {
     "id": 8,
@@ -177,7 +177,7 @@
     "gwPoints": 11,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 42.4,
+    "selectedByPercent": 43.2,
     "minutes": 170,
     "goals": 0,
     "assists": 2,
@@ -186,10 +186,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 61,
-    "influence": 26,
-    "creativity": 12.2,
-    "threat": 4,
-    "ictIndex": 4.2
+    "influence": 47.2,
+    "creativity": 24.1,
+    "threat": 13,
+    "ictIndex": 8.4
   },
   {
     "id": 9,
@@ -225,7 +225,7 @@
     "gwPoints": 7,
     "pointsPerGame": 9,
     "form": 9,
-    "selectedByPercent": 7.1,
+    "selectedByPercent": 7.2,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -234,10 +234,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 63,
-    "influence": 33.2,
-    "creativity": 26.8,
+    "influence": 49.6,
+    "creativity": 47.1,
     "threat": 13,
-    "ictIndex": 7.3
+    "ictIndex": 11
   },
   {
     "id": 11,
@@ -249,7 +249,7 @@
     "gwPoints": 6,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 5.3,
+    "selectedByPercent": 5.1,
     "minutes": 168,
     "goals": 0,
     "assists": 0,
@@ -258,10 +258,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 52,
-    "influence": 14.4,
-    "creativity": 0.6,
+    "influence": 24.6,
+    "creativity": 2,
     "threat": 0,
-    "ictIndex": 1.5
+    "ictIndex": 2.7
   },
   {
     "id": 12,
@@ -273,7 +273,7 @@
     "gwPoints": 11,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 10.3,
+    "selectedByPercent": 10.5,
     "minutes": 157,
     "goals": 2,
     "assists": 0,
@@ -282,10 +282,10 @@
     "saves": 0,
     "bonus": 4,
     "bps": 82,
-    "influence": 42.8,
-    "creativity": 26.1,
-    "threat": 33,
-    "ictIndex": 10.2
+    "influence": 83.8,
+    "creativity": 34.1,
+    "threat": 77,
+    "ictIndex": 19.5
   },
   {
     "id": 13,
@@ -297,7 +297,7 @@
     "gwPoints": 5,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 15.6,
+    "selectedByPercent": 15.2,
     "minutes": 151,
     "goals": 0,
     "assists": 0,
@@ -306,10 +306,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 29,
-    "influence": 6.8,
-    "creativity": 6.4,
+    "influence": 30.8,
+    "creativity": 34,
     "threat": 2,
-    "ictIndex": 1.5
+    "ictIndex": 6.7
   },
   {
     "id": 14,
@@ -321,7 +321,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 1.6,
+    "selectedByPercent": 1.5,
     "minutes": 59,
     "goals": 0,
     "assists": 0,
@@ -330,10 +330,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 10,
-    "influence": 0,
-    "creativity": 1.8,
-    "threat": 1,
-    "ictIndex": 0.1
+    "influence": 1.6,
+    "creativity": 3.8,
+    "threat": 3,
+    "ictIndex": 0.7
   },
   {
     "id": 15,
@@ -345,7 +345,7 @@
     "gwPoints": 3,
     "pointsPerGame": 7,
     "form": 7,
-    "selectedByPercent": 11.7,
+    "selectedByPercent": 11.4,
     "minutes": 145,
     "goals": 1,
     "assists": 0,
@@ -354,10 +354,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 54,
-    "influence": 50.6,
-    "creativity": 41.5,
-    "threat": 31,
-    "ictIndex": 12.3
+    "influence": 57.4,
+    "creativity": 48.3,
+    "threat": 36,
+    "ictIndex": 14.2
   },
   {
     "id": 16,
@@ -402,17 +402,17 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 3.6,
-    "creativity": 1.2,
+    "influence": 6.4,
+    "creativity": 2.2,
     "threat": 14,
-    "ictIndex": 1.9
+    "ictIndex": 2.3
   },
   {
     "id": 18,
     "name": "Martinelli",
     "team": "Arsenal",
     "position": "MID",
-    "price": 6.4,
+    "price": 6.3,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -450,10 +450,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 3.8,
-    "creativity": 2.3,
+    "influence": 8.6,
+    "creativity": 3.2,
     "threat": 0,
-    "ictIndex": 0.6
+    "ictIndex": 1.2
   },
   {
     "id": 20,
@@ -556,12 +556,12 @@
     "name": "Gyökeres",
     "team": "Arsenal",
     "position": "FWD",
-    "price": 7.4,
+    "price": 7.3,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 5.7,
+    "selectedByPercent": 5.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -585,7 +585,7 @@
     "gwPoints": 2,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 7.3,
+    "selectedByPercent": 7.1,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -594,10 +594,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 37.2,
-    "creativity": 13.2,
-    "threat": 25,
-    "ictIndex": 7.5
+    "influence": 39.6,
+    "creativity": 16.6,
+    "threat": 48,
+    "ictIndex": 10.4
   },
   {
     "id": 27,
@@ -642,10 +642,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 3.2,
+    "creativity": 0.1,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.3
   },
   {
     "id": 452,
@@ -657,7 +657,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 2.3,
+    "selectedByPercent": 2.2,
     "minutes": 19,
     "goals": 0,
     "assists": 0,
@@ -666,10 +666,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 1.4,
+    "creativity": 0.8,
+    "threat": 2,
+    "ictIndex": 0.4
   },
   {
     "id": 557,
@@ -681,7 +681,7 @@
     "gwPoints": 0,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 23.9,
+    "selectedByPercent": 22.6,
     "minutes": 120,
     "goals": 0,
     "assists": 1,
@@ -691,9 +691,9 @@
     "bonus": 0,
     "bps": 31,
     "influence": 17,
-    "creativity": 39.8,
-    "threat": 30,
-    "ictIndex": 8.7
+    "creativity": 51.6,
+    "threat": 34,
+    "ictIndex": 10.3
   },
   {
     "id": 29,
@@ -762,10 +762,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 0,
-    "influence": 12,
-    "creativity": 1.1,
-    "threat": 0,
-    "ictIndex": 1.3
+    "influence": 26,
+    "creativity": 2.9,
+    "threat": 7,
+    "ictIndex": 3.6
   },
   {
     "id": 33,
@@ -810,10 +810,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -8,
-    "influence": 0,
-    "creativity": 0.7,
+    "influence": 11,
+    "creativity": 1.5,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 1.2
   },
   {
     "id": 35,
@@ -858,10 +858,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -14,
-    "influence": 9.2,
-    "creativity": 0.8,
-    "threat": 3,
-    "ictIndex": 1.3
+    "influence": 14,
+    "creativity": 1.3,
+    "threat": 15,
+    "ictIndex": 3
   },
   {
     "id": 37,
@@ -882,10 +882,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -3,
-    "influence": 1.8,
-    "creativity": 0.1,
+    "influence": 16.8,
+    "creativity": 1.3,
     "threat": 0,
-    "ictIndex": 0.2
+    "ictIndex": 1.8
   },
   {
     "id": 38,
@@ -954,10 +954,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 0,
-    "creativity": 16.3,
-    "threat": 8,
-    "ictIndex": 2.2
+    "influence": 5,
+    "creativity": 29.5,
+    "threat": 17,
+    "ictIndex": 4.9
   },
   {
     "id": 44,
@@ -993,7 +993,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 2.6,
+    "selectedByPercent": 2.5,
     "minutes": 171,
     "goals": 0,
     "assists": 0,
@@ -1003,9 +1003,9 @@
     "bonus": 0,
     "bps": 10,
     "influence": 1.6,
-    "creativity": 2.4,
-    "threat": 1,
-    "ictIndex": 0.5
+    "creativity": 14.4,
+    "threat": 11,
+    "ictIndex": 2.2
   },
   {
     "id": 46,
@@ -1026,10 +1026,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 34,
-    "influence": 9.4,
-    "creativity": 21.4,
-    "threat": 7,
-    "ictIndex": 3.8
+    "influence": 22.2,
+    "creativity": 44.7,
+    "threat": 9,
+    "ictIndex": 7.6
   },
   {
     "id": 47,
@@ -1050,10 +1050,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 22,
-    "influence": 11.2,
-    "creativity": 2.8,
+    "influence": 21.8,
+    "creativity": 17,
     "threat": 0,
-    "ictIndex": 1.4
+    "ictIndex": 3.9
   },
   {
     "id": 48,
@@ -1137,7 +1137,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 0.8,
+    "selectedByPercent": 0.9,
     "minutes": 160,
     "goals": 0,
     "assists": 0,
@@ -1146,10 +1146,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 17,
-    "influence": 10.6,
-    "creativity": 11.6,
+    "influence": 12.4,
+    "creativity": 15.9,
     "threat": 2,
-    "ictIndex": 2.4
+    "ictIndex": 3
   },
   {
     "id": 52,
@@ -1170,10 +1170,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 4,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0.4
+    "influence": 5.2,
+    "creativity": 0.8,
+    "threat": 2,
+    "ictIndex": 0.8
   },
   {
     "id": 53,
@@ -1233,7 +1233,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 6.1,
+    "selectedByPercent": 5.5,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -1267,9 +1267,9 @@
     "bonus": 0,
     "bps": 3,
     "influence": 0,
-    "creativity": 0,
+    "creativity": 1.3,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.1
   },
   {
     "id": 160,
@@ -1290,10 +1290,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 0.2,
+    "creativity": 2,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.2
   },
   {
     "id": 166,
@@ -1305,7 +1305,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.8,
     "minutes": 70,
     "goals": 0,
     "assists": 0,
@@ -1314,10 +1314,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 4.2,
+    "creativity": 5.9,
+    "threat": 2,
+    "ictIndex": 1.2
   },
   {
     "id": 582,
@@ -1329,7 +1329,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.4,
+    "selectedByPercent": 0.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -1377,7 +1377,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 0.9,
+    "selectedByPercent": 1,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -1386,10 +1386,10 @@
     "saves": 1,
     "bonus": 0,
     "bps": 8,
-    "influence": 0,
+    "influence": 13.6,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 1.4
   },
   {
     "id": 606,
@@ -1458,10 +1458,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 3.6,
+    "creativity": 0.8,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.4
   },
   {
     "id": 618,
@@ -1506,10 +1506,10 @@
     "saves": 9,
     "bonus": 0,
     "bps": 33,
-    "influence": 36.8,
+    "influence": 70.6,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 3.7
+    "ictIndex": 7.1
   },
   {
     "id": 58,
@@ -1578,10 +1578,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 19,
-    "influence": 11.6,
-    "creativity": 0.3,
-    "threat": 0,
-    "ictIndex": 1.2
+    "influence": 37.2,
+    "creativity": 21.3,
+    "threat": 4,
+    "ictIndex": 6.3
   },
   {
     "id": 61,
@@ -1593,7 +1593,7 @@
     "gwPoints": 4,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 4,
+    "selectedByPercent": 3.9,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -1602,10 +1602,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 27,
-    "influence": 15.4,
-    "creativity": 1.3,
-    "threat": 0,
-    "ictIndex": 1.7
+    "influence": 43.2,
+    "creativity": 25,
+    "threat": 4,
+    "ictIndex": 7.3
   },
   {
     "id": 62,
@@ -1674,10 +1674,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 7,
-    "creativity": 0.6,
+    "influence": 22.6,
+    "creativity": 16.3,
     "threat": 0,
-    "ictIndex": 0.8
+    "ictIndex": 3.9
   },
   {
     "id": 65,
@@ -1737,7 +1737,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 2.5,
+    "selectedByPercent": 2.4,
     "minutes": 178,
     "goals": 0,
     "assists": 0,
@@ -1746,10 +1746,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 6.2,
-    "creativity": 11.3,
-    "threat": 17,
-    "ictIndex": 3.5
+    "influence": 14.8,
+    "creativity": 14.8,
+    "threat": 61,
+    "ictIndex": 9.1
   },
   {
     "id": 68,
@@ -1770,10 +1770,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 52,
-    "influence": 40,
-    "creativity": 17.2,
-    "threat": 18,
-    "ictIndex": 7.5
+    "influence": 55,
+    "creativity": 55.5,
+    "threat": 29,
+    "ictIndex": 13.9
   },
   {
     "id": 69,
@@ -1785,7 +1785,7 @@
     "gwPoints": 12,
     "pointsPerGame": 7,
     "form": 7,
-    "selectedByPercent": 1.8,
+    "selectedByPercent": 1.9,
     "minutes": 176,
     "goals": 1,
     "assists": 0,
@@ -1794,10 +1794,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 56,
-    "influence": 11.4,
-    "creativity": 4.8,
-    "threat": 0,
-    "ictIndex": 1.6
+    "influence": 59,
+    "creativity": 36.9,
+    "threat": 21,
+    "ictIndex": 11.7
   },
   {
     "id": 70,
@@ -1809,7 +1809,7 @@
     "gwPoints": 3,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 1.2,
+    "selectedByPercent": 1.1,
     "minutes": 154,
     "goals": 0,
     "assists": 0,
@@ -1818,10 +1818,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 27,
-    "influence": 11,
-    "creativity": 14.3,
-    "threat": 17,
-    "ictIndex": 4.2
+    "influence": 22.2,
+    "creativity": 41.2,
+    "threat": 74,
+    "ictIndex": 13.7
   },
   {
     "id": 71,
@@ -1842,10 +1842,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 21,
-    "influence": 4.6,
-    "creativity": 2.1,
+    "influence": 8.4,
+    "creativity": 14.9,
     "threat": 0,
-    "ictIndex": 0.7
+    "ictIndex": 2.4
   },
   {
     "id": 72,
@@ -1890,10 +1890,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 3.6,
-    "creativity": 0.6,
+    "influence": 5.2,
+    "creativity": 1.9,
     "threat": 0,
-    "ictIndex": 0.4
+    "ictIndex": 0.7
   },
   {
     "id": 74,
@@ -1915,9 +1915,9 @@
     "bonus": 0,
     "bps": 3,
     "influence": 0,
-    "creativity": 0,
+    "creativity": 1.6,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.1
   },
   {
     "id": 75,
@@ -1938,10 +1938,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 2.8,
+    "creativity": 0.3,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.3
   },
   {
     "id": 76,
@@ -2034,10 +2034,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 28,
-    "influence": 19.4,
-    "creativity": 11.9,
-    "threat": 2,
-    "ictIndex": 3.3
+    "influence": 34.4,
+    "creativity": 34.1,
+    "threat": 24,
+    "ictIndex": 9.2
   },
   {
     "id": 80,
@@ -2106,10 +2106,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 16,
-    "influence": 31.4,
-    "creativity": 0.3,
-    "threat": 0,
-    "ictIndex": 3.2
+    "influence": 50,
+    "creativity": 2.1,
+    "threat": 13,
+    "ictIndex": 6.5
   },
   {
     "id": 573,
@@ -2193,7 +2193,7 @@
     "gwPoints": 2,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 6.9,
+    "selectedByPercent": 7,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -2202,10 +2202,10 @@
     "saves": 5,
     "bonus": 0,
     "bps": 41,
-    "influence": 31.4,
+    "influence": 40.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 3.1
+    "ictIndex": 4
   },
   {
     "id": 83,
@@ -2250,10 +2250,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 35,
-    "influence": 11.6,
-    "creativity": 21.5,
-    "threat": 17,
-    "ictIndex": 5
+    "influence": 39.6,
+    "creativity": 22.4,
+    "threat": 51,
+    "ictIndex": 11.3
   },
   {
     "id": 85,
@@ -2289,7 +2289,7 @@
     "gwPoints": 6,
     "pointsPerGame": 8,
     "form": 8,
-    "selectedByPercent": 1.7,
+    "selectedByPercent": 1.8,
     "minutes": 177,
     "goals": 1,
     "assists": 1,
@@ -2298,10 +2298,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 66,
-    "influence": 47.2,
-    "creativity": 15.9,
-    "threat": 19,
-    "ictIndex": 8.2
+    "influence": 85.6,
+    "creativity": 47.5,
+    "threat": 21,
+    "ictIndex": 15.4
   },
   {
     "id": 87,
@@ -2313,7 +2313,7 @@
     "gwPoints": 3,
     "pointsPerGame": 5.5,
     "form": 5.5,
-    "selectedByPercent": 4.5,
+    "selectedByPercent": 4.7,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -2322,10 +2322,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 36,
-    "influence": 20,
-    "creativity": 0.9,
-    "threat": 35,
-    "ictIndex": 5.6
+    "influence": 57.8,
+    "creativity": 21.9,
+    "threat": 37,
+    "ictIndex": 11.7
   },
   {
     "id": 88,
@@ -2337,7 +2337,7 @@
     "gwPoints": 2,
     "pointsPerGame": 7.5,
     "form": 7.5,
-    "selectedByPercent": 8.9,
+    "selectedByPercent": 9.1,
     "minutes": 162,
     "goals": 1,
     "assists": 0,
@@ -2346,10 +2346,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 45,
-    "influence": 33.8,
-    "creativity": 1.5,
-    "threat": 46,
-    "ictIndex": 8.1
+    "influence": 48.2,
+    "creativity": 17.5,
+    "threat": 54,
+    "ictIndex": 11.9
   },
   {
     "id": 89,
@@ -2394,10 +2394,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 0,
-    "creativity": 0.3,
+    "influence": 4,
+    "creativity": 4.4,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.8
   },
   {
     "id": 92,
@@ -2457,7 +2457,7 @@
     "gwPoints": 10,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 3.7,
+    "selectedByPercent": 3.9,
     "minutes": 177,
     "goals": 1,
     "assists": 0,
@@ -2466,10 +2466,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 51,
-    "influence": 14.4,
-    "creativity": 11.8,
-    "threat": 59,
-    "ictIndex": 8.5
+    "influence": 60,
+    "creativity": 22.9,
+    "threat": 93,
+    "ictIndex": 17.6
   },
   {
     "id": 95,
@@ -2481,7 +2481,7 @@
     "gwPoints": 1,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 1,
+    "selectedByPercent": 0.9,
     "minutes": 95,
     "goals": 0,
     "assists": 0,
@@ -2490,10 +2490,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 22,
-    "influence": 1,
-    "creativity": 30.8,
-    "threat": 15,
-    "ictIndex": 4.7
+    "influence": 16.4,
+    "creativity": 46.3,
+    "threat": 17,
+    "ictIndex": 8
   },
   {
     "id": 96,
@@ -2514,10 +2514,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 7.6,
-    "creativity": 26.3,
-    "threat": 0,
-    "ictIndex": 3.4
+    "influence": 24.2,
+    "creativity": 58.7,
+    "threat": 25,
+    "ictIndex": 10.8
   },
   {
     "id": 97,
@@ -2562,10 +2562,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 46,
-    "influence": 53.2,
-    "creativity": 38.8,
-    "threat": 24,
-    "ictIndex": 11.6
+    "influence": 69.6,
+    "creativity": 74.2,
+    "threat": 28,
+    "ictIndex": 17.2
   },
   {
     "id": 99,
@@ -2634,10 +2634,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 2.2,
-    "creativity": 0.8,
-    "threat": 3,
-    "ictIndex": 0.6
+    "influence": 5.2,
+    "creativity": 13.3,
+    "threat": 7,
+    "ictIndex": 2.6
   },
   {
     "id": 103,
@@ -2682,10 +2682,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 10.6,
-    "creativity": 34.9,
-    "threat": 1,
-    "ictIndex": 4.7
+    "influence": 13.8,
+    "creativity": 60.8,
+    "threat": 16,
+    "ictIndex": 9.1
   },
   {
     "id": 106,
@@ -2697,7 +2697,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 14.9,
+    "selectedByPercent": 14.6,
     "minutes": 172,
     "goals": 0,
     "assists": 0,
@@ -2706,10 +2706,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -1,
-    "influence": 2.2,
-    "creativity": 4,
-    "threat": 8,
-    "ictIndex": 1.4
+    "influence": 4.6,
+    "creativity": 10.2,
+    "threat": 63,
+    "ictIndex": 7.8
   },
   {
     "id": 107,
@@ -2755,21 +2755,21 @@
     "bonus": 0,
     "bps": 7,
     "influence": 2.2,
-    "creativity": 10.3,
-    "threat": 5,
-    "ictIndex": 1.8
+    "creativity": 10.4,
+    "threat": 12,
+    "ictIndex": 2.5
   },
   {
     "id": 565,
     "name": "M.Sangaré",
     "team": "Brentford",
     "position": "MID",
-    "price": 5.6,
+    "price": 5.7,
     "totalPoints": 18,
     "gwPoints": 4,
     "pointsPerGame": 9,
     "form": 9,
-    "selectedByPercent": 11.6,
+    "selectedByPercent": 12.6,
     "minutes": 165,
     "goals": 0,
     "assists": 2,
@@ -2778,10 +2778,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 57,
-    "influence": 31.6,
-    "creativity": 21.8,
-    "threat": 21,
-    "ictIndex": 7.4
+    "influence": 56,
+    "creativity": 47.1,
+    "threat": 32,
+    "ictIndex": 13.5
   },
   {
     "id": 620,
@@ -2817,7 +2817,7 @@
     "gwPoints": 0,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 21.5,
+    "selectedByPercent": 21.6,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -2826,10 +2826,10 @@
     "saves": 1,
     "bonus": 0,
     "bps": 24,
-    "influence": 6.6,
+    "influence": 16.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 0.7
+    "ictIndex": 1.7
   },
   {
     "id": 111,
@@ -2874,10 +2874,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -4,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 2.8,
+    "creativity": 16.7,
+    "threat": 8,
+    "ictIndex": 2.8
   },
   {
     "id": 114,
@@ -2898,10 +2898,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 27,
-    "influence": 15.2,
-    "creativity": 7.3,
-    "threat": 6,
-    "ictIndex": 2.9
+    "influence": 32,
+    "creativity": 33.9,
+    "threat": 17,
+    "ictIndex": 8.3
   },
   {
     "id": 115,
@@ -2913,7 +2913,7 @@
     "gwPoints": 0,
     "pointsPerGame": 8.5,
     "form": 8.5,
-    "selectedByPercent": 13.1,
+    "selectedByPercent": 14.1,
     "minutes": 167,
     "goals": 1,
     "assists": 1,
@@ -2922,10 +2922,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 44,
-    "influence": 40.6,
-    "creativity": 45.3,
-    "threat": 43,
-    "ictIndex": 12.9
+    "influence": 49.4,
+    "creativity": 69,
+    "threat": 48,
+    "ictIndex": 16.7
   },
   {
     "id": 116,
@@ -2946,10 +2946,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 20,
-    "influence": 13.4,
-    "creativity": 6.4,
+    "influence": 28.2,
+    "creativity": 8.4,
     "threat": 0,
-    "ictIndex": 2
+    "ictIndex": 3.7
   },
   {
     "id": 117,
@@ -3019,7 +3019,7 @@
     "bonus": 0,
     "bps": 6,
     "influence": 8.2,
-    "creativity": 1.9,
+    "creativity": 2.2,
     "threat": 18,
     "ictIndex": 2.8
   },
@@ -3081,7 +3081,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -3105,7 +3105,7 @@
     "gwPoints": 0,
     "pointsPerGame": 16,
     "form": 8,
-    "selectedByPercent": 1.7,
+    "selectedByPercent": 1.5,
     "minutes": 63,
     "goals": 2,
     "assists": 0,
@@ -3129,7 +3129,7 @@
     "gwPoints": 13,
     "pointsPerGame": 7.5,
     "form": 7.5,
-    "selectedByPercent": 13.8,
+    "selectedByPercent": 14.3,
     "minutes": 180,
     "goals": 1,
     "assists": 1,
@@ -3138,10 +3138,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 64,
-    "influence": 21,
-    "creativity": 56.9,
-    "threat": 8,
-    "ictIndex": 8.6
+    "influence": 68.8,
+    "creativity": 90.1,
+    "threat": 31,
+    "ictIndex": 19
   },
   {
     "id": 125,
@@ -3153,7 +3153,7 @@
     "gwPoints": 0,
     "pointsPerGame": 5,
     "form": 2.5,
-    "selectedByPercent": 0.9,
+    "selectedByPercent": 0.8,
     "minutes": 90,
     "goals": 0,
     "assists": 1,
@@ -3201,7 +3201,7 @@
     "gwPoints": 5,
     "pointsPerGame": 5.5,
     "form": 5.5,
-    "selectedByPercent": 4.2,
+    "selectedByPercent": 4.4,
     "minutes": 175,
     "goals": 0,
     "assists": 2,
@@ -3210,10 +3210,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 42,
-    "influence": 33,
-    "creativity": 25.1,
-    "threat": 41,
-    "ictIndex": 9.9
+    "influence": 37.6,
+    "creativity": 45.4,
+    "threat": 83,
+    "ictIndex": 16.6
   },
   {
     "id": 128,
@@ -3282,10 +3282,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 38,
-    "influence": 16.6,
-    "creativity": 26.3,
-    "threat": 6,
-    "ictIndex": 4.9
+    "influence": 37,
+    "creativity": 35.5,
+    "threat": 10,
+    "ictIndex": 8.3
   },
   {
     "id": 132,
@@ -3417,7 +3417,7 @@
     "gwPoints": 5,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 0.3,
+    "selectedByPercent": 0.4,
     "minutes": 105,
     "goals": 0,
     "assists": 1,
@@ -3426,10 +3426,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 16,
-    "influence": 0,
-    "creativity": 0.4,
-    "threat": 10,
-    "ictIndex": 0.9
+    "influence": 5,
+    "creativity": 15.5,
+    "threat": 27,
+    "ictIndex": 4.6
   },
   {
     "id": 139,
@@ -3498,10 +3498,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 17,
-    "influence": 12.4,
-    "creativity": 4.5,
-    "threat": 12,
-    "ictIndex": 2.9
+    "influence": 35.2,
+    "creativity": 12.8,
+    "threat": 17,
+    "ictIndex": 6.5
   },
   {
     "id": 594,
@@ -3523,9 +3523,9 @@
     "bonus": 0,
     "bps": 3,
     "influence": 0,
-    "creativity": 0,
+    "creativity": 3.7,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.4
   },
   {
     "id": 600,
@@ -3546,10 +3546,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 4.2,
-    "creativity": 15.4,
-    "threat": 4,
-    "ictIndex": 2.4
+    "influence": 7.2,
+    "creativity": 16.7,
+    "threat": 6,
+    "ictIndex": 3
   },
   {
     "id": 605,
@@ -3561,7 +3561,7 @@
     "gwPoints": 8,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 1,
+    "selectedByPercent": 1.3,
     "minutes": 77,
     "goals": 1,
     "assists": 0,
@@ -3570,10 +3570,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 42,
-    "influence": 0.6,
-    "creativity": 2.7,
-    "threat": 0,
-    "ictIndex": 0.3
+    "influence": 51.4,
+    "creativity": 22.8,
+    "threat": 42,
+    "ictIndex": 11.6
   },
   {
     "id": 614,
@@ -3642,10 +3642,10 @@
     "saves": 4,
     "bonus": 0,
     "bps": 18,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 36.2,
+    "creativity": 20,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 5.6
   },
   {
     "id": 40,
@@ -3657,7 +3657,7 @@
     "gwPoints": 5,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 25.5,
+    "selectedByPercent": 25.1,
     "minutes": 171,
     "goals": 1,
     "assists": 1,
@@ -3666,10 +3666,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 65,
-    "influence": 48.8,
-    "creativity": 53.5,
-    "threat": 29,
-    "ictIndex": 13.1
+    "influence": 75.6,
+    "creativity": 100,
+    "threat": 52,
+    "ictIndex": 22.7
   },
   {
     "id": 101,
@@ -3729,7 +3729,7 @@
     "gwPoints": 0,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 1.8,
+    "selectedByPercent": 1.7,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -3777,7 +3777,7 @@
     "gwPoints": 1,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 9,
+    "selectedByPercent": 8.7,
     "minutes": 112,
     "goals": 0,
     "assists": 0,
@@ -3786,10 +3786,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 23.4,
-    "creativity": 16.8,
-    "threat": 19,
-    "ictIndex": 5.9
+    "influence": 23.8,
+    "creativity": 17.2,
+    "threat": 21,
+    "ictIndex": 6.2
   },
   {
     "id": 143,
@@ -3834,10 +3834,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 1,
-    "influence": 7.2,
-    "creativity": 9.8,
+    "influence": 15,
+    "creativity": 10.5,
     "threat": 6,
-    "ictIndex": 2.3
+    "ictIndex": 3.2
   },
   {
     "id": 145,
@@ -3858,10 +3858,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -2,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 19.4,
+    "creativity": 0.9,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 2
   },
   {
     "id": 146,
@@ -3930,10 +3930,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 17,
-    "influence": 8.4,
-    "creativity": 12.3,
+    "influence": 38.4,
+    "creativity": 33,
     "threat": 11,
-    "ictIndex": 3.2
+    "ictIndex": 8.3
   },
   {
     "id": 149,
@@ -3945,7 +3945,7 @@
     "gwPoints": 1,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 1.4,
+    "selectedByPercent": 1.3,
     "minutes": 161,
     "goals": 0,
     "assists": 0,
@@ -3954,10 +3954,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 6,
-    "creativity": 1.6,
+    "influence": 19.2,
+    "creativity": 2,
     "threat": 7,
-    "ictIndex": 1.5
+    "ictIndex": 2.9
   },
   {
     "id": 150,
@@ -4002,10 +4002,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 33.2,
-    "creativity": 2.2,
+    "influence": 39.4,
+    "creativity": 2.3,
     "threat": 2,
-    "ictIndex": 3.7
+    "ictIndex": 4.3
   },
   {
     "id": 152,
@@ -4017,7 +4017,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 1.7,
+    "selectedByPercent": 1.5,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -4041,7 +4041,7 @@
     "gwPoints": 7,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 18.1,
+    "selectedByPercent": 18.2,
     "minutes": 172,
     "goals": 2,
     "assists": 1,
@@ -4050,10 +4050,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 88,
-    "influence": 65.2,
-    "creativity": 41.3,
-    "threat": 54,
-    "ictIndex": 16.1
+    "influence": 106,
+    "creativity": 66.6,
+    "threat": 80,
+    "ictIndex": 25.3
   },
   {
     "id": 155,
@@ -4065,7 +4065,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 3.6,
+    "selectedByPercent": 3.5,
     "minutes": 25,
     "goals": 0,
     "assists": 0,
@@ -4089,7 +4089,7 @@
     "gwPoints": 7,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 1.2,
+    "selectedByPercent": 1.3,
     "minutes": 81,
     "goals": 1,
     "assists": 0,
@@ -4098,10 +4098,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 41,
-    "influence": 5.2,
-    "creativity": 4.1,
-    "threat": 4,
-    "ictIndex": 1.3
+    "influence": 50.4,
+    "creativity": 29.7,
+    "threat": 42,
+    "ictIndex": 12.2
   },
   {
     "id": 157,
@@ -4113,7 +4113,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 1,
+    "selectedByPercent": 0.9,
     "minutes": 7,
     "goals": 0,
     "assists": 0,
@@ -4161,7 +4161,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 2.3,
+    "selectedByPercent": 2.2,
     "minutes": 13,
     "goals": 0,
     "assists": 0,
@@ -4171,7 +4171,7 @@
     "bonus": 0,
     "bps": 3,
     "influence": 0,
-    "creativity": 0,
+    "creativity": 0.1,
     "threat": 0,
     "ictIndex": 0
   },
@@ -4185,7 +4185,7 @@
     "gwPoints": 7,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0.2,
     "minutes": 131,
     "goals": 1,
     "assists": 0,
@@ -4194,10 +4194,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 40,
-    "influence": 13.6,
-    "creativity": 21.9,
-    "threat": 33,
-    "ictIndex": 6.9
+    "influence": 52.6,
+    "creativity": 22.7,
+    "threat": 66,
+    "ictIndex": 14.2
   },
   {
     "id": 163,
@@ -4252,12 +4252,12 @@
     "name": "João Pedro",
     "team": "Chelsea",
     "position": "FWD",
-    "price": 7.6,
+    "price": 7.7,
     "totalPoints": 20,
     "gwPoints": 9,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 69.7,
+    "selectedByPercent": 69.9,
     "minutes": 180,
     "goals": 2,
     "assists": 2,
@@ -4266,10 +4266,10 @@
     "saves": 0,
     "bonus": 4,
     "bps": 89,
-    "influence": 51.2,
-    "creativity": 23,
-    "threat": 37,
-    "ictIndex": 11.1
+    "influence": 104,
+    "creativity": 45.5,
+    "threat": 83,
+    "ictIndex": 23.2
   },
   {
     "id": 168,
@@ -4353,7 +4353,7 @@
     "gwPoints": 1,
     "pointsPerGame": 3.5,
     "form": 3.5,
-    "selectedByPercent": 8.9,
+    "selectedByPercent": 8.7,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -4362,10 +4362,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 22,
-    "influence": 44.2,
-    "creativity": 11.2,
-    "threat": 2,
-    "ictIndex": 5.7
+    "influence": 57.2,
+    "creativity": 11.3,
+    "threat": 8,
+    "ictIndex": 7.6
   },
   {
     "id": 560,
@@ -4436,8 +4436,8 @@
     "bps": 1,
     "influence": 0,
     "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "threat": 4,
+    "ictIndex": 0.2
   },
   {
     "id": 578,
@@ -4482,10 +4482,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 2.4,
-    "creativity": 0.2,
+    "influence": 8.8,
+    "creativity": 0.5,
     "threat": 2,
-    "ictIndex": 0.5
+    "ictIndex": 1.2
   },
   {
     "id": 91,
@@ -4506,10 +4506,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -1,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 3.8,
+    "creativity": 0.7,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.5
   },
   {
     "id": 104,
@@ -4554,10 +4554,10 @@
     "saves": 3,
     "bonus": 0,
     "bps": 10,
-    "influence": 14.2,
+    "influence": 24.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.4
+    "ictIndex": 2.5
   },
   {
     "id": 171,
@@ -4617,7 +4617,7 @@
     "gwPoints": 8,
     "pointsPerGame": 5.5,
     "form": 5.5,
-    "selectedByPercent": 8.2,
+    "selectedByPercent": 8.3,
     "minutes": 167,
     "goals": 0,
     "assists": 0,
@@ -4626,10 +4626,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 39,
-    "influence": 23.2,
-    "creativity": 11.2,
+    "influence": 40.2,
+    "creativity": 11.9,
     "threat": 1,
-    "ictIndex": 3.5
+    "ictIndex": 5.3
   },
   {
     "id": 174,
@@ -4665,7 +4665,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 12.3,
+    "selectedByPercent": 12.2,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -4674,10 +4674,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 10.6,
-    "creativity": 2,
-    "threat": 2,
-    "ictIndex": 1.5
+    "influence": 26,
+    "creativity": 35.9,
+    "threat": 8,
+    "ictIndex": 7
   },
   {
     "id": 176,
@@ -4698,10 +4698,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 13.8,
-    "creativity": 3.8,
-    "threat": 0,
-    "ictIndex": 1.8
+    "influence": 29,
+    "creativity": 11.1,
+    "threat": 17,
+    "ictIndex": 5.8
   },
   {
     "id": 177,
@@ -4713,7 +4713,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -4785,7 +4785,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.2,
+    "selectedByPercent": 0.1,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -4842,10 +4842,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 28.8,
-    "creativity": 0.8,
-    "threat": 0,
-    "ictIndex": 3
+    "influence": 40.2,
+    "creativity": 2.9,
+    "threat": 5,
+    "ictIndex": 4.9
   },
   {
     "id": 183,
@@ -4866,10 +4866,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 15,
-    "influence": 5.6,
-    "creativity": 3.8,
-    "threat": 17,
-    "ictIndex": 2.6
+    "influence": 12.4,
+    "creativity": 31.5,
+    "threat": 21,
+    "ictIndex": 6.5
   },
   {
     "id": 184,
@@ -4890,17 +4890,17 @@
     "saves": 0,
     "bonus": 0,
     "bps": 28,
-    "influence": 13.4,
-    "creativity": 3.7,
-    "threat": 0,
-    "ictIndex": 1.7
+    "influence": 27.6,
+    "creativity": 24.6,
+    "threat": 2,
+    "ictIndex": 5.4
   },
   {
     "id": 185,
     "name": "Sakamoto",
     "team": "Coventry City",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 1,
     "gwPoints": 1,
     "pointsPerGame": 1,
@@ -4914,10 +4914,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 6.2,
+    "creativity": 5.9,
+    "threat": 7,
+    "ictIndex": 1.9
   },
   {
     "id": 186,
@@ -4938,10 +4938,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 4.2,
+    "creativity": 16,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 2
   },
   {
     "id": 187,
@@ -4987,9 +4987,9 @@
     "bonus": 0,
     "bps": 10,
     "influence": 6.8,
-    "creativity": 16.4,
+    "creativity": 20,
     "threat": 0,
-    "ictIndex": 2.3
+    "ictIndex": 2.6
   },
   {
     "id": 189,
@@ -5034,10 +5034,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 1.8,
-    "creativity": 6,
-    "threat": 3,
-    "ictIndex": 1.1
+    "influence": 8.8,
+    "creativity": 24.5,
+    "threat": 8,
+    "ictIndex": 4.2
   },
   {
     "id": 191,
@@ -5130,10 +5130,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 4.6,
-    "creativity": 1.1,
-    "threat": 0,
-    "ictIndex": 0.6
+    "influence": 5.8,
+    "creativity": 3.1,
+    "threat": 2,
+    "ictIndex": 1.1
   },
   {
     "id": 195,
@@ -5217,7 +5217,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 0.8,
+    "selectedByPercent": 0.7,
     "minutes": 110,
     "goals": 0,
     "assists": 0,
@@ -5226,10 +5226,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 10,
-    "influence": 0,
-    "creativity": 1.4,
-    "threat": 0,
-    "ictIndex": 0.1
+    "influence": 10,
+    "creativity": 25,
+    "threat": 65,
+    "ictIndex": 10
   },
   {
     "id": 575,
@@ -5250,10 +5250,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 19,
-    "influence": 0,
-    "creativity": 3.1,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 9.4,
+    "creativity": 19.1,
+    "threat": 7,
+    "ictIndex": 3.2
   },
   {
     "id": 584,
@@ -5274,10 +5274,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0.4,
-    "creativity": 0.3,
+    "influence": 0.6,
+    "creativity": 1.8,
     "threat": 0,
-    "ictIndex": 0.1
+    "ictIndex": 0.3
   },
   {
     "id": 599,
@@ -5346,10 +5346,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 6,
-    "influence": 3.2,
-    "creativity": 1.8,
+    "influence": 5.4,
+    "creativity": 2.1,
     "threat": 7,
-    "ictIndex": 1.2
+    "ictIndex": 1.5
   },
   {
     "id": 153,
@@ -5370,10 +5370,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -2,
-    "influence": 0,
+    "influence": 1.2,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.1
   },
   {
     "id": 198,
@@ -5394,10 +5394,10 @@
     "saves": 7,
     "bonus": 0,
     "bps": 18,
-    "influence": 28.2,
+    "influence": 58.4,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 2.8
+    "ictIndex": 5.8
   },
   {
     "id": 199,
@@ -5424,30 +5424,6 @@
     "ictIndex": 0
   },
   {
-    "id": 201,
-    "name": "Muñoz",
-    "team": "Crystal Palace",
-    "position": "DEF",
-    "price": 5.4,
-    "totalPoints": 0,
-    "gwPoints": 0,
-    "pointsPerGame": 0,
-    "form": 0,
-    "selectedByPercent": 7.1,
-    "minutes": 54,
-    "goals": 0,
-    "assists": 0,
-    "cleanSheets": 0,
-    "goalsConceded": 2,
-    "saves": 0,
-    "bonus": 0,
-    "bps": -4,
-    "influence": 1.2,
-    "creativity": 1.8,
-    "threat": 21,
-    "ictIndex": 2.4
-  },
-  {
     "id": 202,
     "name": "Richards",
     "team": "Crystal Palace",
@@ -5466,10 +5442,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 42.6,
-    "creativity": 0.7,
-    "threat": 0,
-    "ictIndex": 4.3
+    "influence": 57.6,
+    "creativity": 0.8,
+    "threat": 17,
+    "ictIndex": 7.5
   },
   {
     "id": 203,
@@ -5490,10 +5466,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 27.4,
-    "creativity": 5.7,
+    "influence": 50.2,
+    "creativity": 6.2,
     "threat": 5,
-    "ictIndex": 3.8
+    "ictIndex": 6.1
   },
   {
     "id": 204,
@@ -5505,7 +5481,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 5.1,
+    "selectedByPercent": 4.9,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -5514,10 +5490,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 1,
-    "influence": 11.6,
-    "creativity": 13.8,
-    "threat": 2,
-    "ictIndex": 2.7
+    "influence": 23.2,
+    "creativity": 35.4,
+    "threat": 9,
+    "ictIndex": 6.7
   },
   {
     "id": 205,
@@ -5572,7 +5548,7 @@
     "name": "Mingueza",
     "team": "Crystal Palace",
     "position": "DEF",
-    "price": 4.5,
+    "price": 4.4,
     "totalPoints": 1,
     "gwPoints": 1,
     "pointsPerGame": 1,
@@ -5586,22 +5562,22 @@
     "saves": 0,
     "bonus": 0,
     "bps": 1,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 2.2,
+    "creativity": 0.1,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.2
   },
   {
     "id": 208,
     "name": "Sarr",
     "team": "Crystal Palace",
     "position": "MID",
-    "price": 6.4,
+    "price": 6.3,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 1.6,
+    "selectedByPercent": 1.5,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -5634,10 +5610,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 41,
-    "influence": 16.8,
-    "creativity": 30.9,
+    "influence": 33,
+    "creativity": 55.6,
     "threat": 0,
-    "ictIndex": 4.8
+    "ictIndex": 8.9
   },
   {
     "id": 211,
@@ -5658,10 +5634,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 31,
-    "influence": 2,
-    "creativity": 6.3,
-    "threat": 6,
-    "ictIndex": 1.4
+    "influence": 12.8,
+    "creativity": 40.5,
+    "threat": 15,
+    "ictIndex": 6.8
   },
   {
     "id": 212,
@@ -5673,7 +5649,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 10,
+    "selectedByPercent": 9.9,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -5692,7 +5668,7 @@
     "name": "Lerma",
     "team": "Crystal Palace",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -5730,10 +5706,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 46,
-    "influence": 20.4,
-    "creativity": 29.3,
-    "threat": 0,
-    "ictIndex": 5
+    "influence": 38,
+    "creativity": 32.1,
+    "threat": 7,
+    "ictIndex": 7.7
   },
   {
     "id": 215,
@@ -5922,10 +5898,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 16,
-    "influence": 1,
-    "creativity": 3.5,
-    "threat": 17,
-    "ictIndex": 2.2
+    "influence": 6.2,
+    "creativity": 3.8,
+    "threat": 21,
+    "ictIndex": 3.2
   },
   {
     "id": 223,
@@ -5937,7 +5913,7 @@
     "gwPoints": 0,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 3.5,
+    "selectedByPercent": 3.1,
     "minutes": 62,
     "goals": 0,
     "assists": 0,
@@ -5970,10 +5946,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 20,
-    "influence": 10.4,
-    "creativity": 24.5,
-    "threat": 23,
-    "ictIndex": 5.8
+    "influence": 13,
+    "creativity": 35.1,
+    "threat": 31,
+    "ictIndex": 7.9
   },
   {
     "id": 225,
@@ -6018,10 +5994,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 9.6,
-    "creativity": 4.7,
+    "influence": 10,
+    "creativity": 5,
     "threat": 2,
-    "ictIndex": 1.6
+    "ictIndex": 1.7
   },
   {
     "id": 555,
@@ -6066,10 +6042,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 0,
-    "influence": 2.4,
-    "creativity": 2.4,
-    "threat": 0,
-    "ictIndex": 0.5
+    "influence": 15,
+    "creativity": 3.7,
+    "threat": 2,
+    "ictIndex": 2.1
   },
   {
     "id": 588,
@@ -6090,10 +6066,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 21,
-    "influence": 24,
-    "creativity": 26.5,
-    "threat": 4,
-    "ictIndex": 5.5
+    "influence": 50.4,
+    "creativity": 28,
+    "threat": 7,
+    "ictIndex": 8.6
   },
   {
     "id": 595,
@@ -6114,17 +6090,17 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 1.4,
+    "creativity": 1.3,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.3
   },
   {
     "id": 21,
     "name": "Nørgaard",
     "team": "Everton",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -6162,10 +6138,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 4,
+    "influence": 5.2,
     "creativity": 0.3,
     "threat": 0,
-    "ictIndex": 0.4
+    "ictIndex": 0.5
   },
   {
     "id": 226,
@@ -6177,7 +6153,7 @@
     "gwPoints": 3,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 8.9,
+    "selectedByPercent": 8.8,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -6186,10 +6162,10 @@
     "saves": 8,
     "bonus": 0,
     "bps": 56,
-    "influence": 31.8,
+    "influence": 63.4,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 3.2
+    "ictIndex": 6.4
   },
   {
     "id": 227,
@@ -6249,7 +6225,7 @@
     "gwPoints": 12,
     "pointsPerGame": 9,
     "form": 9,
-    "selectedByPercent": 10,
+    "selectedByPercent": 10.3,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -6258,10 +6234,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 52,
-    "influence": 15.2,
-    "creativity": 0.8,
-    "threat": 4,
-    "ictIndex": 2
+    "influence": 70,
+    "creativity": 12.1,
+    "threat": 23,
+    "ictIndex": 10.5
   },
   {
     "id": 230,
@@ -6282,10 +6258,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 33,
-    "influence": 18.6,
-    "creativity": 0.8,
-    "threat": 6,
-    "ictIndex": 2.5
+    "influence": 41.2,
+    "creativity": 2.3,
+    "threat": 39,
+    "ictIndex": 8.2
   },
   {
     "id": 231,
@@ -6297,7 +6273,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 1.2,
+    "selectedByPercent": 1.1,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -6354,10 +6330,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 34,
-    "influence": 12.8,
-    "creativity": 13.8,
+    "influence": 49.6,
+    "creativity": 14.8,
     "threat": 2,
-    "ictIndex": 2.9
+    "ictIndex": 6.7
   },
   {
     "id": 234,
@@ -6417,7 +6393,7 @@
     "gwPoints": 2,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 4.5,
+    "selectedByPercent": 4.4,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -6426,10 +6402,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 64,
-    "influence": 42.8,
-    "creativity": 28.3,
-    "threat": 27,
-    "ictIndex": 9.8
+    "influence": 62.2,
+    "creativity": 80.6,
+    "threat": 36,
+    "ictIndex": 17.9
   },
   {
     "id": 237,
@@ -6441,7 +6417,7 @@
     "gwPoints": 4,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 14.7,
+    "selectedByPercent": 14.2,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -6450,10 +6426,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 52,
-    "influence": 40.8,
-    "creativity": 39.8,
-    "threat": 48,
-    "ictIndex": 12.9
+    "influence": 53.4,
+    "creativity": 54.3,
+    "threat": 58,
+    "ictIndex": 16.6
   },
   {
     "id": 239,
@@ -6474,10 +6450,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 15,
-    "influence": 4.8,
-    "creativity": 11.8,
+    "influence": 8.2,
+    "creativity": 12.9,
     "threat": 2,
-    "ictIndex": 1.9
+    "ictIndex": 2.4
   },
   {
     "id": 240,
@@ -6522,10 +6498,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 7,
-    "creativity": 23.4,
-    "threat": 25,
-    "ictIndex": 5.5
+    "influence": 13,
+    "creativity": 35.6,
+    "threat": 41,
+    "ictIndex": 8.9
   },
   {
     "id": 243,
@@ -6547,9 +6523,9 @@
     "bonus": 0,
     "bps": 5,
     "influence": 5,
-    "creativity": 0.3,
-    "threat": 17,
-    "ictIndex": 2.2
+    "creativity": 0.8,
+    "threat": 25,
+    "ictIndex": 2.7
   },
   {
     "id": 244,
@@ -6561,7 +6537,7 @@
     "gwPoints": 2,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 0.3,
+    "selectedByPercent": 0.4,
     "minutes": 176,
     "goals": 0,
     "assists": 1,
@@ -6570,10 +6546,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 37,
-    "influence": 28.8,
-    "creativity": 14.7,
+    "influence": 40,
+    "creativity": 27,
     "threat": 4,
-    "ictIndex": 4.8
+    "ictIndex": 7.2
   },
   {
     "id": 245,
@@ -6618,10 +6594,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 13.8,
-    "creativity": 13,
+    "influence": 22.2,
+    "creativity": 15.3,
     "threat": 2,
-    "ictIndex": 2.9
+    "ictIndex": 4
   },
   {
     "id": 247,
@@ -6642,10 +6618,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 19,
-    "influence": 8.6,
-    "creativity": 12.2,
-    "threat": 5,
-    "ictIndex": 2.6
+    "influence": 16.4,
+    "creativity": 13.6,
+    "threat": 7,
+    "ictIndex": 3.7
   },
   {
     "id": 248,
@@ -6657,7 +6633,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 2.1,
+    "selectedByPercent": 2,
     "minutes": 31,
     "goals": 0,
     "assists": 0,
@@ -6666,10 +6642,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 2,
-    "ictIndex": 0.2
+    "influence": 3,
+    "creativity": 0.3,
+    "threat": 5,
+    "ictIndex": 0.8
   },
   {
     "id": 249,
@@ -6681,7 +6657,7 @@
     "gwPoints": 2,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 4.1,
+    "selectedByPercent": 4.3,
     "minutes": 147,
     "goals": 1,
     "assists": 0,
@@ -6690,10 +6666,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 43,
-    "influence": 38,
-    "creativity": 19,
-    "threat": 41,
-    "ictIndex": 9.8
+    "influence": 48,
+    "creativity": 30.7,
+    "threat": 99,
+    "ictIndex": 17.8
   },
   {
     "id": 250,
@@ -6705,7 +6681,7 @@
     "gwPoints": 3,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 3,
+    "selectedByPercent": 3.1,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -6714,10 +6690,10 @@
     "saves": 6,
     "bonus": 0,
     "bps": 22,
-    "influence": 29.6,
+    "influence": 48.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 3
+    "ictIndex": 4.9
   },
   {
     "id": 251,
@@ -6786,10 +6762,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 17.8,
+    "creativity": 12.9,
+    "threat": 2,
+    "ictIndex": 3.3
   },
   {
     "id": 254,
@@ -6810,10 +6786,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 21.6,
-    "creativity": 25.2,
+    "influence": 31.4,
+    "creativity": 29.8,
     "threat": 3,
-    "ictIndex": 5
+    "ictIndex": 6.4
   },
   {
     "id": 255,
@@ -6882,10 +6858,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 13.8,
-    "creativity": 3.8,
+    "influence": 33.2,
+    "creativity": 6.4,
     "threat": 2,
-    "ictIndex": 2
+    "ictIndex": 4.2
   },
   {
     "id": 258,
@@ -6897,7 +6873,7 @@
     "gwPoints": 6,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.8,
     "minutes": 157,
     "goals": 0,
     "assists": 2,
@@ -6907,7 +6883,7 @@
     "bonus": 0,
     "bps": 39,
     "influence": 38,
-    "creativity": 27.8,
+    "creativity": 28.5,
     "threat": 23,
     "ictIndex": 8.9
   },
@@ -6930,10 +6906,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 37,
-    "influence": 12.4,
-    "creativity": 11.3,
-    "threat": 0,
-    "ictIndex": 2.4
+    "influence": 24.4,
+    "creativity": 46.8,
+    "threat": 2,
+    "ictIndex": 7.4
   },
   {
     "id": 262,
@@ -6954,10 +6930,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 5.2,
+    "creativity": 22.8,
+    "threat": 7,
+    "ictIndex": 3.5
   },
   {
     "id": 263,
@@ -6969,7 +6945,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0,
     "minutes": 24,
     "goals": 0,
     "assists": 0,
@@ -6979,9 +6955,9 @@
     "bonus": 0,
     "bps": 4,
     "influence": 5.2,
-    "creativity": 1.9,
+    "creativity": 3.4,
     "threat": 0,
-    "ictIndex": 0.7
+    "ictIndex": 0.8
   },
   {
     "id": 264,
@@ -7002,10 +6978,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 9.8,
-    "creativity": 13.8,
-    "threat": 6,
-    "ictIndex": 3
+    "influence": 16.8,
+    "creativity": 26.2,
+    "threat": 12,
+    "ictIndex": 5.5
   },
   {
     "id": 265,
@@ -7026,10 +7002,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 28,
-    "influence": 13.6,
-    "creativity": 23.1,
-    "threat": 7,
-    "ictIndex": 4.4
+    "influence": 19.6,
+    "creativity": 51,
+    "threat": 9,
+    "ictIndex": 8
   },
   {
     "id": 266,
@@ -7065,7 +7041,7 @@
     "gwPoints": 2,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 0.6,
+    "selectedByPercent": 0.7,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -7074,10 +7050,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 42,
-    "influence": 41.6,
-    "creativity": 15.6,
-    "threat": 41,
-    "ictIndex": 9.8
+    "influence": 52.2,
+    "creativity": 20.1,
+    "threat": 62,
+    "ictIndex": 13.4
   },
   {
     "id": 269,
@@ -7098,10 +7074,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 10,
-    "influence": 6.6,
-    "creativity": 0.5,
-    "threat": 19,
-    "ictIndex": 2.6
+    "influence": 15.2,
+    "creativity": 11.5,
+    "threat": 27,
+    "ictIndex": 5.4
   },
   {
     "id": 270,
@@ -7113,7 +7089,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 1.4,
+    "selectedByPercent": 1.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -7161,7 +7137,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 6.8,
+    "selectedByPercent": 6.7,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -7194,10 +7170,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 35,
-    "influence": 37.2,
-    "creativity": 4.3,
-    "threat": 40,
-    "ictIndex": 8.2
+    "influence": 42.8,
+    "creativity": 7.1,
+    "threat": 64,
+    "ictIndex": 11.4
   },
   {
     "id": 570,
@@ -7218,10 +7194,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 16,
-    "influence": 2.8,
-    "creativity": 7.3,
-    "threat": 8,
-    "ictIndex": 1.8
+    "influence": 5.8,
+    "creativity": 8.6,
+    "threat": 11,
+    "ictIndex": 2.5
   },
   {
     "id": 580,
@@ -7242,10 +7218,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 3.4,
-    "creativity": 1.3,
-    "threat": 0,
-    "ictIndex": 0.5
+    "influence": 4,
+    "creativity": 4.1,
+    "threat": 6,
+    "ictIndex": 1.4
   },
   {
     "id": 610,
@@ -7281,7 +7257,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0.2,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -7401,7 +7377,7 @@
     "gwPoints": 9,
     "pointsPerGame": 8.5,
     "form": 8.5,
-    "selectedByPercent": 3.6,
+    "selectedByPercent": 4.1,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -7410,10 +7386,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 52,
-    "influence": 43.4,
-    "creativity": 0.1,
+    "influence": 67.2,
+    "creativity": 0.5,
     "threat": 2,
-    "ictIndex": 4.6
+    "ictIndex": 7
   },
   {
     "id": 278,
@@ -7449,7 +7425,7 @@
     "gwPoints": 6,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 6.4,
+    "selectedByPercent": 7.4,
     "minutes": 153,
     "goals": 1,
     "assists": 0,
@@ -7458,10 +7434,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 63,
-    "influence": 44.2,
-    "creativity": 0.2,
+    "influence": 59.8,
+    "creativity": 1,
     "threat": 35,
-    "ictIndex": 7.9
+    "ictIndex": 9.5
   },
   {
     "id": 280,
@@ -7482,10 +7458,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 5.8,
-    "creativity": 11.3,
+    "influence": 10.4,
+    "creativity": 11.6,
     "threat": 0,
-    "ictIndex": 1.7
+    "ictIndex": 2.2
   },
   {
     "id": 281,
@@ -7506,10 +7482,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 8,
-    "influence": 2.2,
-    "creativity": 0,
+    "influence": 6.4,
+    "creativity": 0.4,
     "threat": 1,
-    "ictIndex": 0.3
+    "ictIndex": 0.8
   },
   {
     "id": 282,
@@ -7530,10 +7506,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 45,
-    "influence": 13.8,
-    "creativity": 18.8,
-    "threat": 4,
-    "ictIndex": 3.7
+    "influence": 23.4,
+    "creativity": 33.8,
+    "threat": 6,
+    "ictIndex": 6.4
   },
   {
     "id": 283,
@@ -7626,10 +7602,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 31,
-    "influence": 10.6,
-    "creativity": 2.2,
-    "threat": 7,
-    "ictIndex": 2
+    "influence": 33.8,
+    "creativity": 14.3,
+    "threat": 18,
+    "ictIndex": 6.6
   },
   {
     "id": 287,
@@ -7650,10 +7626,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 2,
-    "creativity": 0.3,
-    "threat": 2,
-    "ictIndex": 0.4
+    "influence": 36,
+    "creativity": 1.1,
+    "threat": 15,
+    "ictIndex": 5.2
   },
   {
     "id": 288,
@@ -7713,7 +7689,7 @@
     "gwPoints": 2,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 4.4,
+    "selectedByPercent": 4.5,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -7722,10 +7698,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 18.4,
-    "creativity": 19.3,
-    "threat": 0,
-    "ictIndex": 3.8
+    "influence": 28.2,
+    "creativity": 22.1,
+    "threat": 2,
+    "ictIndex": 5.3
   },
   {
     "id": 291,
@@ -7842,10 +7818,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 28,
-    "influence": 17.2,
-    "creativity": 21.1,
-    "threat": 52,
-    "ictIndex": 9
+    "influence": 18,
+    "creativity": 34.4,
+    "threat": 60,
+    "ictIndex": 11.2
   },
   {
     "id": 296,
@@ -7977,7 +7953,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 2.2,
+    "selectedByPercent": 2.1,
     "minutes": 5,
     "goals": 0,
     "assists": 0,
@@ -8010,10 +7986,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 6,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 11,
+    "creativity": 13.4,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 2.4
   },
   {
     "id": 572,
@@ -8025,7 +8001,7 @@
     "gwPoints": 10,
     "pointsPerGame": 10,
     "form": 10,
-    "selectedByPercent": 5.9,
+    "selectedByPercent": 6.6,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -8034,10 +8010,10 @@
     "saves": 8,
     "bonus": 6,
     "bps": 73,
-    "influence": 34.6,
+    "influence": 60.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 3.5
+    "ictIndex": 6.1
   },
   {
     "id": 574,
@@ -8083,9 +8059,9 @@
     "bonus": 0,
     "bps": 9,
     "influence": 8.4,
-    "creativity": 4.8,
-    "threat": 0,
-    "ictIndex": 1.3
+    "creativity": 9.1,
+    "threat": 7,
+    "ictIndex": 2.2
   },
   {
     "id": 585,
@@ -8106,10 +8082,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 8,
-    "creativity": 0,
+    "influence": 11,
+    "creativity": 0.2,
     "threat": 0,
-    "ictIndex": 0.8
+    "ictIndex": 1.1
   },
   {
     "id": 586,
@@ -8121,7 +8097,7 @@
     "gwPoints": 1,
     "pointsPerGame": 8,
     "form": 8,
-    "selectedByPercent": 5.1,
+    "selectedByPercent": 5.3,
     "minutes": 121,
     "goals": 1,
     "assists": 0,
@@ -8130,10 +8106,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 44,
-    "influence": 51.8,
+    "influence": 79.4,
     "creativity": 0.6,
-    "threat": 33,
-    "ictIndex": 8.5
+    "threat": 40,
+    "ictIndex": 12
   },
   {
     "id": 589,
@@ -8154,10 +8130,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 6,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 12.8,
+    "creativity": 0.9,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 1.4
   },
   {
     "id": 617,
@@ -8178,10 +8154,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 0.4,
+    "creativity": 0.3,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.1
   },
   {
     "id": 259,
@@ -8193,7 +8169,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 16.2,
+    "selectedByPercent": 16,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -8202,10 +8178,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 7.2,
-    "creativity": 0.8,
+    "influence": 48,
+    "creativity": 1.1,
     "threat": 2,
-    "ictIndex": 1
+    "ictIndex": 5.1
   },
   {
     "id": 267,
@@ -8226,10 +8202,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 33,
-    "influence": 23.4,
-    "creativity": 14.8,
-    "threat": 2,
-    "ictIndex": 4
+    "influence": 40.8,
+    "creativity": 26.7,
+    "threat": 4,
+    "ictIndex": 7.1
   },
   {
     "id": 300,
@@ -8265,7 +8241,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 4.4,
+    "selectedByPercent": 4.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -8347,9 +8323,9 @@
     "bonus": 0,
     "bps": 2,
     "influence": 48,
-    "creativity": 24.5,
-    "threat": 2,
-    "ictIndex": 7.5
+    "creativity": 25.3,
+    "threat": 11,
+    "ictIndex": 8.4
   },
   {
     "id": 305,
@@ -8361,7 +8337,7 @@
     "gwPoints": 6,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 4.9,
+    "selectedByPercent": 5,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -8370,10 +8346,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 15.2,
-    "creativity": 2.3,
-    "threat": 0,
-    "ictIndex": 1.8
+    "influence": 62.2,
+    "creativity": 17,
+    "threat": 50,
+    "ictIndex": 13
   },
   {
     "id": 306,
@@ -8385,7 +8361,7 @@
     "gwPoints": -1,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 1.4,
+    "selectedByPercent": 1.3,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -8394,10 +8370,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -1,
-    "influence": 16.4,
-    "creativity": 1.3,
+    "influence": 34.8,
+    "creativity": 2.6,
     "threat": 0,
-    "ictIndex": 1.8
+    "ictIndex": 3.8
   },
   {
     "id": 307,
@@ -8442,10 +8418,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -1,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 5,
+    "creativity": 0.5,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.6
   },
   {
     "id": 309,
@@ -8466,10 +8442,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 32,
-    "influence": 13,
-    "creativity": 7.3,
-    "threat": 4,
-    "ictIndex": 2.4
+    "influence": 24.6,
+    "creativity": 19.4,
+    "threat": 6,
+    "ictIndex": 5
   },
   {
     "id": 310,
@@ -8572,7 +8548,7 @@
     "name": "Ogbene",
     "team": "Ipswich Town",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -8610,10 +8586,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 47,
-    "influence": 18.6,
-    "creativity": 28.4,
-    "threat": 8,
-    "ictIndex": 5.5
+    "influence": 45.2,
+    "creativity": 70.7,
+    "threat": 10,
+    "ictIndex": 12.6
   },
   {
     "id": 316,
@@ -8625,7 +8601,7 @@
     "gwPoints": 1,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 1.8,
+    "selectedByPercent": 1.7,
     "minutes": 110,
     "goals": 1,
     "assists": 0,
@@ -8634,10 +8610,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 48,
-    "influence": 45.6,
-    "creativity": 26.3,
-    "threat": 40,
-    "ictIndex": 11.2
+    "influence": 46.6,
+    "creativity": 37.4,
+    "threat": 42,
+    "ictIndex": 12.6
   },
   {
     "id": 317,
@@ -8668,7 +8644,7 @@
     "name": "Philogene",
     "team": "Ipswich Town",
     "position": "MID",
-    "price": 5.5,
+    "price": 5.4,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -8721,7 +8697,7 @@
     "gwPoints": 5,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.8,
     "minutes": 69,
     "goals": 1,
     "assists": 0,
@@ -8730,10 +8706,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 33,
-    "influence": 1.4,
-    "creativity": 0,
-    "threat": 2,
-    "ictIndex": 0.3
+    "influence": 34.6,
+    "creativity": 1.7,
+    "threat": 19,
+    "ictIndex": 5.5
   },
   {
     "id": 321,
@@ -8745,7 +8721,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 3,
+    "selectedByPercent": 3.1,
     "minutes": 10,
     "goals": 0,
     "assists": 0,
@@ -8802,7 +8778,7 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 1.2,
+    "influence": 1.4,
     "creativity": 1.3,
     "threat": 0,
     "ictIndex": 0.3
@@ -8812,7 +8788,7 @@
     "name": "Mehmeti",
     "team": "Ipswich Town",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -8874,10 +8850,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 17,
-    "influence": 12.6,
-    "creativity": 1.4,
-    "threat": 7,
-    "ictIndex": 2.1
+    "influence": 20.6,
+    "creativity": 2.8,
+    "threat": 26,
+    "ictIndex": 4.9
   },
   {
     "id": 564,
@@ -8898,10 +8874,10 @@
     "saves": 8,
     "bonus": 0,
     "bps": 21,
-    "influence": 14.4,
+    "influence": 60.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.4
+    "ictIndex": 6
   },
   {
     "id": 571,
@@ -8946,10 +8922,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 49,
-    "influence": 21.6,
-    "creativity": 14,
-    "threat": 18,
-    "ictIndex": 5.4
+    "influence": 43.4,
+    "creativity": 26.4,
+    "threat": 39,
+    "ictIndex": 10.9
   },
   {
     "id": 592,
@@ -8970,10 +8946,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 5.2,
-    "creativity": 10,
+    "influence": 5.8,
+    "creativity": 10.6,
     "threat": 0,
-    "ictIndex": 1.5
+    "ictIndex": 1.6
   },
   {
     "id": 602,
@@ -9018,22 +8994,22 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 7.2,
+    "creativity": 12,
+    "threat": 2,
+    "ictIndex": 2.1
   },
   {
     "id": 260,
     "name": "Wilson",
     "team": "Leeds",
     "position": "MID",
-    "price": 6.5,
+    "price": 6.4,
     "totalPoints": 4,
     "gwPoints": 1,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 4.8,
+    "selectedByPercent": 4.6,
     "minutes": 110,
     "goals": 0,
     "assists": 0,
@@ -9042,10 +9018,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 15,
-    "influence": 6.2,
-    "creativity": 15.3,
-    "threat": 4,
-    "ictIndex": 2.6
+    "influence": 14.6,
+    "creativity": 27.4,
+    "threat": 10,
+    "ictIndex": 5.3
   },
   {
     "id": 326,
@@ -9090,10 +9066,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 28,
-    "influence": 23.6,
-    "creativity": 0.4,
+    "influence": 32,
+    "creativity": 0.6,
     "threat": 15,
-    "ictIndex": 3.9
+    "ictIndex": 4.8
   },
   {
     "id": 329,
@@ -9105,7 +9081,7 @@
     "gwPoints": 1,
     "pointsPerGame": 3.5,
     "form": 3.5,
-    "selectedByPercent": 3.2,
+    "selectedByPercent": 3,
     "minutes": 123,
     "goals": 0,
     "assists": 0,
@@ -9114,10 +9090,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 14.4,
-    "creativity": 14.4,
-    "threat": 5,
-    "ictIndex": 3.4
+    "influence": 23,
+    "creativity": 14.7,
+    "threat": 7,
+    "ictIndex": 4.5
   },
   {
     "id": 330,
@@ -9138,10 +9114,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 33,
-    "influence": 7,
-    "creativity": 1.1,
-    "threat": 0,
-    "ictIndex": 0.8
+    "influence": 25.6,
+    "creativity": 12.4,
+    "threat": 4,
+    "ictIndex": 4.2
   },
   {
     "id": 331,
@@ -9186,10 +9162,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 40,
-    "influence": 24.6,
-    "creativity": 2.3,
-    "threat": 2,
-    "ictIndex": 2.9
+    "influence": 49.2,
+    "creativity": 14.1,
+    "threat": 11,
+    "ictIndex": 7.4
   },
   {
     "id": 333,
@@ -9234,10 +9210,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 42,
-    "influence": 15.6,
-    "creativity": 0.6,
-    "threat": 17,
-    "ictIndex": 3.3
+    "influence": 67.2,
+    "creativity": 1.4,
+    "threat": 19,
+    "ictIndex": 8.7
   },
   {
     "id": 335,
@@ -9258,10 +9234,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 50,
-    "influence": 47.8,
-    "creativity": 2.3,
-    "threat": 16,
-    "ictIndex": 6.6
+    "influence": 72.4,
+    "creativity": 19.3,
+    "threat": 20,
+    "ictIndex": 11.2
   },
   {
     "id": 336,
@@ -9282,10 +9258,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 21,
-    "influence": 10,
-    "creativity": 14,
-    "threat": 4,
-    "ictIndex": 2.8
+    "influence": 16.4,
+    "creativity": 21.5,
+    "threat": 14,
+    "ictIndex": 5.2
   },
   {
     "id": 337,
@@ -9306,10 +9282,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 22,
-    "influence": 8,
-    "creativity": 1.1,
+    "influence": 10.2,
+    "creativity": 1.7,
     "threat": 7,
-    "ictIndex": 1.6
+    "ictIndex": 1.9
   },
   {
     "id": 338,
@@ -9330,10 +9306,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 30,
-    "influence": 18.6,
-    "creativity": 23.3,
-    "threat": 0,
-    "ictIndex": 4.2
+    "influence": 38.2,
+    "creativity": 39.9,
+    "threat": 1,
+    "ictIndex": 7.9
   },
   {
     "id": 339,
@@ -9427,9 +9403,9 @@
     "bonus": 0,
     "bps": 2,
     "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "creativity": 1.1,
+    "threat": 12,
+    "ictIndex": 1.1
   },
   {
     "id": 344,
@@ -9474,10 +9450,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 6,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 20,
+    "creativity": 1.8,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 2.2
   },
   {
     "id": 346,
@@ -9489,7 +9465,7 @@
     "gwPoints": 8,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 27.1,
+    "selectedByPercent": 26.8,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -9498,10 +9474,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 29,
-    "influence": 0,
-    "creativity": 0.8,
-    "threat": 11,
-    "ictIndex": 0.7
+    "influence": 38.4,
+    "creativity": 4.8,
+    "threat": 46,
+    "ictIndex": 8.4
   },
   {
     "id": 347,
@@ -9522,10 +9498,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 18.2,
+    "creativity": 20.3,
+    "threat": 6,
+    "ictIndex": 4.5
   },
   {
     "id": 348,
@@ -9594,10 +9570,10 @@
     "saves": 7,
     "bonus": 2,
     "bps": 48,
-    "influence": 19.4,
+    "influence": 57,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.9
+    "ictIndex": 5.7
   },
   {
     "id": 598,
@@ -9618,10 +9594,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 16,
+    "creativity": 1.1,
+    "threat": 6,
+    "ictIndex": 2.3
   },
   {
     "id": 603,
@@ -9681,6 +9657,30 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
+    "selectedByPercent": 0.2,
+    "minutes": 0,
+    "goals": 0,
+    "assists": 0,
+    "cleanSheets": 0,
+    "goalsConceded": 0,
+    "saves": 0,
+    "bonus": 0,
+    "bps": 0,
+    "influence": 0,
+    "creativity": 0,
+    "threat": 0,
+    "ictIndex": 0
+  },
+  {
+    "id": 629,
+    "name": "Zetterer",
+    "team": "Leeds",
+    "position": "GKP",
+    "price": 4,
+    "totalPoints": 0,
+    "gwPoints": 0,
+    "pointsPerGame": 0,
+    "form": 0,
     "selectedByPercent": 0.1,
     "minutes": 0,
     "goals": 0,
@@ -9714,10 +9714,10 @@
     "saves": 4,
     "bonus": 0,
     "bps": 2,
-    "influence": 17.8,
+    "influence": 25.4,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.8
+    "ictIndex": 2.6
   },
   {
     "id": 351,
@@ -9849,7 +9849,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 18.4,
+    "selectedByPercent": 18.1,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -9858,10 +9858,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 13,
-    "influence": 25.6,
-    "creativity": 1.6,
-    "threat": 24,
-    "ictIndex": 5.1
+    "influence": 50.2,
+    "creativity": 5.9,
+    "threat": 26,
+    "ictIndex": 8.2
   },
   {
     "id": 357,
@@ -9873,7 +9873,7 @@
     "gwPoints": 1,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 3.2,
+    "selectedByPercent": 3.1,
     "minutes": 160,
     "goals": 0,
     "assists": 0,
@@ -9882,10 +9882,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 13.6,
-    "creativity": 37.8,
-    "threat": 10,
-    "ictIndex": 6.1
+    "influence": 26.4,
+    "creativity": 51.6,
+    "threat": 14,
+    "ictIndex": 9.2
   },
   {
     "id": 358,
@@ -9897,7 +9897,7 @@
     "gwPoints": 1,
     "pointsPerGame": 0.5,
     "form": 0.5,
-    "selectedByPercent": 3.2,
+    "selectedByPercent": 3.1,
     "minutes": 160,
     "goals": 0,
     "assists": 0,
@@ -9906,10 +9906,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 18,
-    "creativity": 13.8,
+    "influence": 42,
+    "creativity": 26.6,
     "threat": 12,
-    "ictIndex": 4.4
+    "ictIndex": 8.1
   },
   {
     "id": 359,
@@ -10002,10 +10002,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 22,
-    "influence": 12.4,
-    "creativity": 11.9,
-    "threat": 0,
-    "ictIndex": 2.4
+    "influence": 43.2,
+    "creativity": 27,
+    "threat": 2,
+    "ictIndex": 7.2
   },
   {
     "id": 363,
@@ -10050,10 +10050,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 3.6,
+    "creativity": 1.3,
+    "threat": 9,
+    "ictIndex": 1.4
   },
   {
     "id": 365,
@@ -10089,7 +10089,7 @@
     "gwPoints": 4,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 10.5,
+    "selectedByPercent": 10.2,
     "minutes": 152,
     "goals": 0,
     "assists": 1,
@@ -10098,10 +10098,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 9.8,
-    "creativity": 17.9,
-    "threat": 29,
-    "ictIndex": 5.7
+    "influence": 37.6,
+    "creativity": 42.2,
+    "threat": 51,
+    "ictIndex": 13.1
   },
   {
     "id": 367,
@@ -10113,7 +10113,7 @@
     "gwPoints": 5,
     "pointsPerGame": 8.5,
     "form": 8.5,
-    "selectedByPercent": 7.5,
+    "selectedByPercent": 7.8,
     "minutes": 160,
     "goals": 1,
     "assists": 1,
@@ -10122,10 +10122,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 54,
-    "influence": 44,
-    "creativity": 34,
-    "threat": 37,
-    "ictIndex": 11.5
+    "influence": 67.2,
+    "creativity": 61.8,
+    "threat": 43,
+    "ictIndex": 17.2
   },
   {
     "id": 368,
@@ -10137,7 +10137,7 @@
     "gwPoints": 4,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 42,
+    "selectedByPercent": 41.6,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -10146,10 +10146,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 53,
-    "influence": 50.4,
-    "creativity": 47.1,
-    "threat": 21,
-    "ictIndex": 11.9
+    "influence": 71.8,
+    "creativity": 87.8,
+    "threat": 25,
+    "ictIndex": 18.5
   },
   {
     "id": 369,
@@ -10170,10 +10170,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 2.4,
-    "creativity": 6,
-    "threat": 5,
-    "ictIndex": 1.3
+    "influence": 4.4,
+    "creativity": 7.3,
+    "threat": 7,
+    "ictIndex": 1.8
   },
   {
     "id": 370,
@@ -10209,7 +10209,7 @@
     "gwPoints": 1,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 1.8,
+    "selectedByPercent": 1.7,
     "minutes": 96,
     "goals": 0,
     "assists": 1,
@@ -10218,10 +10218,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 33,
-    "influence": 24.4,
-    "creativity": 16,
+    "influence": 28.8,
+    "creativity": 28.1,
     "threat": 4,
-    "ictIndex": 4.4
+    "ictIndex": 6.1
   },
   {
     "id": 372,
@@ -10242,10 +10242,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 19,
-    "influence": 5.8,
-    "creativity": 1.4,
+    "influence": 18.4,
+    "creativity": 9.1,
     "threat": 0,
-    "ictIndex": 0.7
+    "ictIndex": 2.7
   },
   {
     "id": 373,
@@ -10314,10 +10314,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 6.4,
+    "creativity": 2.2,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.9
   },
   {
     "id": 376,
@@ -10353,7 +10353,7 @@
     "gwPoints": 6,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 1,
+    "selectedByPercent": 1.1,
     "minutes": 117,
     "goals": 1,
     "assists": 1,
@@ -10362,10 +10362,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 4,
-    "creativity": 8.9,
-    "threat": 14,
-    "ictIndex": 2.7
+    "influence": 46.2,
+    "creativity": 25.7,
+    "threat": 43,
+    "ictIndex": 11.5
   },
   {
     "id": 378,
@@ -10401,7 +10401,7 @@
     "gwPoints": 8,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 16.2,
+    "selectedByPercent": 16.4,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -10410,10 +10410,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 36,
-    "influence": 11.4,
-    "creativity": 14.6,
-    "threat": 66,
-    "ictIndex": 9.2
+    "influence": 45.4,
+    "creativity": 24.9,
+    "threat": 114,
+    "ictIndex": 18.4
   },
   {
     "id": 380,
@@ -10516,7 +10516,7 @@
     "name": "Araujo",
     "team": "Liverpool",
     "position": "DEF",
-    "price": 5.5,
+    "price": 5.4,
     "totalPoints": 1,
     "gwPoints": 0,
     "pointsPerGame": 0.5,
@@ -10530,10 +10530,34 @@
     "saves": 0,
     "bonus": 0,
     "bps": 2,
-    "influence": 13.2,
-    "creativity": 1.2,
+    "influence": 19,
+    "creativity": 3.5,
     "threat": 0,
-    "ictIndex": 1.4
+    "ictIndex": 2.2
+  },
+  {
+    "id": 627,
+    "name": "Barcola",
+    "team": "Liverpool",
+    "position": "MID",
+    "price": 8,
+    "totalPoints": 0,
+    "gwPoints": 0,
+    "pointsPerGame": 0,
+    "form": 0,
+    "selectedByPercent": 0.6,
+    "minutes": 0,
+    "goals": 0,
+    "assists": 0,
+    "cleanSheets": 0,
+    "goalsConceded": 0,
+    "saves": 0,
+    "bonus": 0,
+    "bps": 0,
+    "influence": 0,
+    "creativity": 0,
+    "threat": 0,
+    "ictIndex": 0
   },
   {
     "id": 238,
@@ -10578,10 +10602,10 @@
     "saves": 4,
     "bonus": 0,
     "bps": 17,
-    "influence": 26.8,
+    "influence": 33.6,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 2.7
+    "ictIndex": 3.4
   },
   {
     "id": 386,
@@ -10617,7 +10641,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 19.6,
+    "selectedByPercent": 19.3,
     "minutes": 150,
     "goals": 0,
     "assists": 0,
@@ -10626,10 +10650,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 16,
-    "influence": 8.8,
-    "creativity": 30.4,
-    "threat": 11,
-    "ictIndex": 5
+    "influence": 12.4,
+    "creativity": 38.2,
+    "threat": 16,
+    "ictIndex": 6.6
   },
   {
     "id": 388,
@@ -10641,7 +10665,7 @@
     "gwPoints": 2,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 19.2,
+    "selectedByPercent": 19,
     "minutes": 180,
     "goals": 1,
     "assists": 0,
@@ -10650,10 +10674,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 43,
-    "influence": 43.6,
-    "creativity": 17.5,
+    "influence": 67.8,
+    "creativity": 33.3,
     "threat": 28,
-    "ictIndex": 8.9
+    "ictIndex": 12.9
   },
   {
     "id": 389,
@@ -10665,7 +10689,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 1.2,
+    "selectedByPercent": 1.1,
     "minutes": 33,
     "goals": 0,
     "assists": 0,
@@ -10698,10 +10722,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 30,
-    "influence": 24.4,
-    "creativity": 17.9,
-    "threat": 2,
-    "ictIndex": 4.4
+    "influence": 51.4,
+    "creativity": 40.2,
+    "threat": 37,
+    "ictIndex": 12.8
   },
   {
     "id": 391,
@@ -10713,7 +10737,7 @@
     "gwPoints": 5,
     "pointsPerGame": 7,
     "form": 7,
-    "selectedByPercent": 17,
+    "selectedByPercent": 17.5,
     "minutes": 164,
     "goals": 1,
     "assists": 1,
@@ -10722,10 +10746,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 46,
-    "influence": 47.6,
-    "creativity": 13.3,
-    "threat": 17,
-    "ictIndex": 7.8
+    "influence": 75.2,
+    "creativity": 44.1,
+    "threat": 19,
+    "ictIndex": 13.8
   },
   {
     "id": 392,
@@ -10761,7 +10785,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 1.7,
+    "selectedByPercent": 1.6,
     "minutes": 178,
     "goals": 0,
     "assists": 0,
@@ -10770,10 +10794,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 31,
-    "influence": 17,
-    "creativity": 3.4,
-    "threat": 0,
-    "ictIndex": 2
+    "influence": 38,
+    "creativity": 8.7,
+    "threat": 4,
+    "ictIndex": 5
   },
   {
     "id": 394,
@@ -10842,10 +10866,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 1.2,
+    "creativity": 0.9,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.2
   },
   {
     "id": 397,
@@ -10857,7 +10881,7 @@
     "gwPoints": 5,
     "pointsPerGame": 3.5,
     "form": 3.5,
-    "selectedByPercent": 21.6,
+    "selectedByPercent": 21,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -10866,10 +10890,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 49,
-    "influence": 5.8,
-    "creativity": 8.9,
-    "threat": 31,
-    "ictIndex": 4.6
+    "influence": 35,
+    "creativity": 51.9,
+    "threat": 71,
+    "ictIndex": 15.8
   },
   {
     "id": 398,
@@ -10881,7 +10905,7 @@
     "gwPoints": 9,
     "pointsPerGame": 5,
     "form": 5,
-    "selectedByPercent": 4.7,
+    "selectedByPercent": 4.9,
     "minutes": 171,
     "goals": 0,
     "assists": 2,
@@ -10890,10 +10914,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 53,
-    "influence": 10.4,
-    "creativity": 49.6,
-    "threat": 15,
-    "ictIndex": 7.5
+    "influence": 53.2,
+    "creativity": 95.4,
+    "threat": 32,
+    "ictIndex": 18.1
   },
   {
     "id": 399,
@@ -10905,7 +10929,7 @@
     "gwPoints": 14,
     "pointsPerGame": 11,
     "form": 11,
-    "selectedByPercent": 21.9,
+    "selectedByPercent": 24.3,
     "minutes": 108,
     "goals": 2,
     "assists": 2,
@@ -10914,10 +10938,10 @@
     "saves": 0,
     "bonus": 4,
     "bps": 88,
-    "influence": 39.2,
-    "creativity": 48.8,
-    "threat": 4,
-    "ictIndex": 9.2
+    "influence": 114,
+    "creativity": 96.6,
+    "threat": 53,
+    "ictIndex": 26.4
   },
   {
     "id": 400,
@@ -11010,17 +11034,17 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 2.2,
-    "creativity": 2.1,
+    "influence": 4.2,
+    "creativity": 5.2,
     "threat": 0,
-    "ictIndex": 0.4
+    "ictIndex": 0.9
   },
   {
     "id": 407,
     "name": "Echeverri",
     "team": "Man City",
     "position": "MID",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -11121,7 +11145,7 @@
     "gwPoints": 13,
     "pointsPerGame": 7.5,
     "form": 7.5,
-    "selectedByPercent": 70,
+    "selectedByPercent": 70.5,
     "minutes": 180,
     "goals": 2,
     "assists": 0,
@@ -11130,10 +11154,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 66,
-    "influence": 3.8,
-    "creativity": 5.2,
-    "threat": 50,
-    "ictIndex": 5.9
+    "influence": 72.8,
+    "creativity": 5.3,
+    "threat": 101,
+    "ictIndex": 17.9
   },
   {
     "id": 481,
@@ -11145,7 +11169,7 @@
     "gwPoints": 3,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 5.5,
+    "selectedByPercent": 5.3,
     "minutes": 143,
     "goals": 0,
     "assists": 0,
@@ -11154,10 +11178,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 7.2,
-    "creativity": 20.8,
-    "threat": 0,
-    "ictIndex": 2.8
+    "influence": 32.2,
+    "creativity": 41,
+    "threat": 13,
+    "ictIndex": 8.6
   },
   {
     "id": 587,
@@ -11202,10 +11226,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 1.8,
+    "creativity": 4.3,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.6
   },
   {
     "id": 621,
@@ -11227,9 +11251,9 @@
     "bonus": 0,
     "bps": 3,
     "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "creativity": 0.5,
+    "threat": 1,
+    "ictIndex": 0.1
   },
   {
     "id": 622,
@@ -11250,6 +11274,30 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
+    "influence": 0.6,
+    "creativity": 0.8,
+    "threat": 0,
+    "ictIndex": 0.1
+  },
+  {
+    "id": 628,
+    "name": "Allan",
+    "team": "Man City",
+    "position": "MID",
+    "price": 6,
+    "totalPoints": 0,
+    "gwPoints": 0,
+    "pointsPerGame": 0,
+    "form": 0,
+    "selectedByPercent": 0,
+    "minutes": 0,
+    "goals": 0,
+    "assists": 0,
+    "cleanSheets": 0,
+    "goalsConceded": 0,
+    "saves": 0,
+    "bonus": 0,
+    "bps": 0,
     "influence": 0,
     "creativity": 0,
     "threat": 0,
@@ -11265,7 +11313,7 @@
     "gwPoints": 4,
     "pointsPerGame": 3,
     "form": 3,
-    "selectedByPercent": 2.2,
+    "selectedByPercent": 2.1,
     "minutes": 156,
     "goals": 0,
     "assists": 0,
@@ -11274,10 +11322,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 5,
-    "creativity": 11.3,
-    "threat": 4,
-    "ictIndex": 2
+    "influence": 38.2,
+    "creativity": 57.6,
+    "threat": 24,
+    "ictIndex": 12
   },
   {
     "id": 131,
@@ -11322,10 +11370,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 19,
-    "influence": 11.4,
-    "creativity": 4.2,
+    "influence": 17.6,
+    "creativity": 4.9,
     "threat": 2,
-    "ictIndex": 1.8
+    "ictIndex": 2.5
   },
   {
     "id": 325,
@@ -11361,7 +11409,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 14.5,
+    "selectedByPercent": 14.2,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -11370,10 +11418,10 @@
     "saves": 5,
     "bonus": 0,
     "bps": 18,
-    "influence": 20.2,
+    "influence": 47.2,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 2
+    "ictIndex": 4.7
   },
   {
     "id": 413,
@@ -11442,10 +11490,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -7,
-    "influence": 0,
-    "creativity": 1.2,
-    "threat": 16,
-    "ictIndex": 0.7
+    "influence": 7,
+    "creativity": 12.9,
+    "threat": 55,
+    "ictIndex": 6.5
   },
   {
     "id": 416,
@@ -11490,10 +11538,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 7.6,
-    "creativity": 11.3,
-    "threat": 0,
-    "ictIndex": 1.9
+    "influence": 24,
+    "creativity": 53.5,
+    "threat": 33,
+    "ictIndex": 11.1
   },
   {
     "id": 418,
@@ -11505,7 +11553,7 @@
     "gwPoints": 4,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 15.7,
+    "selectedByPercent": 15.3,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -11514,10 +11562,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 28,
-    "influence": 25.4,
-    "creativity": 28.6,
-    "threat": 19,
-    "ictIndex": 7.3
+    "influence": 32.6,
+    "creativity": 30.1,
+    "threat": 25,
+    "ictIndex": 8.8
   },
   {
     "id": 419,
@@ -11538,10 +11586,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 2,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 4.8,
+    "creativity": 1.8,
+    "threat": 3,
+    "ictIndex": 1
   },
   {
     "id": 420,
@@ -11562,10 +11610,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": -2,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 1.8,
+    "creativity": 1.8,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 0.4
   },
   {
     "id": 421,
@@ -11610,10 +11658,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 17.4,
-    "creativity": 29.4,
+    "influence": 18.8,
+    "creativity": 30.7,
     "threat": 9,
-    "ictIndex": 5.6
+    "ictIndex": 5.9
   },
   {
     "id": 423,
@@ -11625,7 +11673,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 17.7,
+    "selectedByPercent": 17.1,
     "minutes": 162,
     "goals": 0,
     "assists": 0,
@@ -11634,10 +11682,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 25.2,
-    "creativity": 59.2,
-    "threat": 6,
-    "ictIndex": 9
+    "influence": 43.6,
+    "creativity": 60.8,
+    "threat": 10,
+    "ictIndex": 11.4
   },
   {
     "id": 424,
@@ -11697,7 +11745,7 @@
     "gwPoints": 23,
     "pointsPerGame": 12.5,
     "form": 12.5,
-    "selectedByPercent": 48.1,
+    "selectedByPercent": 48.5,
     "minutes": 180,
     "goals": 3,
     "assists": 1,
@@ -11706,10 +11754,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 105,
-    "influence": 20.2,
-    "creativity": 55.4,
-    "threat": 17,
-    "ictIndex": 9.3
+    "influence": 152.6,
+    "creativity": 117.9,
+    "threat": 83,
+    "ictIndex": 35.4
   },
   {
     "id": 427,
@@ -11721,7 +11769,7 @@
     "gwPoints": 11,
     "pointsPerGame": 6.5,
     "form": 6.5,
-    "selectedByPercent": 31.4,
+    "selectedByPercent": 30.5,
     "minutes": 180,
     "goals": 1,
     "assists": 1,
@@ -11730,10 +11778,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 49,
-    "influence": 9.6,
-    "creativity": 28.1,
-    "threat": 49,
-    "ictIndex": 8.7
+    "influence": 55.2,
+    "creativity": 71.4,
+    "threat": 84,
+    "ictIndex": 21.1
   },
   {
     "id": 428,
@@ -11745,7 +11793,7 @@
     "gwPoints": 9,
     "pointsPerGame": 5.5,
     "form": 5.5,
-    "selectedByPercent": 8.5,
+    "selectedByPercent": 8.3,
     "minutes": 158,
     "goals": 0,
     "assists": 2,
@@ -11754,10 +11802,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 45,
-    "influence": 5.4,
-    "creativity": 28.2,
-    "threat": 35,
-    "ictIndex": 6.9
+    "influence": 25.4,
+    "creativity": 55.8,
+    "threat": 63,
+    "ictIndex": 14.5
   },
   {
     "id": 429,
@@ -11778,10 +11826,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 11.6,
-    "creativity": 48.6,
-    "threat": 4,
-    "ictIndex": 6.4
+    "influence": 27.6,
+    "creativity": 82.9,
+    "threat": 62,
+    "ictIndex": 17.2
   },
   {
     "id": 430,
@@ -11817,7 +11865,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.6,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -11841,7 +11889,7 @@
     "gwPoints": 4,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 1,
+    "selectedByPercent": 1.1,
     "minutes": 102,
     "goals": 0,
     "assists": 0,
@@ -11850,10 +11898,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 32,
-    "influence": 2.8,
-    "creativity": 2.5,
-    "threat": 2,
-    "ictIndex": 0.7
+    "influence": 18,
+    "creativity": 9.7,
+    "threat": 11,
+    "ictIndex": 3.8
   },
   {
     "id": 433,
@@ -12018,10 +12066,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 0,
-    "creativity": 0.5,
-    "threat": 9,
-    "ictIndex": 0.9
+    "influence": 2.2,
+    "creativity": 11,
+    "threat": 11,
+    "ictIndex": 2.4
   },
   {
     "id": 440,
@@ -12090,10 +12138,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 7.2,
+    "creativity": 29.5,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 3.7
   },
   {
     "id": 442,
@@ -12177,7 +12225,7 @@
     "gwPoints": 6,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 1.9,
+    "selectedByPercent": 2,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -12186,10 +12234,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 37.8,
-    "creativity": 0.2,
+    "influence": 44.6,
+    "creativity": 1.7,
     "threat": 0,
-    "ictIndex": 3.8
+    "ictIndex": 4.6
   },
   {
     "id": 446,
@@ -12234,10 +12282,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 32.4,
-    "creativity": 0.3,
-    "threat": 0,
-    "ictIndex": 3.3
+    "influence": 43.6,
+    "creativity": 2.1,
+    "threat": 2,
+    "ictIndex": 4.8
   },
   {
     "id": 448,
@@ -12249,7 +12297,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 1.3,
+    "selectedByPercent": 1.2,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -12268,12 +12316,12 @@
     "name": "Hall",
     "team": "Newcastle",
     "position": "DEF",
-    "price": 5,
+    "price": 5.1,
     "totalPoints": 14,
     "gwPoints": 11,
     "pointsPerGame": 7,
     "form": 7,
-    "selectedByPercent": 7,
+    "selectedByPercent": 8,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -12282,17 +12330,17 @@
     "saves": 0,
     "bonus": 3,
     "bps": 60,
-    "influence": 22,
-    "creativity": 15.2,
-    "threat": 0,
-    "ictIndex": 3.7
+    "influence": 61,
+    "creativity": 42.5,
+    "threat": 4,
+    "ictIndex": 10.7
   },
   {
     "id": 450,
     "name": "Livramento",
     "team": "Newcastle",
     "position": "DEF",
-    "price": 5,
+    "price": 4.9,
     "totalPoints": 0,
     "gwPoints": 0,
     "pointsPerGame": 0,
@@ -12354,10 +12402,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 21,
-    "influence": 5.2,
-    "creativity": 2.4,
-    "threat": 9,
-    "ictIndex": 1.7
+    "influence": 12.4,
+    "creativity": 24.5,
+    "threat": 16,
+    "ictIndex": 5.3
   },
   {
     "id": 454,
@@ -12369,7 +12417,7 @@
     "gwPoints": 8,
     "pointsPerGame": 8.5,
     "form": 8.5,
-    "selectedByPercent": 6.7,
+    "selectedByPercent": 7.7,
     "minutes": 156,
     "goals": 2,
     "assists": 0,
@@ -12378,10 +12426,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 63,
-    "influence": 37.4,
-    "creativity": 3.5,
-    "threat": 28,
-    "ictIndex": 6.9
+    "influence": 74.2,
+    "creativity": 18.8,
+    "threat": 57,
+    "ictIndex": 15
   },
   {
     "id": 456,
@@ -12402,10 +12450,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 7.8,
-    "creativity": 1.3,
+    "influence": 8,
+    "creativity": 5.5,
     "threat": 4,
-    "ictIndex": 1.3
+    "ictIndex": 1.7
   },
   {
     "id": 457,
@@ -12426,10 +12474,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 2,
-    "influence": 0,
-    "creativity": 0.1,
-    "threat": 2,
-    "ictIndex": 0.1
+    "influence": 2.2,
+    "creativity": 3.2,
+    "threat": 4,
+    "ictIndex": 0.8
   },
   {
     "id": 458,
@@ -12474,10 +12522,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 29,
-    "influence": 15.6,
-    "creativity": 21.4,
+    "influence": 26.8,
+    "creativity": 36.1,
     "threat": 3,
-    "ictIndex": 4
+    "ictIndex": 6.6
   },
   {
     "id": 460,
@@ -12489,7 +12537,7 @@
     "gwPoints": 3,
     "pointsPerGame": 4.5,
     "form": 4.5,
-    "selectedByPercent": 0.3,
+    "selectedByPercent": 0.4,
     "minutes": 104,
     "goals": 1,
     "assists": 0,
@@ -12499,9 +12547,9 @@
     "bonus": 0,
     "bps": 28,
     "influence": 38.4,
-    "creativity": 13.9,
-    "threat": 9,
-    "ictIndex": 6.1
+    "creativity": 18.2,
+    "threat": 17,
+    "ictIndex": 6.6
   },
   {
     "id": 461,
@@ -12546,10 +12594,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 0.4,
+    "influence": 5.4,
     "creativity": 1.2,
     "threat": 0,
-    "ictIndex": 0.2
+    "ictIndex": 0.7
   },
   {
     "id": 463,
@@ -12561,7 +12609,7 @@
     "gwPoints": 4,
     "pointsPerGame": 4,
     "form": 2,
-    "selectedByPercent": 1.4,
+    "selectedByPercent": 1.3,
     "minutes": 19,
     "goals": 0,
     "assists": 1,
@@ -12570,10 +12618,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 18.2,
+    "creativity": 10.5,
+    "threat": 11,
+    "ictIndex": 4
   },
   {
     "id": 464,
@@ -12585,7 +12633,7 @@
     "gwPoints": 8,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 8.8,
+    "selectedByPercent": 10.5,
     "minutes": 171,
     "goals": 1,
     "assists": 1,
@@ -12594,10 +12642,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 44,
-    "influence": 20,
-    "creativity": 16.3,
-    "threat": 28,
-    "ictIndex": 6.4
+    "influence": 55.6,
+    "creativity": 26.6,
+    "threat": 74,
+    "ictIndex": 15.6
   },
   {
     "id": 465,
@@ -12609,7 +12657,7 @@
     "gwPoints": 0,
     "pointsPerGame": 4,
     "form": 2,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.6,
     "minutes": 55,
     "goals": 0,
     "assists": 1,
@@ -12690,10 +12738,10 @@
     "saves": 9,
     "bonus": 0,
     "bps": 44,
-    "influence": 41.2,
+    "influence": 75.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 4.1
+    "ictIndex": 7.6
   },
   {
     "id": 593,
@@ -12705,7 +12753,7 @@
     "gwPoints": 11,
     "pointsPerGame": 6,
     "form": 6,
-    "selectedByPercent": 1.5,
+    "selectedByPercent": 1.9,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -12714,10 +12762,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 36,
-    "influence": 16.4,
-    "creativity": 1.2,
+    "influence": 59,
+    "creativity": 31.6,
     "threat": 5,
-    "ictIndex": 2.3
+    "ictIndex": 9.6
   },
   {
     "id": 609,
@@ -12729,7 +12777,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.2,
+    "selectedByPercent": 0.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -12753,7 +12801,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 0.6,
+    "selectedByPercent": 0.7,
     "minutes": 24,
     "goals": 0,
     "assists": 0,
@@ -12762,10 +12810,34 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 4,
+    "creativity": 10.1,
+    "threat": 7,
+    "ictIndex": 2.1
+  },
+  {
+    "id": 201,
+    "name": "Muñoz",
+    "team": "Nott'm Forest",
+    "position": "DEF",
+    "price": 5.4,
+    "totalPoints": 0,
+    "gwPoints": 0,
+    "pointsPerGame": 0,
+    "form": 0,
+    "selectedByPercent": 6.9,
+    "minutes": 54,
+    "goals": 0,
+    "assists": 0,
+    "cleanSheets": 0,
+    "goalsConceded": 2,
+    "saves": 0,
+    "bonus": 0,
+    "bps": -4,
+    "influence": 1.2,
+    "creativity": 1.8,
+    "threat": 21,
+    "ictIndex": 2.4
   },
   {
     "id": 467,
@@ -12786,10 +12858,10 @@
     "saves": 4,
     "bonus": 0,
     "bps": 17,
-    "influence": 14.2,
+    "influence": 30.8,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.4
+    "ictIndex": 3.1
   },
   {
     "id": 468,
@@ -12825,7 +12897,7 @@
     "gwPoints": 6,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 8.6,
+    "selectedByPercent": 8.5,
     "minutes": 180,
     "goals": 0,
     "assists": 1,
@@ -12834,10 +12906,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 29,
-    "influence": 15.2,
-    "creativity": 5.8,
-    "threat": 6,
-    "ictIndex": 2.7
+    "influence": 49.6,
+    "creativity": 31.1,
+    "threat": 12,
+    "ictIndex": 9.3
   },
   {
     "id": 470,
@@ -12882,10 +12954,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 7,
-    "influence": 7.6,
+    "influence": 24.6,
     "creativity": 0.6,
     "threat": 14,
-    "ictIndex": 2.2
+    "ictIndex": 3.9
   },
   {
     "id": 472,
@@ -12906,10 +12978,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 17,
-    "influence": 32.2,
-    "creativity": 25.9,
-    "threat": 0,
-    "ictIndex": 5.8
+    "influence": 43.4,
+    "creativity": 26.2,
+    "threat": 8,
+    "ictIndex": 7.8
   },
   {
     "id": 473,
@@ -12921,7 +12993,7 @@
     "gwPoints": 0,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 3.3,
+    "selectedByPercent": 3.2,
     "minutes": 158,
     "goals": 0,
     "assists": 0,
@@ -12930,10 +13002,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 16,
-    "creativity": 35.6,
-    "threat": 11,
-    "ictIndex": 6.3
+    "influence": 27.8,
+    "creativity": 51.1,
+    "threat": 15,
+    "ictIndex": 9.4
   },
   {
     "id": 474,
@@ -12954,10 +13026,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 11,
-    "influence": 20.8,
-    "creativity": 1.3,
+    "influence": 35.4,
+    "creativity": 1.7,
     "threat": 0,
-    "ictIndex": 2.2
+    "ictIndex": 3.7
   },
   {
     "id": 475,
@@ -13017,7 +13089,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.2,
+    "selectedByPercent": 0.3,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -13050,10 +13122,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
+    "influence": 2,
     "creativity": 0.9,
     "threat": 0,
-    "ictIndex": 0.1
+    "ictIndex": 0.3
   },
   {
     "id": 479,
@@ -13089,7 +13161,7 @@
     "gwPoints": 13,
     "pointsPerGame": 7.5,
     "form": 7.5,
-    "selectedByPercent": 8.9,
+    "selectedByPercent": 9.2,
     "minutes": 180,
     "goals": 1,
     "assists": 1,
@@ -13098,10 +13170,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 46,
-    "influence": 0,
-    "creativity": 9.3,
-    "threat": 16,
-    "ictIndex": 2.4
+    "influence": 56.4,
+    "creativity": 21.8,
+    "threat": 33,
+    "ictIndex": 11
   },
   {
     "id": 482,
@@ -13123,7 +13195,7 @@
     "bonus": 0,
     "bps": 2,
     "influence": 0,
-    "creativity": 0,
+    "creativity": 0.3,
     "threat": 0,
     "ictIndex": 0
   },
@@ -13146,10 +13218,10 @@
     "saves": 0,
     "bonus": 2,
     "bps": 35,
-    "influence": 1.4,
-    "creativity": 2.5,
-    "threat": 0,
-    "ictIndex": 0.4
+    "influence": 37.2,
+    "creativity": 25.5,
+    "threat": 36,
+    "ictIndex": 9.9
   },
   {
     "id": 484,
@@ -13218,10 +13290,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 34,
-    "influence": 11.6,
-    "creativity": 42.5,
+    "influence": 19.8,
+    "creativity": 61,
     "threat": 0,
-    "ictIndex": 5.4
+    "ictIndex": 8.1
   },
   {
     "id": 487,
@@ -13242,7 +13314,7 @@
     "saves": 0,
     "bonus": 0,
     "bps": 3,
-    "influence": 0,
+    "influence": 0.2,
     "creativity": 0,
     "threat": 0,
     "ictIndex": 0
@@ -13324,12 +13396,12 @@
     "name": "Igor Jesus",
     "team": "Nott'm Forest",
     "position": "FWD",
-    "price": 6,
+    "price": 5.9,
     "totalPoints": 3,
     "gwPoints": 1,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 3.3,
+    "selectedByPercent": 3.2,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -13338,10 +13410,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 5.2,
-    "creativity": 6.8,
-    "threat": 31,
-    "ictIndex": 4.3
+    "influence": 13.8,
+    "creativity": 20.1,
+    "threat": 69,
+    "ictIndex": 10.3
   },
   {
     "id": 493,
@@ -13386,10 +13458,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 0.6,
-    "creativity": 1,
-    "threat": 2,
-    "ictIndex": 0.4
+    "influence": 21.8,
+    "creativity": 1.7,
+    "threat": 9,
+    "ictIndex": 3.3
   },
   {
     "id": 581,
@@ -13401,7 +13473,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.7,
+    "selectedByPercent": 0.6,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -13449,7 +13521,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 8.3,
+    "selectedByPercent": 8,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -13458,10 +13530,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 12,
-    "influence": 28.2,
-    "creativity": 2.8,
-    "threat": 2,
-    "ictIndex": 3.3
+    "influence": 54.8,
+    "creativity": 16.5,
+    "threat": 35,
+    "ictIndex": 10.6
   },
   {
     "id": 401,
@@ -13473,7 +13545,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 1.8,
+    "selectedByPercent": 1.9,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -13482,10 +13554,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 14,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 9.2,
+    "creativity": 35.1,
+    "threat": 28,
+    "ictIndex": 7.2
   },
   {
     "id": 403,
@@ -13521,7 +13593,7 @@
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 3.2,
+    "selectedByPercent": 3.1,
     "minutes": 164,
     "goals": 0,
     "assists": 0,
@@ -13530,10 +13602,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 30,
-    "influence": 6.2,
-    "creativity": 6.4,
-    "threat": 8,
-    "ictIndex": 2.1
+    "influence": 11.2,
+    "creativity": 32.7,
+    "threat": 12,
+    "ictIndex": 5.6
   },
   {
     "id": 494,
@@ -13593,7 +13665,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 20.9,
+    "selectedByPercent": 20.4,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -13602,10 +13674,10 @@
     "saves": 5,
     "bonus": 0,
     "bps": 19,
-    "influence": 43.6,
+    "influence": 47.4,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 4.4
+    "ictIndex": 4.8
   },
   {
     "id": 497,
@@ -13636,12 +13708,12 @@
     "name": "Senesi",
     "team": "Spurs",
     "position": "DEF",
-    "price": 6,
+    "price": 5.9,
     "totalPoints": 3,
     "gwPoints": 0,
     "pointsPerGame": 3,
     "form": 1.5,
-    "selectedByPercent": 6.4,
+    "selectedByPercent": 6.1,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -13665,7 +13737,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 12.6,
+    "selectedByPercent": 12.2,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -13674,10 +13746,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 1,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 9.4,
+    "creativity": 7.9,
+    "threat": 21,
+    "ictIndex": 3.8
   },
   {
     "id": 500,
@@ -13746,10 +13818,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 20,
-    "influence": 31.8,
-    "creativity": 19.2,
-    "threat": 2,
-    "ictIndex": 5.3
+    "influence": 43,
+    "creativity": 36,
+    "threat": 27,
+    "ictIndex": 10.6
   },
   {
     "id": 503,
@@ -13761,7 +13833,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 4,
+    "selectedByPercent": 3.9,
     "minutes": 90,
     "goals": 0,
     "assists": 0,
@@ -13770,10 +13842,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0,
+    "influence": 15.2,
+    "creativity": 2.1,
     "threat": 0,
-    "ictIndex": 0
+    "ictIndex": 1.7
   },
   {
     "id": 505,
@@ -13818,10 +13890,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 5,
-    "influence": 0,
-    "creativity": 0.7,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 5.2,
+    "creativity": 12.2,
+    "threat": 2,
+    "ictIndex": 1.9
   },
   {
     "id": 507,
@@ -13962,10 +14034,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 4,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 1.2,
+    "creativity": 3.3,
+    "threat": 11,
+    "ictIndex": 1.6
   },
   {
     "id": 513,
@@ -14010,10 +14082,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 27,
-    "influence": 10.4,
-    "creativity": 26,
-    "threat": 9,
-    "ictIndex": 4.5
+    "influence": 14.2,
+    "creativity": 29.3,
+    "threat": 43,
+    "ictIndex": 8.6
   },
   {
     "id": 515,
@@ -14058,10 +14130,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 25,
-    "influence": 2,
-    "creativity": 14.7,
+    "influence": 17.4,
+    "creativity": 21.8,
     "threat": 0,
-    "ictIndex": 1.7
+    "ictIndex": 4
   },
   {
     "id": 517,
@@ -14202,10 +14274,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 24,
-    "influence": 6.2,
-    "creativity": 3.3,
+    "influence": 8,
+    "creativity": 4.8,
     "threat": 0,
-    "ictIndex": 1
+    "ictIndex": 1.3
   },
   {
     "id": 523,
@@ -14227,8 +14299,8 @@
     "bonus": 0,
     "bps": 11,
     "influence": 14.2,
-    "creativity": 5.9,
-    "threat": 55,
+    "creativity": 6.3,
+    "threat": 56,
     "ictIndex": 7.5
   },
   {
@@ -14265,7 +14337,7 @@
     "gwPoints": 2,
     "pointsPerGame": 1.5,
     "form": 1.5,
-    "selectedByPercent": 1.4,
+    "selectedByPercent": 1.3,
     "minutes": 135,
     "goals": 0,
     "assists": 0,
@@ -14274,10 +14346,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 34,
-    "influence": 7.2,
-    "creativity": 27.2,
-    "threat": 2,
-    "ictIndex": 3.6
+    "influence": 21.2,
+    "creativity": 73.5,
+    "threat": 3,
+    "ictIndex": 9.7
   },
   {
     "id": 526,
@@ -14289,7 +14361,7 @@
     "gwPoints": 1,
     "pointsPerGame": 1,
     "form": 1,
-    "selectedByPercent": 1.2,
+    "selectedByPercent": 1.1,
     "minutes": 37,
     "goals": 0,
     "assists": 0,
@@ -14298,10 +14370,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 9,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 5,
-    "ictIndex": 0.5
+    "influence": 3.2,
+    "creativity": 0.3,
+    "threat": 11,
+    "ictIndex": 1.5
   },
   {
     "id": 527,
@@ -14313,7 +14385,7 @@
     "gwPoints": 0,
     "pointsPerGame": 2,
     "form": 1,
-    "selectedByPercent": 2.2,
+    "selectedByPercent": 2.1,
     "minutes": 67,
     "goals": 0,
     "assists": 0,
@@ -14385,7 +14457,7 @@
     "gwPoints": 6,
     "pointsPerGame": 3.5,
     "form": 3.5,
-    "selectedByPercent": 3.6,
+    "selectedByPercent": 3.5,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -14394,10 +14466,10 @@
     "saves": 1,
     "bonus": 0,
     "bps": 29,
-    "influence": 15.2,
+    "influence": 19.2,
     "creativity": 0,
     "threat": 0,
-    "ictIndex": 1.5
+    "ictIndex": 1.9
   },
   {
     "id": 530,
@@ -14457,7 +14529,7 @@
     "gwPoints": 8,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 4.5,
+    "selectedByPercent": 4.4,
     "minutes": 180,
     "goals": 0,
     "assists": 0,
@@ -14466,10 +14538,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 31,
-    "influence": 18.2,
-    "creativity": 1.2,
-    "threat": 0,
-    "ictIndex": 1.9
+    "influence": 41.8,
+    "creativity": 2.4,
+    "threat": 7,
+    "ictIndex": 5.1
   },
   {
     "id": 533,
@@ -14490,10 +14562,10 @@
     "saves": 0,
     "bonus": 1,
     "bps": 28,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 42.6,
+    "creativity": 8,
+    "threat": 2,
+    "ictIndex": 5.3
   },
   {
     "id": 534,
@@ -14505,7 +14577,7 @@
     "gwPoints": 6,
     "pointsPerGame": 4,
     "form": 4,
-    "selectedByPercent": 5.8,
+    "selectedByPercent": 5.7,
     "minutes": 169,
     "goals": 0,
     "assists": 0,
@@ -14514,10 +14586,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 38,
-    "influence": 9.4,
-    "creativity": 39.4,
-    "threat": 13,
-    "ictIndex": 6.2
+    "influence": 28,
+    "creativity": 58.5,
+    "threat": 15,
+    "ictIndex": 10.2
   },
   {
     "id": 535,
@@ -14562,10 +14634,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 35,
-    "influence": 23,
-    "creativity": 27.5,
-    "threat": 4,
-    "ictIndex": 5.5
+    "influence": 39.4,
+    "creativity": 33.5,
+    "threat": 6,
+    "ictIndex": 7.9
   },
   {
     "id": 537,
@@ -14625,7 +14697,7 @@
     "gwPoints": 0,
     "pointsPerGame": 1,
     "form": 0.5,
-    "selectedByPercent": 3.2,
+    "selectedByPercent": 3.1,
     "minutes": 66,
     "goals": 0,
     "assists": 0,
@@ -14682,10 +14754,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 32,
-    "influence": 13.8,
-    "creativity": 5.3,
-    "threat": 11,
-    "ictIndex": 3
+    "influence": 36.4,
+    "creativity": 25.3,
+    "threat": 20,
+    "ictIndex": 8.2
   },
   {
     "id": 542,
@@ -14697,7 +14769,7 @@
     "gwPoints": 3,
     "pointsPerGame": 2.5,
     "form": 2.5,
-    "selectedByPercent": 7.1,
+    "selectedByPercent": 6.8,
     "minutes": 168,
     "goals": 0,
     "assists": 0,
@@ -14706,10 +14778,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 26,
-    "influence": 4.6,
-    "creativity": 9.9,
-    "threat": 0,
-    "ictIndex": 1.5
+    "influence": 8,
+    "creativity": 31.1,
+    "threat": 30,
+    "ictIndex": 7
   },
   {
     "id": 543,
@@ -14730,10 +14802,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 18,
-    "influence": 0.4,
-    "creativity": 0.6,
+    "influence": 15.6,
+    "creativity": 10.9,
     "threat": 2,
-    "ictIndex": 0.3
+    "ictIndex": 2.9
   },
   {
     "id": 544,
@@ -14754,10 +14826,10 @@
     "saves": 0,
     "bonus": 5,
     "bps": 60,
-    "influence": 18.8,
-    "creativity": 31.4,
+    "influence": 39.2,
+    "creativity": 89.3,
     "threat": 0,
-    "ictIndex": 5
+    "ictIndex": 12.8
   },
   {
     "id": 545,
@@ -14778,10 +14850,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 39,
-    "influence": 14.6,
-    "creativity": 32.1,
-    "threat": 25,
-    "ictIndex": 7.2
+    "influence": 33,
+    "creativity": 39.9,
+    "threat": 31,
+    "ictIndex": 10.4
   },
   {
     "id": 546,
@@ -14793,7 +14865,7 @@
     "gwPoints": 0,
     "pointsPerGame": 0,
     "form": 0,
-    "selectedByPercent": 0.1,
+    "selectedByPercent": 0,
     "minutes": 0,
     "goals": 0,
     "assists": 0,
@@ -14826,10 +14898,10 @@
     "saves": 0,
     "bonus": 0,
     "bps": 2,
-    "influence": 0,
-    "creativity": 0,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 8,
+    "creativity": 0.1,
+    "threat": 17,
+    "ictIndex": 2.5
   },
   {
     "id": 548,
@@ -14922,22 +14994,22 @@
     "saves": 0,
     "bonus": 0,
     "bps": 36,
-    "influence": 32.8,
-    "creativity": 3.3,
+    "influence": 40,
+    "creativity": 20,
     "threat": 16,
-    "ictIndex": 5.2
+    "ictIndex": 7.6
   },
   {
     "id": 552,
     "name": "Brobbey",
     "team": "Sunderland",
     "position": "FWD",
-    "price": 6,
+    "price": 5.9,
     "totalPoints": 4,
     "gwPoints": 2,
     "pointsPerGame": 2,
     "form": 2,
-    "selectedByPercent": 10.9,
+    "selectedByPercent": 10.4,
     "minutes": 129,
     "goals": 0,
     "assists": 0,
@@ -14947,9 +15019,9 @@
     "bonus": 0,
     "bps": 6,
     "influence": 0,
-    "creativity": 1.5,
-    "threat": 9,
-    "ictIndex": 1.1
+    "creativity": 4.3,
+    "threat": 15,
+    "ictIndex": 1.8
   },
   {
     "id": 553,
@@ -14970,10 +15042,10 @@
     "saves": 0,
     "bonus": 3,
     "bps": 32,
-    "influence": 0,
-    "creativity": 0.2,
-    "threat": 0,
-    "ictIndex": 0
+    "influence": 29.2,
+    "creativity": 0.3,
+    "threat": 25,
+    "ictIndex": 5.4
   },
   {
     "id": 612,
